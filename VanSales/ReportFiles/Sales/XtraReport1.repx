@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraReport" DisplayName="XtraReport1" PageWidth="850" PageHeight="1100" Version="20.2" DataMember="AspNetUserClaims" DataSource="#Ref-0">
+  <Extensions>
+    <Item1 Ref="2" Key="DataSerializationExtension" Value="DevExpress.XtraReports.Web.ReportDesigner.DefaultDataSerializer" />
+  </Extensions>
+  <Bands>
+    <Item1 Ref="3" ControlType="TopMarginBand" Name="TopMargin1" />
+    <Item2 Ref="4" ControlType="DetailBand" Name="Detail1" />
+    <Item3 Ref="5" ControlType="BottomMarginBand" Name="BottomMargin1" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTZWxlY3RRdWVyeSIgTmFtZT0iQXNwTmV0VXNlckNsYWltcyI+PFRhYmxlcz48VGFibGUgTmFtZT0iQXNwTmV0VXNlckNsYWltcyIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJBc3BOZXRVc2VyQ2xhaW1zIiBOYW1lPSJJZCIgLz48Q29sdW1uIFRhYmxlPSJBc3BOZXRVc2VyQ2xhaW1zIiBOYW1lPSJVc2VySWQiIC8+PENvbHVtbiBUYWJsZT0iQXNwTmV0VXNlckNsYWltcyIgTmFtZT0iQ2xhaW1UeXBlIiAvPjxDb2x1bW4gVGFibGU9IkFzcE5ldFVzZXJDbGFpbXMiIE5hbWU9IkNsYWltVmFsdWUiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iQXNwTmV0VXNlckNsYWltcyI+PEZpZWxkIE5hbWU9IklkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVXNlcklkIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYWltVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDbGFpbVZhbHVlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

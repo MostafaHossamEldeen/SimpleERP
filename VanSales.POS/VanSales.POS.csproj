@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1C85D70-378D-4EA6-AB44-CE00B9C47C77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VanSales.POS</RootNamespace>
+    <AssemblyName>VanSales.POS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo512 %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2.UI, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RestSharp, Version=106.12.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.12.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="closing_shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="closing_shift.Designer.cs">
+      <DependentUpon>closing_shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsPos1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddCust.Designer.cs">
+      <DependentUpon>FrmAddCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CustChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CustChart.Designer.cs">
+      <DependentUpon>Frm_CustChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cus_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cus_search.Designer.cs">
+      <DependentUpon>frm_cus_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_invpos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_invpos.Designer.cs">
+      <DependentUpon>frm_invpos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_items_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_items_search.Designer.cs">
+      <DependentUpon>frm_items_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_paydoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_paydoc.Designer.cs">
+      <DependentUpon>frm_paydoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_paydoc_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_paydoc_search.Designer.cs">
+      <DependentUpon>frm_paydoc_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_recdoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_recdoc.Designer.cs">
+      <DependentUpon>frm_recdoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_recdoc_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_recdoc_search.Designer.cs">
+      <DependentUpon>frm_recdoc_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rtninv_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rtninv_search.Designer.cs">
+      <DependentUpon>frm_rtninv_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RtnItem_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RtnItem_search.Designer.cs">
+      <DependentUpon>frm_RtnItem_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Rtn_Inv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rtn_Inv.Designer.cs">
+      <DependentUpon>Frm_Rtn_Inv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home_page.Designer.cs">
+      <DependentUpon>home_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inv_items_report_POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inv_items_report_POS.Designer.cs">
+      <DependentUpon>inv_items_report_POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inv_pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inv_pay.Designer.cs">
+      <DependentUpon>inv_pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inv_Report_POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inv_Report_POS.Designer.cs">
+      <DependentUpon>Inv_Report_POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inv_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inv_search.Designer.cs">
+      <DependentUpon>inv_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inv_pos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inv_pos.Designer.cs">
+      <DependentUpon>Inv_pos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_frm.Designer.cs">
+      <DependentUpon>Login_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrom.Designer.cs">
+      <DependentUpon>MainFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pay_doc.cs" />
+    <Compile Include="Models\rec_doc.cs" />
+    <Compile Include="Models\s_invdtl.cs" />
+    <Compile Include="Models\s_invmeasures.cs" />
+    <Compile Include="Models\s_invpays.cs" />
+    <Compile Include="Models\s_invs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rtninv_pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rtninv_pay.Designer.cs">
+      <DependentUpon>rtninv_pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TokenResult.cs" />
+    <Content Include="complogo\emax.png" />
+    <Content Include="complogo\logo.png" />
+    <Content Include="logo512 %281%29.ico" />
+    <None Include="bin\Debug\Report\pos_warranty_certificate_repo.repx" />
+    <None Include="bin\Debug\Report\s_invdtl_sel_report_POS.repx" />
+    <None Include="Resources\certificate.svg" />
+    <None Include="bin\Debug\Report\pay_doc_receipt_pos.repx" />
+    <None Include="bin\Debug\Report\pay_doc_receipt_pos_A5.repx" />
+    <None Include="bin\Debug\Report\pos_closing_shift_sel_repo.repx" />
+    <None Include="bin\Debug\Report\rec_doc_receipt_pos.repx" />
+    <None Include="bin\Debug\Report\rec_doc_receipt_pos_A5.repx" />
+    <None Include="bin\Debug\Report\s_inv_report_pos.repx" />
+    <None Include="Report\s_inv_receipt_pos.repx" />
+    <None Include="Resources\Btn_book.svg" />
+    <None Include="Resources\pdf.svg" />
+    <None Include="Resources\server2.svg" />
+    <None Include="Resources\clear.svg" />
+    <None Include="Resources\add-new.svg" />
+    <None Include="Resources\visa.svg" />
+    <None Include="Resources\money.svg" />
+    <None Include="Resources\btn_ExpandedButton1.svg" />
+    <None Include="Resources\btn_CollapsedButton.svg" />
+    <None Include="Resources\btn_print.svg" />
+    <None Include="Resources\btn_ExpandedButton.svg" />
+    <None Include="Resources\print.svg" />
+    <None Include="Resources\btn_search.svg" />
+    <None Include="Resources\btn_save1.svg" />
+    <None Include="Resources\btn_delete.svg" />
+    <EmbeddedResource Include="closing_shift.resx">
+      <DependentUpon>closing_shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddCust.resx">
+      <DependentUpon>FrmAddCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CustChart.resx">
+      <DependentUpon>Frm_CustChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cus_search.resx">
+      <DependentUpon>frm_cus_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_invpos.resx">
+      <DependentUpon>frm_invpos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_items_search.resx">
+      <DependentUpon>frm_items_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_paydoc.resx">
+      <DependentUpon>frm_paydoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_paydoc_search.resx">
+      <DependentUpon>frm_paydoc_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_recdoc.resx">
+      <DependentUpon>frm_recdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_recdoc_search.resx">
+      <DependentUpon>frm_recdoc_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rtninv_search.resx">
+      <DependentUpon>frm_rtninv_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RtnItem_search.resx">
+      <DependentUpon>frm_RtnItem_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rtn_Inv.resx">
+      <DependentUpon>Frm_Rtn_Inv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home_page.resx">
+      <DependentUpon>home_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv_items_report_POS.resx">
+      <DependentUpon>inv_items_report_POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv_pay.resx">
+      <DependentUpon>inv_pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inv_pos.resx">
+      <DependentUpon>Inv_pos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inv_Report_POS.resx">
+      <DependentUpon>Inv_Report_POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv_search.resx">
+      <DependentUpon>inv_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_frm.resx">
+      <DependentUpon>Login_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrom.resx">
+      <DependentUpon>MainFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rtninv_pay.resx">
+      <DependentUpon>rtninv_pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Report\s_inv_dtl_receipt_pos.repx" />
+    <None Include="bin\Debug\Report\s_inv_pay_receipt_pos.repx" />
+    <Content Include="bin\Debug\Report\s_inv_receipt_pos.repx" />
+    <None Include="DsPos.xsc">
+      <DependentUpon>DsPos.xsd</DependentUpon>
+    </None>
+    <None Include="DsPos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPos1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsPos.xss">
+      <DependentUpon>DsPos.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Report\s_rtn_inv_dtl_receipt_pos.repx" />
+    <Content Include="bin\Debug\Report\s_rtn_inv_pay_receipt_pos.repx" />
+    <Content Include="bin\Debug\Report\s_rtn_inv_receipt_pos.repx" />
+    <None Include="Resources\btn_save.svg" />
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emax.SharedLib\Emax.SharedLib.csproj">
+      <Project>{CD39258E-574D-44FD-BFA1-EC0F205CEDA1}</Project>
+      <Name>Emax.SharedLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emax.Core\Emax.Core.csproj">
+      <Project>{07af1bba-4c95-482c-897f-87a282d81785}</Project>
+      <Name>Emax.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emax.SharedLib\Emax.SharedLib.csproj">
+      <Project>{cd39258e-574d-44fd-bfa1-ec0f205ceda1}</Project>
+      <Name>Emax.SharedLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emax.Vansales.Service\Emax.Vansales.Service.csproj">
+      <Project>{0D40E47A-96E6-4993-B85E-B3BBE4687DF7}</Project>
+      <Name>Emax.Vansales.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Emax.Dal.csproj">
+      <Project>{f4e81949-8ae7-4ad1-aadc-b452aa193ddd}</Project>
+      <Name>Emax.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_pos.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\noimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_respass.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

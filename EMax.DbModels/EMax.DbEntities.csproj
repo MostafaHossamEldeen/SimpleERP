@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69A5C47E-B26E-4D98-85A7-72016E3ECBCB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMax.DbModels</RootNamespace>
+    <AssemblyName>EMax.DbModels</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AspNetRole.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUser.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserClaim.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserLogin.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gl_accbranchs.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gl_accpay.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gl_chart.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gl_vocherdtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gl_vouchers.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_doc.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_employees.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_loans.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_masterfiles.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_monthyear.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_salarydtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_salarypaid.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_salaryprep.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_salaryvarables.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_vactions.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hr_vactions_sel_search_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pay_doc.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="p_inv.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_invdtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_invpay.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_order.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_orderdtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_reqdtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_request.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_suppgroup.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_supplier.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rec_doc.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_fillcomp.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_group.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_inventdlts.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_inventory.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_items.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_items_sel_itemid_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_items_sel_item_code_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_items_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_items_sel_search_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_itemunit.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_itemwh.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_transactions.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_transdtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="st_unit.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_branch.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_branch_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_company.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_company_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_costcenter.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_costcenter_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_docupload.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_fillcomp.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_fillcomp_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_modules.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_pages.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_paytype.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_paytype_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_urpages.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_userdbord.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_userprep.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_years.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_custgroup.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_custgroup_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_customers.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_customers_sel_custid_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_customers_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_customers_sel_search_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_inv.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_invdtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_invdtls_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_invmeasure.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_invpay.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_inv_bind_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_inv_sel_id_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_inv_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_inv_sel_search_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_ItemHs2.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_order.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_orderdtls.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_sman.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="s_sman_sel_Result.cs">
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VanSalesDbModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VanSalesDbModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VanSalesDbModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VanSalesDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VanSalesDbModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VanSalesDbModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="VanSalesDbModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VanSalesDbModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="VanSalesDbModel.edmx.diagram">
+      <DependentUpon>VanSalesDbModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VanSalesDbModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>VanSalesDbModel.Context.cs</LastGenOutput>
+      <DependentUpon>VanSalesDbModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="VanSalesDbModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VanSalesDbModel.edmx</DependentUpon>
+      <LastGenOutput>VanSalesDbModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

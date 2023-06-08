@@ -1,0 +1,25 @@
+﻿.disable {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+    background-color: #d7d7d7e3;
+}
+.enable {
+ /*   width: 20px;
+    height: 20px;*/
+    background-color: #FFF;
+
+}
+.disableclint {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+    background-color: #d7d7d7e3 !important;
+}
+enableclint {
+    width: 20px;
+    height: 20px;
+     
+    background-color: #FFF !important;
+}
+ 

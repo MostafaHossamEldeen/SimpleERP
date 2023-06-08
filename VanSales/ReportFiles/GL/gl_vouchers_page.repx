@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraReport" DisplayName="gl_vouchers_page.repx" Margins="27, 25, 1, 76" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="20.2" DataSource="#Ref-0">
+  <Extensions>
+    <Item1 Ref="2" Key="DataSerializationExtension" Value="DevExpress.XtraReports.Web.ReportDesigner.DefaultDataSerializer" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="4" Visible="false" Description="vchrid" ValueInfo="0" AllowNull="true" Name="vchrid" Type="#Ref-3" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="5" ControlType="TopMarginBand" Name="TopMargin1" HeightF="1" />
+    <Item2 Ref="6" ControlType="ReportHeaderBand" Name="ReportHeader1" HeightF="150.99" Padding="20,20,20,0,100">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRTable" Name="table3" TextAlignment="MiddleCenter" SizeF="749.97,25" LocationFloat="12.5,125.98" Borders="Left, Right">
+          <Rows>
+            <Item1 Ref="8" ControlType="XRTableRow" Name="tableRow3" Weight="1" Borders="Left, Right, Bottom">
+              <Cells>
+                <Item1 Ref="9" ControlType="XRTableCell" Name="tableCell17" Weight="6.0413792765297138" Multiline="true" Text="tableCell2" TextAlignment="MiddleCenter" Font="Arial, 11pt" Padding="2,2,0,0,100" Borders="Left, Right, Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="10" EventName="BeforePrint" PropertyName="Text" Expression="[GL_vouchers_sel_rep.vchrdesc]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="11" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="12" ControlType="XRTableCell" Name="tableCell18" Weight="0.88539696430159975" Multiline="true" Text="الملاحظات" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="Left, Right, Bottom">
+                  <StylePriority Ref="13" UseFont="false" UseBorders="false" />
+                </Item2>
+              </Cells>
+              <StylePriority Ref="14" UseBorders="false" />
+            </Item1>
+          </Rows>
+          <StylePriority Ref="15" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="16" ControlType="XRTable" Name="table2" TextAlignment="MiddleCenter" SizeF="749.97,25" LocationFloat="12.5,100.99" Borders="Left, Right">
+          <Rows>
+            <Item1 Ref="17" ControlType="XRTableRow" Name="tableRow2" Weight="1" Borders="Left, Right, Bottom">
+              <Cells>
+                <Item1 Ref="18" ControlType="XRTableCell" Name="tableCell16" Weight="1.39569512604361" Multiline="true" Text="tableCell4" Font="Times New Roman, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="19" EventName="BeforePrint" PropertyName="Text" Expression="[GL_vouchers_sel_rep.puser]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="20" UseFont="false" />
+                </Item1>
+                <Item2 Ref="21" ControlType="XRTableCell" Name="tableCell15" Weight="0.85429701667912583" Multiline="true" Text="المراجع" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="22" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="23" ControlType="XRTableCell" Name="tableCell5" Weight="1.3018955268634518" Multiline="true" Text="tableCell4" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[GL_vouchers_sel_rep.vrfrance]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="25" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="26" ControlType="XRTableCell" Name="tableCell6" Weight="1.0939962411772148" Multiline="true" Text="الرقم المرجعى" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="27" UseFont="false" UseBorders="false" />
+                </Item4>
+                <Item5 Ref="28" ControlType="XRTableCell" Name="tableCell7" Weight="1.3954953657663118" Multiline="true" Text="tableCell2" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="29" EventName="BeforePrint" PropertyName="Text" Expression="[GL_vouchers_sel_rep.vchrdocno]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="30" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="31" ControlType="XRTableCell" Name="tableCell8" Weight="0.88539696430159975" Multiline="true" Text="الرقم اليدوى" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="32" UseFont="false" UseBorders="false" />
+                </Item6>
+              </Cells>
+              <StylePriority Ref="33" UseBorders="false" />
+            </Item1>
+          </Rows>
+          <StylePriority Ref="34" UseBorders="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="35" ControlType="XRTable" Name="table1" SizeF="749.97,25" LocationFloat="12.5,75.99">
+          <Rows>
+            <Item1 Ref="36" ControlType="XRTableRow" Name="tableRow1" Weight="1" TextAlignment="MiddleCenter" Borders="All">
+              <Cells>
+                <Item1 Ref="37" ControlType="XRTableCell" Name="tableCell13" Weight="1.3957367176602309" Multiline="true" Text="tableCell2" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <ExpressionBindings>
+                    <Item1 Ref="38" EventName="BeforePrint" PropertyName="Text" Expression="[GL_vouchers_sel_rep.vchrtypename]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="39" UseFont="false" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="40" ControlType="XRTableCell" Name="tableCell14" Weight="0.85415555188462422" Multiline="true" Text="نوع القيد" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <StylePriority Ref="41" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="42" ControlType="XRTableCell" Name="tableCell4" Weight="1.3019322507068374" TextFormatString="{0:yyyy/MM/dd}" Multiline="true" Text="tableCell4" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <ExpressionBindings>
+                    <Item1 Ref="43" EventName="BeforePrint" PropertyName="Text" Expression="[GL_vouchers_sel_rep.vchrdate]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="44" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="45" ControlType="XRTableCell" Name="tableCell1" Weight="1.0937366495099201" Multiline="true" Text="التاريخ" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <StylePriority Ref="46" UseFont="false" UseBorders="false" />
+                </Item4>
+                <Item5 Ref="47" ControlType="XRTableCell" Name="tableCell2" Weight="1.3956191641259785" Multiline="true" Text="tableCell2" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="Top, Right">
+                  <ExpressionBindings>
+                    <Item1 Ref="48" EventName="BeforePrint" PropertyName="Text" Expression="[GL_vouchers_sel_rep.vchrno]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="49" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="50" ControlType="XRTableCell" Name="tableCell3" Weight="0.88535224997498652" Multiline="true" Text="رقم القيد" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <StylePriority Ref="51" UseFont="false" UseBorders="false" />
+                </Item6>
+              </Cells>
+              <StylePriority Ref="52" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+            </Item1>
+          </Rows>
+        </Item3>
+        <Item4 Ref="53" ControlType="XRSubreport" Name="subreport1" ReportSourceUrl="C:\Users\Mu_Sam\Source\Workspaces\VanSales\VanSales\ReportFiles\GL\Header.repx" SizeF="775,23" LocationFloat="0,0" />
+        <Item5 Ref="54" ControlType="XRLabel" Name="label1" Multiline="true" Text="القيود اليومية" TextAlignment="MiddleCenter" SizeF="151.04,23" LocationFloat="321.84,23" Font="Times New Roman, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="55" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+      </Controls>
+      <StylePriority Ref="56" UsePadding="false" />
+    </Item2>
+    <Item3 Ref="57" ControlType="DetailBand" Name="Detail1" HeightF="37.58" Padding="20,20,0,0,100">
+      <Controls>
+        <Item1 Ref="58" ControlType="XRSubreport" Name="subreport2" ReportSourceUrl="C:\Users\Mu_Sam\Source\Workspaces\VanSales\VanSales\ReportFiles\GL\gl_vouchersdtl_page.repx" SizeF="750.94,23" LocationFloat="12.5,14.58">
+          <ParameterBindings>
+            <Item1 Ref="60" ParameterName="vchrid" Parameter="#Ref-4" />
+          </ParameterBindings>
+        </Item1>
+      </Controls>
+      <StylePriority Ref="61" UsePadding="false" />
+    </Item3>
+    <Item4 Ref="62" ControlType="BottomMarginBand" Name="BottomMargin1" HeightF="76">
+      <Controls>
+        <Item1 Ref="63" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" TextFormatString="{0:yyyy-MM-dd hh:mm tt}" TextAlignment="MiddleLeft" SizeF="186.69,23" LocationFloat="12.5,14.54" Padding="2,2,0,0,100">
+          <StylePriority Ref="64" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="65" ControlType="XRPageInfo" Name="pageInfo2" TextAlignment="MiddleRight" SizeF="205.21,23" LocationFloat="557.24,14.54" Padding="2,2,0,0,100">
+          <StylePriority Ref="66" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item4>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9IkdMX3ZvdWNoZXJzX3NlbF9yZXAiPjxQYXJhbWV0ZXIgTmFtZT0iQHZjaHJpZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uSW50MzIpKD92Y2hyaWQpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPkdMX3ZvdWNoZXJzX3NlbF9yZXA8L1Byb2NOYW1lPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iR0xfdm91Y2hlcnNfc2VsX3JlcCI+PEZpZWxkIE5hbWU9InZjaHJpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InZjaHJubyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ2Y2hyZG9jbm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idmNocmRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJicmFuY2hpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImJyYW5jaG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idmNocmRlc2MiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idnJmcmFuY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idnVzZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icG9zdGFjYyIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0icHVzZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idmNocnR5cGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJ2Y2hydHlwZW5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idXNlcnZjaHIiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9ImZ5ZWFyIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="3" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

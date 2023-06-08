@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraReport" DisplayName="s_inv_paydoc_page" Margins="78, 50, 12, 100" PageWidth="850" PageHeight="1100" Version="20.2" DataSource="#Ref-0">
+  <Extensions>
+    <Item1 Ref="2" Key="DataSerializationExtension" Value="DevExpress.XtraReports.Web.ReportDesigner.DefaultDataSerializer" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="4" Visible="false" Description="inv_id" ValueInfo="0" Name="inv_id" Type="#Ref-3" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="5" ControlType="TopMarginBand" Name="TopMargin1" HeightF="12" />
+    <Item2 Ref="6" ControlType="ReportHeaderBand" Name="ReportHeader1" HeightF="86.45" Padding="20,20,20,0,100">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRLabel" Name="label1" Multiline="true" Text="صرف بضاعه فاتوره" TextAlignment="MiddleCenter" SizeF="178.09,23" LocationFloat="296.85,16.6" Font="Times New Roman, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="8" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+      <StylePriority Ref="9" UsePadding="false" />
+    </Item2>
+    <Item3 Ref="10" ControlType="PageHeaderBand" Name="PageHeader1" HeightF="89.56" Padding="20,20,0,0,100">
+      <Controls>
+        <Item1 Ref="11" ControlType="XRTable" Name="table2" TextAlignment="MiddleCenter" SizeF="692.68,25" LocationFloat="5.16,39.57" Borders="Left, Right">
+          <Rows>
+            <Item1 Ref="12" ControlType="XRTableRow" Name="tableRow2" Weight="1" Borders="Left, Right, Bottom">
+              <Cells>
+                <Item1 Ref="13" ControlType="XRTableCell" Name="tableCell5" Weight="3.3642884157207651" Multiline="true" Text="tableCell4" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="14" EventName="BeforePrint" PropertyName="Text" Expression="[s_inv_paydoc_rep.custname]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="15" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="16" ControlType="XRTableCell" Name="tableCell6" Weight="1.0524963759314288" Multiline="true" Text="العميل" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="17" UseFont="false" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="18" ControlType="XRTableCell" Name="tableCell7" Weight="1.6245944275646123" Multiline="true" Text="tableCell2" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="19" EventName="BeforePrint" PropertyName="Text" Expression="[s_inv_paydoc_rep.branchname]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="20" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="21" ControlType="XRTableCell" Name="tableCell8" Weight="0.88539696430159975" Multiline="true" Text="الفرع" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="22" UseFont="false" UseBorders="false" />
+                </Item4>
+              </Cells>
+              <StylePriority Ref="23" UseBorders="false" />
+            </Item1>
+          </Rows>
+          <StylePriority Ref="24" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="25" ControlType="XRTable" Name="table1" SizeF="692.69,25" LocationFloat="5.16,14.57">
+          <Rows>
+            <Item1 Ref="26" ControlType="XRTableRow" Name="tableRow1" Weight="1" TextAlignment="MiddleCenter" Borders="All">
+              <Cells>
+                <Item1 Ref="27" ControlType="XRTableCell" Name="tableCell4" Weight="3.3641274465322235" TextFormatString="{0:yyyy/MM/dd}" Multiline="true" Text="tableCell4" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <ExpressionBindings>
+                    <Item1 Ref="28" EventName="BeforePrint" PropertyName="Text" Expression="[s_inv_paydoc_rep.sinvdata]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="29" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="30" ControlType="XRTableCell" Name="tableCell1" Weight="1.0522460279956776" Multiline="true" Text="التاريخ" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <StylePriority Ref="31" UseFont="false" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="32" ControlType="XRTableCell" Name="tableCell2" Weight="1.6248138121697009" Multiline="true" Text="tableCell2" TextAlignment="MiddleCenter" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100" Borders="Top, Right">
+                  <ExpressionBindings>
+                    <Item1 Ref="33" EventName="BeforePrint" PropertyName="Text" Expression="[s_inv_paydoc_rep.sinvno]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="34" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="35" ControlType="XRTableCell" Name="tableCell3" Weight="0.88535224997498652" Multiline="true" Text="رقم الفاتوره" Font="Arial, 10pt" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+                  <StylePriority Ref="36" UseFont="false" UseBorders="false" />
+                </Item4>
+              </Cells>
+              <StylePriority Ref="37" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+            </Item1>
+          </Rows>
+        </Item2>
+      </Controls>
+      <StylePriority Ref="38" UsePadding="false" />
+    </Item3>
+    <Item4 Ref="39" ControlType="DetailBand" Name="Detail1" Padding="20,20,0,0,100">
+      <Controls>
+        <Item1 Ref="40" ControlType="XRSubreport" Name="subreport1" ReportSourceUrl="E:\Project Repo\VanSales\VanSales\VanSales\ReportFiles\sales\inv_paydoc_dtl.repx" SizeF="692.66,23" LocationFloat="3.11,0">
+          <ParameterBindings>
+            <Item1 Ref="42" ParameterName="inv_id" Parameter="#Ref-4" />
+          </ParameterBindings>
+        </Item1>
+      </Controls>
+      <StylePriority Ref="43" UsePadding="false" />
+    </Item4>
+    <Item5 Ref="44" ControlType="BottomMarginBand" Name="BottomMargin1">
+      <Controls>
+        <Item1 Ref="45" ControlType="XRPageInfo" Name="pageInfo2" PageInfo="DateTime" TextFormatString="{0:dd/MM/yyyy}" SizeF="100,23" LocationFloat="43.36,23.46" Padding="2,2,0,0,100" />
+        <Item2 Ref="46" ControlType="XRPageInfo" Name="pageInfo1" SizeF="100,23" LocationFloat="615.56,23.46" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item5>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InNfaW52X3BheWRvY19yZXAiPjxQYXJhbWV0ZXIgTmFtZT0iQGludl9pZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uSW50MzIpKD9pbnZfaWQpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPnNfaW52X3BheWRvY19yZXA8L1Byb2NOYW1lPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0ic19pbnZfcGF5ZG9jX3JlcCI+PEZpZWxkIE5hbWU9InNpbnZpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InNuYXR1cmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJzbmF0dXJlbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJzaW52bm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ic2ludmRvY25vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNpbnZkYXRhIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0ic2ludnRpbWUiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9ImJyYW5jaGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iYnJhbmNobmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjY2lkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iY2NuYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNpbnZwYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJzaW52cGF5bmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjdXN0aWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJjdXN0bmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjdXN0dmF0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImN1c3RhZGQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY3VzdHZhdGFwcGx5IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJjdXN0bW9iaWxlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InN1c2VyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNtYW5pZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InNtYW5uYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNub3RlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwb3N0c3QiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9InBvc3lhY2MiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9InBvc3RzdHR4dCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwb3N0YWNjdHh0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InZvY2hyaWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJ0b3RhbGludiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZGlzY3AiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9ImRpc2N2IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJuZXRidmF0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ2YXR2YWx1ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0ibmV0YXZhdCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0icmVzdHZhbHVlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkb2NpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImRvY25vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ5ZWFyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImludmRvYyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ3aXRob3V0aW52IiBUeXBlPSJCb29sZWFuIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="3" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

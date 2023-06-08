@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 161" width="512" height="161">
+	<title>btn_ExpandedButton-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #49b3f6 } 
+		.shp1 { fill: #145388 } 
+	</style>
+	<path id="Shape 2" class="shp0" d="M20 17L203 30L304 132L309 155L45 142L22 144L20 17Z" />
+	<path id="Shape 3" class="shp1" d="M398 161L399 131L479 132L481 31L30 31L29 130L314 131L315 161L0 161L0 0L512 0L512 161L398 161Z" />
+</svg>

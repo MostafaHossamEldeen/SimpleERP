@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" DisplayName="P_Inv_Page" Margins="26, 25, 1, 55" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="20.2" RightToLeft="Inherit" RightToLeftLayout="Yes" DataMember="p_inv_rep" DataSource="#Ref-0" Font="Arial, 9pt">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" Description="pinvid" ValueInfo="0" Name="pinvid" Type="#Ref-2" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="TopMargin1" HeightF="1.04" />
+    <Item2 Ref="5" ControlType="ReportHeaderBand" Name="ReportHeader1" HeightF="141.18">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRSubreport" Name="subreport2" ReportSourceUrl="C:\Users\Mu_Sam\Source\Workspaces\VanSales\VanSales\ReportFiles\Purchase\Header.repx" SizeF="775.98,23" LocationFloat="0,0" />
+        <Item2 Ref="7" ControlType="XRPictureBox" Name="pictureBox1" Sizing="Squeeze" ImageAlignment="MiddleCenter" SizeF="133.3,93.9" LocationFloat="616.02,23">
+          <ExpressionBindings>
+            <Item1 Ref="8" EventName="BeforePrint" PropertyName="ImageUrl" Expression="[company.complogo]" />
+          </ExpressionBindings>
+        </Item2>
+        <Item3 Ref="9" ControlType="XRLabel" Name="label1" Multiline="true" Text="فاتورة مشتريات" TextAlignment="MiddleCenter" SizeF="247.92,23" LocationFloat="255.19,23" Font="Times New Roman, 15pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="10" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+      </Controls>
+    </Item2>
+    <Item3 Ref="11" ControlType="PageHeaderBand" Name="PageHeader1" HeightF="144.31">
+      <Controls>
+        <Item1 Ref="12" ControlType="XRTable" Name="table3" RightToLeft="Yes" SizeF="775.9,118.75" LocationFloat="0,13.18" BorderColor="255,201,197,197" Borders="All">
+          <Rows>
+            <Item1 Ref="13" ControlType="XRTableRow" Name="tableRow4" Weight="1">
+              <Cells>
+                <Item1 Ref="14" ControlType="XRTableCell" Name="tableCell14" Weight="2.0703030598183929" Multiline="true" TextAlignment="MiddleLeft" ForeColor="Black" BackColor="38,0,0,0" Padding="2,2,0,0,100" Borders="None">
+                  <StylePriority Ref="15" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="16" ControlType="XRTableCell" Name="tableCell15" Weight="2.0381186435046246" Multiline="true" Text="المورد :" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="38,0,0,0" Padding="2,2,0,0,100" Borders="None">
+                  <StylePriority Ref="17" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="18" ControlType="XRTableCell" Name="tableCell19" Weight="2.0859869898594603" Multiline="true" ForeColor="Black" BackColor="38,0,0,0" Padding="2,2,0,0,100">
+                  <StylePriority Ref="19" UseForeColor="false" UseBackColor="false" />
+                </Item3>
+                <Item4 Ref="20" ControlType="XRTableCell" Name="tableCell26" Weight="1.8101257006726514" Multiline="true" Text="بيانات الفاتورة :" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="38,0,0,0" Padding="2,2,0,0,100">
+                  <StylePriority Ref="21" UseFont="false" UseForeColor="false" UseBackColor="false" />
+                </Item4>
+              </Cells>
+            </Item1>
+            <Item2 Ref="22" ControlType="XRTableRow" Name="tableRow7" Weight="1">
+              <Cells>
+                <Item1 Ref="23" ControlType="XRTableCell" Name="tableCell51" Weight="2.0293842650056648" Multiline="true" Text="tableCell51" Padding="2,2,0,0,100" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.suppid]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="25" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="26" ControlType="XRTableCell" Name="tableCell52" Weight="1.9978359620961947" Multiline="true" Text="الكود" Font="Times New Roman, 9pt" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="27" UseFont="false" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="28" ControlType="XRTableCell" Name="tableCell21" Weight="2.0447582078145903" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="29" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.pinvno]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="30" ControlType="XRTableCell" Name="tableCell27" Weight="1.7743492177177513" Multiline="true" Text="رقم الفاتورة" Padding="2,2,0,0,100" />
+              </Cells>
+            </Item2>
+            <Item3 Ref="31" ControlType="XRTableRow" Name="tableRow6" Weight="1">
+              <Cells>
+                <Item1 Ref="32" ControlType="XRTableCell" Name="tableCell41" Weight="2.0289252018990602" Multiline="true" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="33" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="34" ControlType="XRTableCell" Name="tableCell42" Weight="1.9985413443264621" Multiline="true" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="35" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="36" ControlType="XRTableCell" Name="tableCell22" Weight="2.0445557311126445" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[pinvdocno]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="38" ControlType="XRTableCell" Name="tableCell28" Weight="1.7747326639988528" Multiline="true" Text="رقم فاتورة المورد" Padding="2,2,0,0,100" />
+              </Cells>
+            </Item3>
+            <Item4 Ref="39" ControlType="XRTableRow" Name="tableRow5" Weight="1">
+              <Cells>
+                <Item1 Ref="40" ControlType="XRTableCell" Name="tableCell31" Weight="2.0291304888945745" Multiline="true" Padding="2,2,0,0,100" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="41" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.suppname]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="42" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="43" ControlType="XRTableCell" Name="tableCell32" Weight="1.998342067979229" Multiline="true" Text="الاسم" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="44" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="45" ControlType="XRTableCell" Name="tableCell23" Weight="2.0445587848348215" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="46" EventName="BeforePrint" PropertyName="Text" Expression="[pinvpayname]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="47" ControlType="XRTableCell" Name="tableCell29" Weight="1.7747353148446015" Multiline="true" Text="نوع سداد الفاتورة" Padding="2,2,0,0,100" />
+              </Cells>
+            </Item4>
+            <Item5 Ref="48" ControlType="XRTableRow" Name="tableRow11" Weight="1">
+              <Cells>
+                <Item1 Ref="49" ControlType="XRTableCell" Name="tableCell72" Weight="2.0291274573146909" Multiline="true" Padding="2,2,0,0,100" />
+                <Item2 Ref="50" ControlType="XRTableCell" Name="tableCell73" Weight="1.9983390823981406" Multiline="true" Padding="2,2,0,0,100" />
+                <Item3 Ref="51" ControlType="XRTableCell" Name="tableCell24" Weight="2.0445557302046158" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="52" EventName="BeforePrint" PropertyName="Text" Expression="GetDay([p_inv_rep.pinvdate])+'/'+ GetMonth([p_inv_rep.pinvdate])+'/'+ GetYear([p_inv_rep.pinvdate])" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="53" ControlType="XRTableCell" Name="tableCell30" Weight="1.7747326633384966" Multiline="true" Text="تاريخ اصدار الفاتورة" Padding="2,2,0,0,100" />
+              </Cells>
+            </Item5>
+            <Item6 Ref="54" ControlType="XRTableRow" Name="tableRow20" Weight="1">
+              <Cells>
+                <Item1 Ref="55" ControlType="XRTableCell" Name="tableCell121" Weight="2.0291305617493" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="56" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.suppvat]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="57" ControlType="XRTableCell" Name="tableCell122" Weight="1.998342139728515" Multiline="true" Text="رقم تسجيل ضريبة القيمه المضافه" Padding="2,2,0,0,100" />
+                <Item3 Ref="58" ControlType="XRTableCell" Name="tableCell25" Weight="2.0445588582434913" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="59" EventName="BeforePrint" PropertyName="Text" Expression="[vattypename]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="60" ControlType="XRTableCell" Name="tableCell33" Weight="1.7747353785654194" Multiline="true" Text="حالة الضريبة" Padding="2,2,0,0,100" />
+              </Cells>
+            </Item6>
+          </Rows>
+          <StylePriority Ref="61" UseBorderColor="false" UseBorders="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="62" ControlType="DetailBand" Name="Detail1" HeightF="52.08">
+      <Controls>
+        <Item1 Ref="63" ControlType="XRSubreport" Name="subreport1" ReportSourceUrl="D:\ProjectRepos\VanSales\ReportFiles\Purchase\P_Inv_Detail_Page.repx" SizeF="775.89,23" LocationFloat="0,14.54">
+          <ParameterBindings>
+            <Item1 Ref="65" ParameterName="pinvid" Parameter="#Ref-3" />
+          </ParameterBindings>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="66" ControlType="ReportFooterBand" Name="ReportFooter1" HeightF="177.09">
+      <Controls>
+        <Item1 Ref="67" ControlType="XRTable" Name="table4" RightToLeft="Yes" TextAlignment="MiddleLeft" SizeF="775.89,175" LocationFloat="0,0">
+          <Rows>
+            <Item1 Ref="68" ControlType="XRTableRow" Name="tableRow12" Weight="1">
+              <Cells>
+                <Item1 Ref="69" ControlType="XRTableCell" Name="tableCell77" Weight="1.5745249978555" Multiline="true" Text="اجمالى المبلغ" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="38,0,0,0" Padding="2,2,0,0,100">
+                  <StylePriority Ref="70" UseFont="false" UseForeColor="false" UseBackColor="false" />
+                </Item1>
+                <Item2 Ref="71" ControlType="XRTableCell" Name="tableCell2" Weight="1.4238920967867763" Multiline="true" BackColor="38,0,0,0" Padding="2,2,0,0,100">
+                  <StylePriority Ref="72" UseBackColor="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+            <Item2 Ref="73" ControlType="XRTableRow" Name="tableRow16" Weight="1" BorderColor="255,201,197,197" Borders="All">
+              <Cells>
+                <Item1 Ref="74" ControlType="XRTableCell" Name="tableCell94" Weight="1.5745238160383659" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="75" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.netbvat]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="76" ControlType="XRTableCell" Name="tableCell3" Weight="1.4238910280326571" Multiline="true" Text="الاجمالى(غير شامل ضريبة القيمة المضافه)" Padding="2,2,0,0,100" />
+              </Cells>
+              <StylePriority Ref="77" UseBorderColor="false" UseBorders="false" />
+            </Item2>
+            <Item3 Ref="78" ControlType="XRTableRow" Name="tableRow15" Weight="1" BorderColor="255,201,197,197" Borders="All">
+              <Cells>
+                <Item1 Ref="79" ControlType="XRTableCell" Name="tableCell90" Weight="1.5743645367092218" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="80" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.discv]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="81" ControlType="XRTableCell" Name="tableCell5" Weight="1.4240525579330545" Multiline="true" Text="مجموع الخصومات" Padding="2,2,0,0,100" />
+              </Cells>
+              <StylePriority Ref="82" UseBorderColor="false" UseBorders="false" />
+            </Item3>
+            <Item4 Ref="83" ControlType="XRTableRow" Name="tableRow14" Weight="1" BorderColor="255,201,197,197" Borders="All">
+              <Cells>
+                <Item1 Ref="84" ControlType="XRTableCell" Name="tableCell86" Weight="1.5745249978555" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="85" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.netbvat]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="86" ControlType="XRTableCell" Name="tableCell6" Weight="1.4238920967867763" Multiline="true" Text="الاجمالى الخاضع للضريبه(غير شامل ضريبة القيمه المضافه)" Padding="2,2,0,0,100" />
+              </Cells>
+              <StylePriority Ref="87" UseBorderColor="false" UseBorders="false" />
+            </Item4>
+            <Item5 Ref="88" ControlType="XRTableRow" Name="tableRow13" Weight="1" BorderColor="255,201,197,197" Borders="All">
+              <Cells>
+                <Item1 Ref="89" ControlType="XRTableCell" Name="tableCell82" Weight="1.5745249978555" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="90" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.vatvalue]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="91" ControlType="XRTableCell" Name="tableCell8" Weight="1.4238920967867763" Multiline="true" Text="مجموع ضريبة القيمه المضافه" Padding="2,2,0,0,100" />
+              </Cells>
+              <StylePriority Ref="92" UseBorderColor="false" UseBorders="false" />
+            </Item5>
+            <Item6 Ref="93" ControlType="XRTableRow" Name="tableRow17" Weight="1" BorderColor="255,201,197,197" Borders="All">
+              <Cells>
+                <Item1 Ref="94" ControlType="XRTableCell" Name="tableCell98" Weight="1.5745249978555" Multiline="true" Font="Arial, 9pt, style=Bold" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="95" EventName="BeforePrint" PropertyName="Text" Expression="[p_inv_rep.netavat]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="96" UseFont="false" />
+                </Item1>
+                <Item2 Ref="97" ControlType="XRTableCell" Name="tableCell9" Weight="1.4238920967867763" Multiline="true" Text="اجمالى المبلغ المستحق" Padding="2,2,0,0,100" />
+              </Cells>
+              <StylePriority Ref="98" UseBorderColor="false" UseBorders="false" />
+            </Item6>
+            <Item7 Ref="99" ControlType="XRTableRow" Name="tableRow10" Weight="1">
+              <Cells>
+                <Item1 Ref="100" ControlType="XRTableCell" Name="tableCell20" Weight="2.9984170946422761" Multiline="true" Text="tableCell20" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="101" EventName="BeforePrint" PropertyName="Text" Expression="[tafket]" />
+                  </ExpressionBindings>
+                </Item1>
+              </Cells>
+            </Item7>
+          </Rows>
+          <StylePriority Ref="102" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item5>
+    <Item6 Ref="103" ControlType="BottomMarginBand" Name="BottomMargin1" HeightF="55" TextAlignment="TopRight">
+      <Controls>
+        <Item1 Ref="104" ControlType="XRPageInfo" Name="pageInfo2" SizeF="100,23" LocationFloat="675.89,0" Padding="2,2,0,0,100" />
+        <Item2 Ref="105" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" TextFormatString="{0:yyyy-MM-dd hh:mm tt}" SizeF="147.92,23" LocationFloat="0,0" Padding="2,2,0,0,100" />
+      </Controls>
+      <StylePriority Ref="106" UseTextAlignment="false" />
+    </Item6>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InBfaW52X3JlcCI+PFBhcmFtZXRlciBOYW1lPSJAcGludmlkIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5JbnQzMikoP3BpbnZpZCk8L1BhcmFtZXRlcj48UHJvY05hbWU+cF9pbnZfcmVwPC9Qcm9jTmFtZT48L1F1ZXJ5PjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9ImNvbXBhbnkiPjxQcm9jTmFtZT5zeXNfY29tcGFueV9zZWw8L1Byb2NOYW1lPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0icF9pbnZfcmVwIj48RmllbGQgTmFtZT0icGludmlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icG5hdHVyZWludiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InBuYXR1cmVuYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBpbnZubyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwaW52ZG9jbm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icGludmRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJicmFuY2hpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImJyYW5jaG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY2NpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImNjbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwaW52cGF5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icGludnBheW5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ic3VwcGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0ic3VwcG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ic3VwcHZhdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwdXNlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJtdXNlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwbm90ZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icG9zdHN0IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJwb3N0YWNjIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJ2b2NocmlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idmF0dHlwZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InZhdHR5cGVuYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InRvdGFsaW52IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkaXNjcCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZGlzY3YiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Im5ldGJ2YXQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InZhdHZhbHVlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJuZXRhdmF0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJyZXN0dmFsdWUiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9ImRvY2lkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iZG9jbm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZnllYXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaW52cGljIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IndpdGhvdXRpbnYiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9ImNvdW50cnkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ic3VwcGFkZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJzdXBwdGVsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InRhZmtldCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48VmlldyBOYW1lPSJjb21wYW55Ij48RmllbGQgTmFtZT0iY29tcGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iY29tcG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcGFjdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21weWVhciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbGVnYWwiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcHRlbCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbW9iIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNvbXB3ZWIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcGVtYWlsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNvbXBhZGQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcG1hbmFnZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcHZhdG5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNvbXBub3RlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbG9nbyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="2" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

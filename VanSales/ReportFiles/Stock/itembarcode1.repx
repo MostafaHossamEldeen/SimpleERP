@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraReport" DisplayName="itembarcode1" Margins="5, 5, 5, 2" PaperKind="Custom" PageWidth="192" PageHeight="86" Version="20.2" DataMember="st_items_barcodeprint" DataSource="#Ref-0">
+  <Extensions>
+    <Item1 Ref="2" Key="DataSerializationExtension" Value="DevExpress.XtraReports.Web.ReportDesigner.DefaultDataSerializer" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="4" Visible="false" Description="itemunitid" ValueInfo="1" Name="itemunitid" Type="#Ref-3" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="5" ControlType="TopMarginBand" Name="TopMargin1" HeightF="5" />
+    <Item2 Ref="6" ControlType="DetailBand" Name="Detail1" HeightF="74.33">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRLabel" Name="label3" Multiline="true" CanGrow="false" TextAlignment="MiddleRight" SizeF="80.48,23.31" LocationFloat="100,49.98" Font="Times New Roman, 8pt" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="8" EventName="BeforePrint" PropertyName="Text" Expression="[barcode1]" />
+          </ExpressionBindings>
+          <StylePriority Ref="9" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="10" ControlType="XRLabel" Name="label2" Multiline="true" CanGrow="false" TextAlignment="MiddleLeft" SizeF="98.49,23.31" LocationFloat="1.51,49.98" Font="Times New Roman, 8pt" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="11" EventName="BeforePrint" PropertyName="Text" Expression="[fprice]" />
+          </ExpressionBindings>
+          <StylePriority Ref="12" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="13" ControlType="XRBarCode" Name="barCode1" AutoModule="true" ShowText="false" SizeF="180.8,25.5" LocationFloat="0.52,24.48" Padding="10,10,0,0,100">
+          <Symbology Ref="14" Name="Code128" />
+          <ExpressionBindings>
+            <Item1 Ref="15" EventName="BeforePrint" PropertyName="Text" Expression="[barcode1]" />
+          </ExpressionBindings>
+        </Item3>
+        <Item4 Ref="16" ControlType="XRLabel" Name="label1" Multiline="true" CanGrow="false" TextAlignment="TopCenter" SizeF="180.49,24.37" LocationFloat="0.52,0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="17" EventName="BeforePrint" PropertyName="Text" Expression="[itemname]" />
+          </ExpressionBindings>
+          <StylePriority Ref="18" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+      </Controls>
+    </Item2>
+    <Item3 Ref="19" ControlType="BottomMarginBand" Name="BottomMargin1" HeightF="1.56" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InN0X2l0ZW1zX2JhcmNvZGVwcmludCI+PFBhcmFtZXRlciBOYW1lPSJAaXRlbXVuaXRpZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uSW50MzIpKD9pdGVtdW5pdGlkKTwvUGFyYW1ldGVyPjxQcm9jTmFtZT5zdF9pdGVtc19iYXJjb2RlcHJpbnQ8L1Byb2NOYW1lPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0ic3RfaXRlbXNfYmFyY29kZXByaW50Ij48RmllbGQgTmFtZT0iaXRlbWNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaXRlbW5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYmFyY29kZTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZnByaWNlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ1bml0bmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="3" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

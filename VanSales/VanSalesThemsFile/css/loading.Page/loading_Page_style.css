@@ -1,0 +1,92 @@
+.loading_circle{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.load_1 {
+	content: url(./img/cir_4.svg);
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.load_2 {
+	content: url(./img/cir_3.svg);
+  position: absolute;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spinn  2s linear infinite;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.load_3 {
+	content: url(./img/cir_2.svg);
+  position: absolute;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 4s linear infinite;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.load_4 {
+	content: url(./img/cir_1.svg);
+  position: absolute;
+  -webkit-animation: spin 8s linear infinite;
+  animation: spinn 4s linear infinite;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.load_5 {
+	content: url(./img/Circles_Svg_logo_512.svg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.ircles {
+  font-size: 5px;
+  font-family: "Engravers MT";
+  color: rgb(46, 142, 82);
+  position: absolute;
+  left: 15px;
+  top: 23px;
+  z-index: 2;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(-360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes spinn {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinn {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spinnn {
+  0% { -webkit-transform: rotatey(0deg); }
+  100% { -webkit-transform: rotatey(-360deg); }
+}
+
+@keyframes spinnn {
+  0% { transform: rotatey(0deg); }
+  100% { transform: rotatey(-360deg); }
+}
+

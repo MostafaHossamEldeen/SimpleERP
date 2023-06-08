@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportDataSet" targetNamespace="http://tempuri.org/ReportDataSet.xsd" xmlns:mstns="http://tempuri.org/ReportDataSet.xsd" xmlns="http://tempuri.org/ReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportDataSet" msprop:Generator_UserDSName="ReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RepHeaderColumn" msprop:Generator_TableClassName="RepHeaderColumnDataTable" msprop:Generator_TableVarName="tableRepHeaderColumn" msprop:Generator_TablePropName="RepHeaderColumn" msprop:Generator_RowDeletingName="RepHeaderColumnRowDeleting" msprop:Generator_RowChangingName="RepHeaderColumnRowChanging" msprop:Generator_RowEvHandlerName="RepHeaderColumnRowChangeEventHandler" msprop:Generator_RowDeletedName="RepHeaderColumnRowDeleted" msprop:Generator_UserTableName="RepHeaderColumn" msprop:Generator_RowChangedName="RepHeaderColumnRowChanged" msprop:Generator_RowEvArgName="RepHeaderColumnRowChangeEvent" msprop:Generator_RowClassName="RepHeaderColumnRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RepName" msprop:Generator_ColumnVarNameInTable="columnRepName" msprop:Generator_ColumnPropNameInRow="RepName" msprop:Generator_ColumnPropNameInTable="RepNameColumn" msprop:Generator_UserColumnName="RepName" type="xs:string" />
+              <xs:element name="Caption" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="Data" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_UserColumnName="Data" type="xs:string" minOccurs="0" />
+              <xs:element name="RowCount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="RowCount" msprop:Generator_ColumnVarNameInTable="columnRowCount" msprop:Generator_ColumnPropNameInTable="RowCountColumn" msprop:Generator_UserColumnName="RowCount" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="Rowno" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="Rowno" msprop:Generator_ColumnVarNameInTable="columnRowno" msprop:Generator_ColumnPropNameInTable="RownoColumn" msprop:Generator_UserColumnName="Rowno" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="DataType" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="DataType" msprop:Generator_ColumnVarNameInTable="columnDataType" msprop:Generator_ColumnPropNameInTable="DataTypeColumn" msprop:Generator_UserColumnName="DataType" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportHeaderRows" msprop:Generator_TableClassName="ReportHeaderRowsDataTable" msprop:Generator_TableVarName="tableReportHeaderRows" msprop:Generator_TablePropName="ReportHeaderRows" msprop:Generator_RowDeletingName="ReportHeaderRowsRowDeleting" msprop:Generator_RowChangingName="ReportHeaderRowsRowChanging" msprop:Generator_RowEvHandlerName="ReportHeaderRowsRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportHeaderRowsRowDeleted" msprop:Generator_UserTableName="ReportHeaderRows" msprop:Generator_RowChangedName="ReportHeaderRowsRowChanged" msprop:Generator_RowEvArgName="ReportHeaderRowsRowChangeEvent" msprop:Generator_RowClassName="ReportHeaderRowsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RepName" msprop:Generator_ColumnVarNameInTable="columnRepName" msprop:Generator_ColumnPropNameInRow="RepName" msprop:Generator_ColumnPropNameInTable="RepNameColumn" msprop:Generator_UserColumnName="RepName" type="xs:string" />
+              <xs:element name="RowsCount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="RowsCount" msprop:Generator_ColumnVarNameInTable="columnRowsCount" msprop:Generator_ColumnPropNameInTable="RowsCountColumn" msprop:Generator_UserColumnName="RowsCount" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ColumnCount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="ColumnCount" msprop:Generator_ColumnVarNameInTable="columnColumnCount" msprop:Generator_ColumnPropNameInTable="ColumnCountColumn" msprop:Generator_UserColumnName="ColumnCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:RepHeaderColumn" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ReportHeaderRows" />
+      <xs:field xpath="mstns:RepName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

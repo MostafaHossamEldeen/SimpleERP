@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c1ebf4fbd1514cb8b9f7b34786dfddaf" Name="Diagram1" ZoomLevel="61">
+        <EntityTypeShape EntityType="masterModel.gl_accbranchs" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="masterModel.gl_accpay" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="masterModel.gl_chart" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="masterModel.gl_vocherdtls" Width="1.5" PointX="9.75" PointY="9.75" />
+        <EntityTypeShape EntityType="masterModel.gl_vouchers" Width="1.5" PointX="11.75" PointY="9.75" />
+        <EntityTypeShape EntityType="masterModel.hr_doc" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.hr_employees" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="masterModel.hr_masterfiles" Width="1.5" PointX="12.75" PointY="5.75" />
+        <EntityTypeShape EntityType="masterModel.hr_monthyear" Width="1.5" PointX="4.75" PointY="13.75" />
+        <EntityTypeShape EntityType="masterModel.hr_salarydtls" Width="1.5" PointX="13.75" PointY="9.75" />
+        <EntityTypeShape EntityType="masterModel.hr_salarypaid" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.hr_salaryprep" Width="1.5" PointX="9.75" PointY="14.75" />
+        <EntityTypeShape EntityType="masterModel.hr_salaryvarables" Width="1.5" PointX="15.75" PointY="5.75" />
+        <EntityTypeShape EntityType="masterModel.hr_vactions" Width="1.5" PointX="15.75" PointY="11.75" />
+        <EntityTypeShape EntityType="masterModel.p_inv" Width="1.5" PointX="11.75" PointY="16.75" />
+        <EntityTypeShape EntityType="masterModel.p_invdtls" Width="1.5" PointX="17.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.p_invpay" Width="1.5" PointX="4.75" PointY="17.75" />
+        <EntityTypeShape EntityType="masterModel.p_order" Width="1.5" PointX="17.75" PointY="6.75" />
+        <EntityTypeShape EntityType="masterModel.p_orderdtls" Width="1.5" PointX="17.75" PointY="12.75" />
+        <EntityTypeShape EntityType="masterModel.p_reqdtls" Width="1.5" PointX="13.75" PointY="17.75" />
+        <EntityTypeShape EntityType="masterModel.p_request" Width="1.5" PointX="15.75" PointY="18.75" />
+        <EntityTypeShape EntityType="masterModel.p_suppgroup" Width="1.5" PointX="17.75" PointY="18.75" />
+        <EntityTypeShape EntityType="masterModel.p_supplier" Width="1.5" PointX="19.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.pay_doc" Width="1.5" PointX="19.75" PointY="5.75" />
+        <EntityTypeShape EntityType="masterModel.rec_doc" Width="1.5" PointX="19.75" PointY="13.75" />
+        <EntityTypeShape EntityType="masterModel.s_custgroup" Width="1.5" PointX="6.75" PointY="20.75" />
+        <EntityTypeShape EntityType="masterModel.s_customers" Width="1.5" PointX="8.75" PointY="20.75" />
+        <EntityTypeShape EntityType="masterModel.s_inv" Width="1.5" PointX="7.75" PointY="11.5" />
+        <EntityTypeShape EntityType="masterModel.s_invdtls" Width="1.5" PointX="10" PointY="2.75" />
+        <EntityTypeShape EntityType="masterModel.s_invpay" Width="1.5" PointX="19.75" PointY="20.75" />
+        <EntityTypeShape EntityType="masterModel.s_order" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.s_orderdtls" Width="1.5" PointX="0.75" PointY="21.75" />
+        <EntityTypeShape EntityType="masterModel.s_sman" Width="1.5" PointX="21.75" PointY="6.75" />
+        <EntityTypeShape EntityType="masterModel.st_fillcomp" Width="1.5" PointX="21.75" PointY="9.75" />
+        <EntityTypeShape EntityType="masterModel.st_group" Width="1.5" PointX="21.75" PointY="13.75" />
+        <EntityTypeShape EntityType="masterModel.st_inventdlts" Width="1.5" PointX="21.75" PointY="16.75" />
+        <EntityTypeShape EntityType="masterModel.st_inventory" Width="1.5" PointX="21.75" PointY="20.75" />
+        <EntityTypeShape EntityType="masterModel.st_items" Width="1.5" PointX="7.75" PointY="1.25" />
+        <EntityTypeShape EntityType="masterModel.st_itemunit" Width="1.5" PointX="2.75" PointY="22.75" />
+        <EntityTypeShape EntityType="masterModel.st_itemwh" Width="1.5" PointX="13.75" PointY="22.75" />
+        <EntityTypeShape EntityType="masterModel.st_transactions" Width="1.5" PointX="15.75" PointY="22.75" />
+        <EntityTypeShape EntityType="masterModel.st_transdtls" Width="1.5" PointX="23.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.st_unit" Width="1.5" PointX="4.75" PointY="23.75" />
+        <EntityTypeShape EntityType="masterModel.sys_branch" Width="1.5" PointX="23.75" PointY="5.75" />
+        <EntityTypeShape EntityType="masterModel.sys_company" Width="1.5" PointX="23.75" PointY="8.75" />
+        <EntityTypeShape EntityType="masterModel.sys_costcenter" Width="1.5" PointX="23.75" PointY="13.75" />
+        <EntityTypeShape EntityType="masterModel.sys_docupload" Width="1.5" PointX="23.75" PointY="16.75" />
+        <EntityTypeShape EntityType="masterModel.sys_fillcomp" Width="1.5" PointX="23.75" PointY="19.75" />
+        <EntityTypeShape EntityType="masterModel.sys_modules" Width="1.5" PointX="23.75" PointY="23.75" />
+        <EntityTypeShape EntityType="masterModel.sys_pages" Width="1.5" PointX="25.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.sys_paytype" Width="1.5" PointX="25.75" PointY="3.75" />
+        <EntityTypeShape EntityType="masterModel.sys_urpages" Width="1.5" PointX="25.75" PointY="7.75" />
+        <EntityTypeShape EntityType="masterModel.sys_userdbord" Width="1.5" PointX="10.75" PointY="25.75" />
+        <EntityTypeShape EntityType="masterModel.sys_userprep" Width="1.5" PointX="25.75" PointY="12.75" />
+        <EntityTypeShape EntityType="masterModel.sys_years" Width="1.5" PointX="25.75" PointY="17.75" />
+        <AssociationConnector Association="masterModel.FK_s_invdtls_s_inv" />
+        <AssociationConnector Association="masterModel.FK_s_invdtls_st_items" />
+        <EntityTypeShape EntityType="masterModel.AspNetRole" Width="1.5" PointX="18.375" PointY="28.5" />
+        <EntityTypeShape EntityType="masterModel.AspNetUserClaim" Width="1.5" PointX="22.875" PointY="27" />
+        <EntityTypeShape EntityType="masterModel.AspNetUserLogin" Width="1.5" PointX="22.875" PointY="29.75" />
+        <EntityTypeShape EntityType="masterModel.AspNetUser" Width="1.5" PointX="20.625" PointY="27.375" />
+        <AssociationConnector Association="masterModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="masterModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="masterModel.AspNetUserRoles" />
+        <AssociationConnector Association="masterModel.FK_sys_userprep_sys_userprep" />
+        <AssociationConnector Association="masterModel.FK_gl_accbranchs_gl_chart" />
+        <AssociationConnector Association="masterModel.FK_gl_vocherdtls_gl_chart" />
+        <AssociationConnector Association="masterModel.FK_s_customers_gl_chart" />
+        <AssociationConnector Association="masterModel.FK_p_inv_p_supplier" />
+        <AssociationConnector Association="masterModel.FK_p_inv_sys_branch" />
+        <AssociationConnector Association="masterModel.FK_p_inv_sys_costcenter" />
+        <AssociationConnector Association="masterModel.FK_p_invdtls_p_inv" />
+        <AssociationConnector Association="masterModel.FK_p_invpay_p_inv" />
+        <AssociationConnector Association="masterModel.FK_p_order_sys_branch" />
+        <AssociationConnector Association="masterModel.FK_p_orderdtls_p_order" />
+        <AssociationConnector Association="masterModel.FK_p_reqdtls_p_request" />
+        <AssociationConnector Association="masterModel.FK_p_request_sys_branch" />
+        <AssociationConnector Association="masterModel.FK_p_supplier_p_suppgroup" />
+        <AssociationConnector Association="masterModel.FK_st_itemunit_p_supplier" />
+        <AssociationConnector Association="masterModel.FK_s_customers_s_custgroup" />
+        <AssociationConnector Association="masterModel.FK_s_inv_s_customers" />
+        <AssociationConnector Association="masterModel.FK_s_order_s_customers" />
+        <AssociationConnector Association="masterModel.FK_s_inv_s_sman" />
+        <AssociationConnector Association="masterModel.FK_s_inv_sys_branch" />
+        <AssociationConnector Association="masterModel.FK_s_inv_sys_costcenter" />
+        <AssociationConnector Association="masterModel.FK_s_invpay_s_inv" />
+        <AssociationConnector Association="masterModel.FK_s_invpay_sys_paytype" />
+        <AssociationConnector Association="masterModel.FK_s_order_sys_branch" />
+        <AssociationConnector Association="masterModel.FK_s_orderdtls_s_order" />
+        <AssociationConnector Association="masterModel.FK_st_items_st_group" />
+        <AssociationConnector Association="masterModel.FK_st_inventdlts_st_inventory" />
+        <AssociationConnector Association="masterModel.FK_st_items_st_unit" />
+        <AssociationConnector Association="masterModel.FK_st_itemunit_st_items" />
+        <AssociationConnector Association="masterModel.FK_st_itemwh_st_items" />
+        <AssociationConnector Association="masterModel.FK_st_itemunit_st_unit" />
+        <AssociationConnector Association="masterModel.FK_st_transactions_sys_branch" />
+        <AssociationConnector Association="masterModel.FK_st_transactions_sys_branch1" />
+        <AssociationConnector Association="masterModel.FK_st_transactions_sys_costcenter" />
+        <AssociationConnector Association="masterModel.FK_st_transactions_sys_costcenter1" />
+        <AssociationConnector Association="masterModel.FK_st_transdtls_st_transactions" />
+        <AssociationConnector Association="masterModel.FK_hr_vactions_hr_employees" />
+        <AssociationConnector Association="masterModel.FK_hr_salarydtls_hr_salaryprep" />
+        <AssociationConnector Association="masterModel.FK_st_itemunit_st_itemunit" />
+        <AssociationConnector Association="masterModel.FK_st_unit_st_itemunit" />
+        <EntityTypeShape EntityType="masterModel.hr_loans" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.s_invmeasure" Width="1.5" PointX="13" PointY="26.75" />
+        <AssociationConnector Association="masterModel.FK_s_invmeasure_s_customers" />
+        <AssociationConnector Association="masterModel.FK_s_invmeasure_s_inv" />
+        <EntityTypeShape EntityType="masterModel.s_ItemHs2" Width="1.5" PointX="3.375" PointY="1.125" />
+        <AssociationConnector Association="masterModel.FK_s_invdtls_s_ItemHs2" />
+        <AssociationConnector Association="masterModel.FK_s_inv_s_inv" />
+        <AssociationConnector Association="masterModel.FK_s_ItemHs2_s_inv" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

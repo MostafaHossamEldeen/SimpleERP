@@ -1,0 +1,101 @@
+
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    font-size: large;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0em 0em!important;
+    border-top: 0;
+    overflow: auto;
+}
+.container {
+    max-width: 99%;
+    margin: auto;
+}
+.title {
+    text-align:center;
+    font-family:Arial;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.accordion__item {
+    margin-bottom:10px;
+}
+.accordion__item__header {
+    background-color: #2e8b57;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 10px;
+    height: 2em;
+}
+.accordion__item__header::before {
+     height:15px;
+     width:15px;
+     content:"";
+     position:absolute;
+     left:15px;
+     top:10px;
+     transition:.5s all;
+     transform:rotate(45deg);
+     border-right:2px solid #fff;
+     border-bottom:2px solid #fff;
+ }
+.accordion__item__header.active {
+        background-color: #00a550;
+        color: #fff;
+        transition: .4s;
+    }
+.accordion__item__header.active::before {
+         transform:rotate(-135deg);
+         top:15px;
+}
+.accordion__item__content {
+    overflow-y: hidden;
+    padding: 15px;
+display: none;
+    /*opacity:0;*/
+    border: 2px solid #00a550;
+}
+/*------------------------------------------------*/
+.accordion_item_header_block {
+    background-color: #2e8b57;
+    padding: 5px;
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right:10px;
+}
+
+    .accordion_item_header_block::before {
+        height: 15px;
+        width: 15px;
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 10px;
+        transition: .5s all;
+        transform: rotate(45deg);
+    }
+
+    .accordion_item_header_block.active {
+        background-color: #00a550;
+        color: #fff;
+        transition: .4s;
+    }
+
+        .accordion_item_header_block.active::before {
+            transform: rotate(-135deg);
+            top: 15px;
+        }

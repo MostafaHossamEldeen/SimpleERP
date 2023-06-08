@@ -1,0 +1,2356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F485900-8D01-4FF1-B3C1-4B02D558F45D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VanSales</RootNamespace>
+    <AssemblyName>VanSales</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44307</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>
+    </IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>
+    </IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>
+    </IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TypeScriptToolsVersion>4.0</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.4.5.3\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.5.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.2.Web, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.2.Web.WebForms, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Drawing, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Web, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Presets, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Win, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2.Web, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2.Web.WebForms, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.1.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.1.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.1.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.1.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.1.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=107.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.107.0.0-preview.13\lib\netstandard2.0\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Owin, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.7\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="assets\css\icons.css" />
+    <Content Include="assets\css\sitemaster_1.css" />
+    <Content Include="assets\img\brand\favicon.png" />
+    <Content Include="assets\img\brand\logo-dark.png" />
+    <Content Include="assets\img\brand\logo-light.png" />
+    <Content Include="assets\img\brand\logo.ico" />
+    <Content Include="assets\img\brand\logo.png" />
+    <Content Include="assets\img\circle.svg" />
+    <Content Include="assets\img\faces\female\32.png" />
+    <Content Include="assets\img\loader.svg" />
+    <Content Include="assets\img\logo512.png" />
+    <Content Include="assets\img\man.png" />
+    <Content Include="assets\img\profile-bg.jpg" />
+    <Content Include="assets\js\chartjs.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\dashboard-cryptocurrency.js" />
+    <Content Include="assets\js\dashboard-it.js" />
+    <Content Include="assets\js\dashboard-marketing.js" />
+    <Content Include="assets\js\dashboard-sales.js" />
+    <Content Include="assets\js\dashboard-social.js" />
+    <Content Include="assets\js\dashboard2map.js" />
+    <Content Include="assets\js\echarts.js" />
+    <Content Include="assets\js\flot.js" />
+    <Content Include="assets\js\fullcalendar.js" />
+    <Content Include="assets\js\gallery.js" />
+    <Content Include="assets\js\gmaps.js" />
+    <Content Include="assets\js\highchart.js" />
+    <Content Include="assets\js\ion-rangeslider.js" />
+    <Content Include="assets\js\jvectormap.js" />
+    <Content Include="assets\js\morris.js" />
+    <Content Include="assets\js\popper.js" />
+    <Content Include="assets\js\select2.js" />
+    <Content Include="assets\js\sweet-alert.js" />
+    <Content Include="assets\js\wizard.js" />
+    <Content Include="assets\plugins\bootstrap-datepicker\js\bootstrap-datepicker.min.js" />
+    <Content Include="assets\plugins\bootstrap-wizard\jquery.bootstrap.wizard.js" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\plugins\chart-circle\circle-progress.min.js" />
+    <Content Include="assets\plugins\chart-echarts\echarts.js" />
+    <Content Include="assets\plugins\chart-flot\jquery.flot.fillbetween.js" />
+    <Content Include="assets\plugins\chart-flot\jquery.flot.js" />
+    <Content Include="assets\plugins\chart-flot\jquery.flot.pie.js" />
+    <Content Include="assets\plugins\chart.js\dist\Chart.extension.js" />
+    <Content Include="assets\plugins\chart.js\dist\Chart.min.js" />
+    <Content Include="assets\plugins\clipboard\dist\clipboard.min.js" />
+    <Content Include="assets\plugins\customscroll\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="assets\plugins\customscroll\jquery.mCustomScrollbar.css" />
+    <Content Include="assets\plugins\customscroll\mCSB_buttons.html" />
+    <Content Include="assets\plugins\datatable\dataTables.bootstrap4.min.css" />
+    <Content Include="assets\plugins\datatable\dataTables.bootstrap4.min.js" />
+    <Content Include="assets\plugins\datatable\jquery.dataTables.min.js" />
+    <Content Include="assets\plugins\fileuploads\css\dropify.css" />
+    <Content Include="assets\plugins\fileuploads\fonts\dropify.svg" />
+    <Content Include="assets\plugins\fileuploads\js\dropify.min.js" />
+    <Content Include="assets\plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="assets\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="assets\plugins\fullcalendar\fullcalendar.print.min.css" />
+    <Content Include="assets\plugins\fullcalendar\jquery-ui.min.js" />
+    <Content Include="assets\plugins\fullcalendar\moment.min.js" />
+    <Content Include="assets\plugins\gallery\dist\simple-lightbox.js" />
+    <Content Include="assets\plugins\gallery\dist\simplelightbox.min.css" />
+    <Content Include="assets\plugins\gmaps\gmaps.js" />
+    <Content Include="assets\plugins\highcharts\boost.js" />
+    <Content Include="assets\plugins\highcharts\export-data.js" />
+    <Content Include="assets\plugins\highcharts\exporting.js" />
+    <Content Include="assets\plugins\highcharts\highcharts.js" />
+    <Content Include="assets\plugins\iconfonts\feathericons\feather\feather-webfont6cfa.svg" />
+    <Content Include="assets\plugins\iconfonts\feathericons\style.css" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\css\all.min.css" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="assets\plugins\iconfonts\Glyphicons\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\plugins\iconfonts\Glyphicons\glyphicon.css" />
+    <Content Include="assets\plugins\iconfonts\ionicons\css\ionicons.min.css" />
+    <Content Include="assets\plugins\iconfonts\ionicons\fonts\ionicons28b5.svg" />
+    <Content Include="assets\plugins\iconfonts\Linearicons\fonts\Linearicons-Free54e9.svg" />
+    <Content Include="assets\plugins\iconfonts\Linearicons\Linearicons.css" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\materialdesignicons\materialdesignicons-webfontdf71-2.html" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\materialdesignicons\materialdesignicons-webfontdf71-3.html" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\materialdesignicons\materialdesignicons-webfontdf71.html" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\materialdesignicons.css" />
+    <Content Include="assets\plugins\iconfonts\nucleo\css\nucleo.css" />
+    <Content Include="assets\plugins\iconfonts\nucleo\fonts\nucleo-icons.svg" />
+    <Content Include="assets\plugins\iconfonts\Pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="assets\plugins\iconfonts\Pe-icon-7-stroke\Pe-icon-7.css" />
+    <Content Include="assets\plugins\iconfonts\simple-line-icons\fonts\Simple-Line-Iconsb26c.svg" />
+    <Content Include="assets\plugins\iconfonts\simple-line-icons\simple-line-icons.css" />
+    <Content Include="assets\plugins\iconfonts\themify\fonts\themify9f24.svg" />
+    <Content Include="assets\plugins\iconfonts\themify\themify.css" />
+    <Content Include="assets\plugins\iconfonts\typicons\fonts\typicons.svg" />
+    <Content Include="assets\plugins\iconfonts\typicons\typicons.css" />
+    <Content Include="assets\plugins\iconfonts\weathericons\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="assets\plugins\iconfonts\weathericons\weathericons.css" />
+    <Content Include="assets\plugins\ion-rangeslider\img\sprite-skin-modern.png" />
+    <Content Include="assets\plugins\ion-rangeslider\ion.rangeSlider.css" />
+    <Content Include="assets\plugins\ion-rangeslider\ion.rangeSlider.min.js" />
+    <Content Include="assets\plugins\ion-rangeslider\ion.rangeSlider.skinModern.css" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="assets\plugins\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="assets\plugins\jquery-ui\jquery-ui.min.css" />
+    <Content Include="assets\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="assets\plugins\jquery\dist\jquery.min.js" />
+    <Content Include="assets\plugins\jvectormap\gdp-data.js" />
+    <Content Include="assets\plugins\jvectormap\jquery-jvectormap-2.0.2.css" />
+    <Content Include="assets\plugins\jvectormap\jquery-jvectormap-2.0.2.min.js" />
+    <Content Include="assets\plugins\jvectormap\jquery-jvectormap-au-mill.js" />
+    <Content Include="assets\plugins\jvectormap\jquery-jvectormap-ca-lcc.js" />
+    <Content Include="assets\plugins\jvectormap\jquery-jvectormap-uk-mill-en.js" />
+    <Content Include="assets\plugins\jvectormap\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="assets\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="assets\plugins\morris\morris.css" />
+    <Content Include="assets\plugins\morris\morris.js" />
+    <Content Include="assets\plugins\morris\raphael-min.js" />
+    <Content Include="assets\plugins\peitychart\jquery.peity.min.js" />
+    <Content Include="assets\plugins\peitychart\peitychart.init.js" />
+    <Content Include="assets\plugins\select2\select2.css" />
+    <Content Include="assets\plugins\select2\select2.full.js" />
+    <Content Include="assets\plugins\single-page\css\main.css" />
+    <Content Include="assets\plugins\sweet-alert\sweetalert.css" />
+    <Content Include="assets\plugins\sweet-alert\sweetalert.min.js" />
+    <Content Include="assets\plugins\tabs\style.css" />
+    <Content Include="assets\plugins\toggle-sidebar\css\sidemenu.css" />
+    <Content Include="assets\plugins\toggle-sidebar\js\sidemenu.js" />
+    <Content Include="Content\all.min.css" />
+    <Content Include="Content\disablebtn.css" />
+    <Content Include="Content\dx.common.css" />
+    <Content Include="Content\dx.light.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Controls\PdfViewer.ascx" />
+    <Content Include="Controls\PopUpControl.ascx" />
+    <Content Include="Controls\PopUpControlSearch.ascx" />
+    <Content Include="Controls\PopUpControlNormal.ascx" />
+    <Content Include="Customers\add_cus.aspx" />
+    <Content Include="GL\AccBranchs.aspx" />
+    <Content Include="GL\AccPay.aspx" />
+    <Content Include="GL\RepBalanceSheetStatment.aspx" />
+    <Content Include="GL\RepDebtRecovery.aspx" />
+    <Content Include="GL\tax_declaration_report.aspx" />
+    <Content Include="Img\Icon\no-image.png" />
+    <Content Include="Scripts\App\GL\Expenses.js" />
+    <Content Include="Scripts\App\HR\hr_masterfiles.js" />
+    <Content Include="Scripts\App\HR\hr_monthyear.js" />
+    <Content Include="Stock\st_item_balance_repo.aspx" />
+    <Content Include="Sys\acc_unpost.aspx" />
+    <Content Include="GL\Chart.aspx" />
+    <Content Include="GL\move_account_cost_report.aspx" />
+    <Content Include="GL\pay_doc.aspx" />
+    <Content Include="GL\pay_doc_report.aspx" />
+    <Content Include="GL\rec_doc_report.aspx" />
+    <Content Include="GL\rec_doc.aspx" />
+    <Content Include="GL\RepIncomStatment.aspx" />
+    <Content Include="GL\RepSubTrailBalance.aspx" />
+    <Content Include="GL\report\RepTrailBalance1.aspx" />
+    <Content Include="GL\RepMainTrailBalance.aspx" />
+    <Content Include="GL\Vouchers.aspx" />
+    <Content Include="HR\hr_loan_report.aspx" />
+    <Content Include="Purchases\p_inv_item_report.aspx" />
+    <Content Include="Purchases\P_inv_Report.aspx" />
+    <Content Include="Purchases\total_p_inv_items.aspx" />
+    <Content Include="HR\hr_vactions_report.aspx" />
+    <Content Include="ReportViewer\ViewRep.aspx" />
+    <Content Include="Sales\CustGroup.aspx" />
+    <Content Include="Purchases\SuppGroup.aspx" />
+    <Content Include="HR\hr_doc.aspx" />
+    <Content Include="HR\hr_doc_report.aspx" />
+    <Content Include="HR\hr_employees.aspx" />
+    <Content Include="HR\hr_employees_master.aspx" />
+    <Content Include="HR\hr_loans.aspx" />
+    <Content Include="HR\hr_masterfiles.aspx" />
+    <Content Include="HR\hr_monthyear.aspx" />
+    <Content Include="HR\hr_salarypaid.aspx" />
+    <Content Include="HR\hr_salaryprep.aspx" />
+    <Content Include="HR\hr_salaryvarables.aspx" />
+    <Content Include="HR\hr_salaryvar_report.aspx" />
+    <Content Include="HR\hr_salary_report.aspx" />
+    <Content Include="HR\hr_vactions.aspx" />
+    <Content Include="hr_employees.aspx" />
+    <Content Include="Img\Icon\add-new.svg" />
+    <Content Include="Img\Icon\add-user.svg" />
+    <Content Include="Img\Icon\back.svg" />
+    <Content Include="Img\Icon\bookmark.svg" />
+    <Content Include="Img\Icon\Btn_book.svg" />
+    <Content Include="Img\Icon\btn_copy.svg" />
+    <Content Include="Img\Icon\calculator.svg" />
+    <Content Include="Img\Icon\cancel.svg" />
+    <Content Include="Img\Icon\close.svg" />
+    <Content Include="Img\Icon\CollapsedButton.svg" />
+    <Content Include="Img\Icon\delete.svg" />
+    <Content Include="Img\Icon\download.svg" />
+    <Content Include="Img\Icon\edit.svg" />
+    <Content Include="Img\Icon\eraser-clear.svg" />
+    <Content Include="Img\Icon\excel.svg" />
+    <Content Include="Img\Icon\exchange.svg" />
+    <Content Include="Img\Icon\expand.svg" />
+    <Content Include="Img\Icon\ExpandedButton.svg" />
+    <Content Include="Img\Icon\favicon.ico" />
+    <Content Include="Img\Icon\import.svg" />
+    <Content Include="Img\Icon\lock.svg" />
+    <Content Include="Img\Icon\paid.svg" />
+    <Content Include="Img\Icon\pdf.svg" />
+    <Content Include="Img\Icon\poststock.svg" />
+    <Content Include="Img\Icon\print.svg" />
+    <Content Include="Img\Icon\Receiving.png" />
+    <Content Include="Img\Icon\save.svg" />
+    <Content Include="Img\Icon\savings-money.svg" />
+    <Content Include="Img\Icon\search.svg" />
+    <Content Include="Img\Icon\select-all.svg" />
+    <Content Include="Img\Icon\unlock.svg" />
+    <Content Include="Img\Icon\Unt512.png" />
+    <Content Include="Img\Icon\word.svg" />
+    <Content Include="login\images\back.jpg" />
+    <Content Include="Purchases\Orders.aspx" />
+    <Content Include="Purchases\P_Inv.aspx" />
+    <Content Include="Purchases\Rtn_P_Inv.aspx" />
+    <Content Include="ReportDesigner\Default.aspx" />
+    <Content Include="ReportDesigner\ReportPramaterSet.aspx" />
+    <Content Include="ReportFiles\Sales\inv_detail.repx" />
+    <Content Include="ReportFiles\Sales\s_inv_page.repx" />
+    <Content Include="ReportsInfo.xml" />
+    <Content Include="ReportViewer\Viewer.aspx" />
+    <Content Include="ReportDesigner\XrReportDesginer.aspx" />
+    <Content Include="Purchases\request.aspx" />
+    <Content Include="Sales\invtest.aspx" />
+    <Content Include="Sales\inv_items_report.aspx" />
+    <Content Include="Sales\inv_pay_report.aspx" />
+    <Content Include="Sales\inv_report.aspx" />
+    <Content Include="Sales\S_order.aspx" />
+    <Content Include="Sales\s_quote_order.aspx" />
+    <Content Include="Sales\total_inv_items.aspx" />
+    <Content Include="Sales\total_inv_pay.aspx" />
+    <Content Include="Scripts\App\base\ApiHelper.js" />
+    <Content Include="Scripts\App\customer\customer.js" />
+    <Content Include="Scripts\App\GL\AccBranches.js" />
+    <Content Include="Scripts\App\GL\AccPay.js" />
+    <Content Include="Scripts\App\GL\Chart.js" />
+    <Content Include="Scripts\App\GL\pay_doc.js" />
+    <Content Include="Scripts\App\GL\rec_doc.js" />
+    <Content Include="Scripts\App\GL\Vouchers.js" />
+    <Content Include="Scripts\App\HR\hr_doc.js" />
+    <Content Include="Scripts\App\HR\hr_employees.js" />
+    <Content Include="Scripts\App\HR\hr_loans.js" />
+    <Content Include="Scripts\App\HR\hr_salarypaid.js" />
+    <Content Include="Scripts\App\HR\hr_salaryprep.js" />
+    <Content Include="Scripts\App\HR\hr_salaryvarables.js" />
+    <Content Include="Scripts\App\HR\hr_salaryvar_report.js" />
+    <Content Include="Scripts\App\HR\hr_vactions.js" />
+    <Content Include="Scripts\App\HR\hr_employees_master.js" />
+    <Content Include="Scripts\App\Purchases\Orders.js" />
+    <Content Include="Scripts\App\Purchases\P_Inv.js" />
+    <Content Include="Scripts\App\Purchases\Rtn_PInv.js" />
+    <Content Include="Scripts\App\Report\Gl\AccountStatment.js" />
+    <Content Include="Scripts\App\request\request.js" />
+    <Content Include="Scripts\App\sales\inv_report.js" />
+    <Content Include="Scripts\App\stock\issord.js" />
+    <Content Include="Scripts\App\sales\order.js" />
+    <Content Include="Scripts\App\sales\quote_order.js" />
+    <Content Include="Scripts\App\stock\add_ord.js" />
+    <Content Include="Scripts\App\stock\Inventory_Manage.js" />
+    <Content Include="Scripts\App\stock\Item_Manage.js" />
+    <Content Include="Scripts\App\stock\print_barcode.js" />
+    <Content Include="Scripts\App\stock\receipt_transfer.js" />
+    <Content Include="Scripts\App\stock\st_Items_data_balances_report.js" />
+    <Content Include="Scripts\App\stock\trans_ord.js" />
+    <Content Include="Scripts\App\Supplier\Supplier.js" />
+    <Content Include="Scripts\App\sys\short_menu.js" />
+    <Content Include="Scripts\App\Users\Users.js" />
+    <Content Include="Scripts\dx.all.js" />
+    <Content Include="Scripts\App\Public\Messages.js" />
+    <Content Include="Content\accordion.css" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Stock\ChangeSPrice.aspx" />
+    <Content Include="Stock\Inventorys.aspx" />
+    <Content Include="Stock\Inventory_Manage.aspx" />
+    <Content Include="Stock\Item_Manage.aspx" />
+    <Content Include="Scripts\accordion.js" />
+    <Content Include="Stock\print_barcode.aspx" />
+    <Content Include="Stock\st_addord.aspx" />
+    <Content Include="Stock\st_analysis_report.aspx" />
+    <Content Include="Stock\st_Edit_add_ord.aspx" />
+    <Content Include="Stock\st_edit_issord.aspx" />
+    <Content Include="Stock\st_issord.aspx" />
+    <Content Include="Stock\st_Items_data_balances_report.aspx" />
+    <Content Include="Stock\st_itemwh.aspx" />
+    <Content Include="Stock\st_Receipt_transfer.aspx" />
+    <Content Include="Stock\st_transactions_report.aspx" />
+    <Content Include="Stock\st_Trans_ord.aspx" />
+    <Content Include="Purchases\Supplier.aspx" />
+    <Content Include="Sys\Branch.aspx" />
+    <Content Include="Content\animate.css" />
+    <Content Include="bin\ar\DevExpress.Blazor.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Charts.Designer.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Dashboard.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Dashboard.v20.2.Web.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Dashboard.v20.2.Win.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Data.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.DataAccess.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.DataAccess.v20.2.UI.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Diagram.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Dialogs.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.EntityFrameworkCore.Security.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.AuditTrail.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Chart.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Dashboards.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Dashboards.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Dashboards.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.FileAttachment.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.FileAttachment.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Kpi.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Maps.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Notifications.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Notifications.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Objects.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Office.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Office.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.PivotChart.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.PivotChart.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.PivotChart.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.PivotGrid.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.PivotGrid.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Reports.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Reports.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Reports.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.ReportsV2.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.ReportsV2.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.ReportsV2.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Scheduler.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Scheduler.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Scheduler.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.ScriptRecorder.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.ScriptRecorder.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Security.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Security.Xpo.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.StateMachine.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Validation.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Validation.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.ViewVariantsModule.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Workflow.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ExpressApp.Workflow.Win.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Map.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Mvvm.v20.2.DataModel.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Office.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Pdf.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Persistent.Base.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.PivotGrid.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Printing.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.ReportServer.v20.2.Localization.resources.dll" />
+    <Content Include="bin\ar\DevExpress.RichEdit.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Snap.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Snap.v20.2.Extensions.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Snap.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Sparkline.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Spreadsheet.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Utils.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Utils.v20.2.UI.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxDiagram.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxGantt.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxHtmlEditor.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxRichEdit.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxScheduler.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxSpellChecker.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxSpreadsheet.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.ASPxTreeList.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.Resources.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Web.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Charts.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Controls.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Core.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Docking.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.DocumentViewer.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Gantt.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Gauges.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Grid.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.LayoutControl.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.NavBar.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.PdfViewer.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Printing.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.PropertyGrid.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.ReportDesigner.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Ribbon.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.RichEdit.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Scheduler.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Scheduling.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.SpellChecker.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpf.Spreadsheet.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.Xpo.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraBars.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraCharts.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraCharts.v20.2.Wizard.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraEditors.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraGantt.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraGauges.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraGauges.v20.2.Presets.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraGrid.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraLayout.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraNavBar.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraPdfViewer.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraPivotGrid.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraPrinting.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraReports.v20.2.Extensions.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraReports.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraReports.v20.2.Web.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraRichEdit.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraScheduler.v20.2.Core.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraScheduler.v20.2.Extensions.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraScheduler.v20.2.Reporting.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraScheduler.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraSpellChecker.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraSpreadsheet.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraTreeList.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraVerticalGrid.v20.2.resources.dll" />
+    <Content Include="bin\ar\DevExpress.XtraWizard.v20.2.resources.dll" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Font.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Sales\customers.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="Stock\ItemGroups.aspx" />
+    <Content Include="import_excel.aspx" />
+    <Content Include="login\js\app.js" />
+    <Content Include="login\js\lib\stats.js" />
+    <Content Include="login\js\particles.js" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="NotAuthorize.aspx" />
+    <Content Include="Sys\CostCenter.aspx" />
+    <Content Include="Sys\Expenses.aspx" />
+    <Content Include="Sys\payment_type.aspx" />
+    <Content Include="Report\ReportDesigner.aspx" />
+    <Content Include="Sales\cust_search.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Sales\inv.aspx" />
+    <Content Include="Sales\Inv_det.aspx" />
+    <Content Include="Sales\inv_search.aspx" />
+    <Content Include="Sales\items_inv_search.aspx" />
+    <Content Include="Sales\Rtn_inv.aspx" />
+    <Content Include="Sales\Rtn_search.aspx" />
+    <Content Include="Scripts\App\base\DevExpressJsHelper.js" />
+    <Content Include="Scripts\App\base\Helperjs.js" />
+    <Content Include="Scripts\App\Inv_det_Quick.js" />
+    <Content Include="Scripts\App\sales\inv.js" />
+    <Content Include="Scripts\App\sales\Rtn_inv.js" />
+    <Content Include="Sales\sman.aspx" />
+    <Content Include="Stock\Items.aspx" />
+    <Content Include="Sales\item_search.aspx" />
+    <Content Include="login\css\main.css" />
+    <Content Include="login\css\util.css" />
+    <Content Include="login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="login\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="login\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="login\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="login\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="login\images\icons\favicon.ico" />
+    <Content Include="login\images\logo512.png" />
+    <Content Include="login\images\New folder\favicon.ico" />
+    <Content Include="login\js\main.js" />
+    <Content Include="login\login.aspx" />
+    <Content Include="login\vendor\animate\animate.css" />
+    <Content Include="login\vendor\animsition\css\animsition.css" />
+    <Content Include="login\vendor\animsition\css\animsition.min.css" />
+    <Content Include="login\vendor\animsition\js\animsition.js" />
+    <Content Include="login\vendor\animsition\js\animsition.min.js" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="login\vendor\bootstrap\js\popper.js" />
+    <Content Include="login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="login\vendor\countdowntime\countdowntime.js" />
+    <Content Include="login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="login\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="login\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="login\vendor\daterangepicker\moment.js" />
+    <Content Include="login\vendor\daterangepicker\moment.min.js" />
+    <Content Include="login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="login\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="login\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="login\vendor\select2\select2.css" />
+    <Content Include="login\vendor\select2\select2.js" />
+    <Content Include="login\vendor\select2\select2.min.css" />
+    <Content Include="login\vendor\select2\select2.min.js" />
+    <Content Include="Sales\Report.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="login\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="login\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="login\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="login\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="login\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="login\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="login\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Customers\Web.config" />
+    <Content Include="Sales\Web.config" />
+    <Content Include="Sys\short_menu.aspx" />
+    <Content Include="Sys\sys_company.aspx" />
+    <Content Include="Sys\sys_settings.aspx" />
+    <Content Include="Sys\Years.aspx" />
+    <Content Include="Stock\unit.aspx" />
+    <Content Include="Users\userresetpass.aspx" />
+    <Content Include="VanSalesThemsFile\css\dark.DevexpressCss\Dev_Blue.css" />
+    <Content Include="VanSalesThemsFile\css\dark.DevexpressCss\Dev_Green.css" />
+    <Content Include="VanSalesThemsFile\css\dark.DevexpressCss\Dev_Orange.css" />
+    <Content Include="VanSalesThemsFile\css\dark.DevexpressCss\Dev_Purple.css" />
+    <Content Include="VanSalesThemsFile\css\dark.DevexpressCss\Dev_Red.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.blue.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.blue.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.green.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.green.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.orange.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.orange.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.purple.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.purple.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.red.css" />
+    <Content Include="VanSalesThemsFile\css\dore.dark.red.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.blue.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.blue.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.green.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.green.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.orange.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.orange.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.purple.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.purple.min.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.red.css" />
+    <Content Include="VanSalesThemsFile\css\dore.light.red.min.css" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_adduser.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_back.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_barcode.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_book.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_bookmark.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_calculator.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_cancel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_CollapsedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_copy.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_delete.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_download.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_edit.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_clear.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_excel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_exchange.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_expand.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_ExpandedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_import.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_lock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_new.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_paid.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_pdf.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_postacc.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_poststock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_previousback.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_print.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_Receiving.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_save.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_savings-money.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_search.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_select-all.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_success.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_unlock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\blue\btn_word.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_adduser.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_back.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_barcode_print.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_book.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_bookmark.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_calculator.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_cancel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_clear.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_CollapsedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_copy.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_delete.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_download.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_edit.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_excel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_exchange.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_expand.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_ExpandedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_import.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_lock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_new.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_paid.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_pdf.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_postacc.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_poststock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_previousback.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_print.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_Receiving.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_save.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_savings-money.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_search.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_select-all.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_success.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_unlock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\green\btn_word.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_back.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_book.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_bookmark.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_btn_copy.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_calculator.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_CollapsedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_ExpandedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_Receiving.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_savings-money.svg" />
+    <Content Include="VanSalesThemsFile\css\img\Icon\btn_select-all.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_adduser.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_back.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_barcode.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_book.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_bookmark.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_btn_copy.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_calculator.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_cancel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_CollapsedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_delete.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_download.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_edit.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_clear.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_excel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_exchange.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_expand.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_ExpandedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_import.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_lock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_new.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_paid.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_pdf.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_postacc.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_poststock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_previousback.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_print.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_Receiving.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_save.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_savings-money.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_search.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_select-all.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_success.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_unlock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\orange\btn_word.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_adduser.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_back.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_barcode.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_book.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_bookmark.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_btn_copy.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_calculator.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_cancel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_CollapsedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_delete.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_download.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_edit.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_clear.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_excel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_exchange.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_expand.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_ExpandedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_import.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_lock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_new.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_paid.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_pdf.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_postacc.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_poststock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_previousback.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_print.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_Receiving.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_save.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_savings-money.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_search.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_select-all.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_success.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_unlock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\purple\btn_word.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_adduser.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_back.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_barcode.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_book.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_bookmark.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_btn_copy.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_calculator.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_cancel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_CollapsedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_delete.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_download.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_edit.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_clear.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_excel.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_exchange.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_expand.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_ExpandedButton.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_import.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_lock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_new.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_paid.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_pdf.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_postacc.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_poststock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_previousback.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_print.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_Receiving.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_save.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_savings-money.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_search.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_select-all.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_success.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_unlock.svg" />
+    <Content Include="VanSalesThemsFile\css\img\red\btn_word.svg" />
+    <Content Include="VanSalesThemsFile\css\light.DevexpressCss\Dev_Blue.css" />
+    <Content Include="VanSalesThemsFile\css\light.DevexpressCss\Dev_Orange.css" />
+    <Content Include="VanSalesThemsFile\css\light.DevexpressCss\Dev_Purple.css" />
+    <Content Include="VanSalesThemsFile\css\light.DevexpressCss\Dev_Red.css" />
+    <Content Include="VanSalesThemsFile\css\loading.Page\img\Circles_Svg_logo_512.svg" />
+    <Content Include="VanSalesThemsFile\css\loading.Page\img\cir_1.svg" />
+    <Content Include="VanSalesThemsFile\css\loading.Page\img\cir_2.svg" />
+    <Content Include="VanSalesThemsFile\css\loading.Page\img\cir_3.svg" />
+    <Content Include="VanSalesThemsFile\css\loading.Page\img\cir_4.svg" />
+    <Content Include="VanSalesThemsFile\css\loading.Page\loading Circles logo.html" />
+    <Content Include="VanSalesThemsFile\css\loading.Page\loading_Page_style.css" />
+    <Content Include="VanSalesThemsFile\css\main.css" />
+    <Content Include="VanSalesThemsFile\css\vendor\bootstrap.min.css" />
+    <Content Include="VanSalesThemsFile\css\vendor\owl.carousel.min.css" />
+    <Content Include="VanSalesThemsFile\css\vendor\perfect-scrollbar.css" />
+    <Content Include="VanSalesThemsFile\font\iconsmind\icomoon.svg" />
+    <Content Include="VanSalesThemsFile\font\iconsmind\style.css" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\css\all.min.css" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="VanSalesThemsFile\font\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="VanSalesThemsFile\font\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="VanSalesThemsFile\font\themify\fonts\themify9f24.svg" />
+    <Content Include="VanSalesThemsFile\font\themify\themify.css" />
+    <Content Include="VanSalesThemsFile\img\emax.png" />
+    <Content Include="VanSalesThemsFile\img\favicon.ico" />
+    <Content Include="VanSalesThemsFile\img\HR.svg" />
+    <Content Include="VanSalesThemsFile\img\HRB.svg" />
+    <Content Include="VanSalesThemsFile\img\HRf.svg" />
+    <Content Include="VanSalesThemsFile\img\logo30px.png" />
+    <Content Include="VanSalesThemsFile\img\logo512.png" />
+    <Content Include="VanSalesThemsFile\img\logo512.svg" />
+    <Content Include="VanSalesThemsFile\img\logo70px.png" />
+    <Content Include="VanSalesThemsFile\js\Custome.js" />
+    <Content Include="VanSalesThemsFile\js\dore.script.js" />
+    <Content Include="VanSalesThemsFile\js\doreold.script.js" />
+    <Content Include="VanSalesThemsFile\js\scripts.js" />
+    <Content Include="VanSalesThemsFile\js\vendor\bootstrap.bundle.min.js" />
+    <Content Include="VanSalesThemsFile\js\vendor\jquery-3.3.1.min.js" />
+    <Content Include="VanSalesThemsFile\js\vendor\owl.carousel.min.js" />
+    <Content Include="VanSalesThemsFile\js\vendor\perfect-scrollbar.min.js" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="assets\plugins\fileuploads\fonts\dropify.eot" />
+    <Content Include="assets\plugins\fileuploads\fonts\dropify.ttf" />
+    <Content Include="assets\plugins\fileuploads\fonts\dropify.woff" />
+    <Content Include="assets\plugins\iconfonts\feathericons\feather\feather-webfont6cfa.eot" />
+    <Content Include="assets\plugins\iconfonts\feathericons\feather\feather-webfont6cfa.ttf" />
+    <Content Include="assets\plugins\iconfonts\feathericons\feather\feather-webfont6cfa.woff" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="assets\plugins\iconfonts\font-awesome\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="assets\plugins\iconfonts\Glyphicons\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\plugins\iconfonts\Glyphicons\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\plugins\iconfonts\Glyphicons\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\plugins\iconfonts\Glyphicons\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\plugins\iconfonts\Glyphicons\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="assets\plugins\iconfonts\ionicons\fonts\ionicons28b5.eot" />
+    <Content Include="assets\plugins\iconfonts\ionicons\fonts\ionicons28b5.ttf" />
+    <Content Include="assets\plugins\iconfonts\ionicons\fonts\ionicons28b5.woff" />
+    <Content Include="assets\plugins\iconfonts\Linearicons\fonts\Linearicons-Free54e9.eot" />
+    <Content Include="assets\plugins\iconfonts\Linearicons\fonts\Linearicons-Free54e9.ttf" />
+    <Content Include="assets\plugins\iconfonts\Linearicons\fonts\Linearicons-Free54e9.woff" />
+    <Content Include="assets\plugins\iconfonts\Linearicons\fonts\Linearicons-Free54e9.woff2" />
+    <Content Include="assets\plugins\iconfonts\Linearicons\fonts\Linearicons-Freed41d.eot" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\Material-Design-Iconic-Fontd1f1.ttf" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\Material-Design-Iconic-Fontd1f1.woff" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\Material-Design-Iconic-Fontd1f1.woff2" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\materialdesignicons-webfontd41d.eot" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\materialdesignicons-webfontdf71.eot" />
+    <Content Include="assets\plugins\iconfonts\materialdesignicons\fonts\materialdesignicons-webfontdf71.woff2" />
+    <Content Include="assets\plugins\iconfonts\nucleo\fonts\nucleo-icons.eot" />
+    <Content Include="assets\plugins\iconfonts\nucleo\fonts\nucleo-icons.ttf" />
+    <Content Include="assets\plugins\iconfonts\nucleo\fonts\nucleo-icons.woff" />
+    <Content Include="assets\plugins\iconfonts\nucleo\fonts\nucleo-icons.woff2" />
+    <Content Include="assets\plugins\iconfonts\Pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="assets\plugins\iconfonts\Pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="assets\plugins\iconfonts\Pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="assets\plugins\iconfonts\Pe-icon-7-stroke\fonts\Pe-icon-7-stroked41d.eot" />
+    <Content Include="assets\plugins\iconfonts\simple-line-icons\fonts\Simple-Line-Iconsb26c.eot" />
+    <Content Include="assets\plugins\iconfonts\simple-line-icons\fonts\Simple-Line-Iconsb26c.ttf" />
+    <Content Include="assets\plugins\iconfonts\simple-line-icons\fonts\Simple-Line-Iconsb26c.woff" />
+    <Content Include="assets\plugins\iconfonts\simple-line-icons\fonts\Simple-Line-Iconsb26c.woff2" />
+    <Content Include="assets\plugins\iconfonts\themify\fonts\themify9f24.eot" />
+    <Content Include="assets\plugins\iconfonts\themify\fonts\themify9f24.ttf" />
+    <Content Include="assets\plugins\iconfonts\themify\fonts\themify9f24.woff" />
+    <Content Include="assets\plugins\iconfonts\themify\fonts\themifyd41d.eot" />
+    <Content Include="assets\plugins\iconfonts\typicons\fonts\typicons.eot" />
+    <Content Include="assets\plugins\iconfonts\typicons\fonts\typicons.ttf" />
+    <Content Include="assets\plugins\iconfonts\typicons\fonts\typicons.woff" />
+    <Content Include="assets\plugins\iconfonts\typicons\fonts\typiconsd41d.eot" />
+    <Content Include="assets\plugins\iconfonts\weathericons\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="assets\plugins\iconfonts\weathericons\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="assets\plugins\iconfonts\weathericons\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="assets\plugins\iconfonts\weathericons\fonts\weathericons-regular-webfont.woff2" />
+    <Content Include="assets\plugins\iconfonts\weathericons\fonts\weathericons-regular-webfontd41d.eot" />
+    <Content Include="Sys\Web.config" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\sweetalert2.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="s_inv.aspx" />
+    <Content Include="Users\users.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="GL\RepAccStatment.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controls\PdfViewer.ascx.cs">
+      <DependentUpon>PdfViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PdfViewer.ascx.designer.cs">
+      <DependentUpon>PdfViewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PopUpControl.ascx.cs">
+      <DependentUpon>PopUpControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PopUpControl.ascx.designer.cs">
+      <DependentUpon>PopUpControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PopUpControlSearch.ascx.cs">
+      <DependentUpon>PopUpControlSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PopUpControlSearch.ascx.designer.cs">
+      <DependentUpon>PopUpControlSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PopUpControlNormal.ascx.cs">
+      <DependentUpon>PopUpControlNormal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PopUpControlNormal.ascx.designer.cs">
+      <DependentUpon>PopUpControlNormal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EmaxBaseReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FloatComparer.cs" />
+    <Compile Include="GL\RepBalanceSheetStatment.aspx.cs">
+      <DependentUpon>RepBalanceSheetStatment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\RepBalanceSheetStatment.aspx.designer.cs">
+      <DependentUpon>RepBalanceSheetStatment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\RepDebtRecovery.aspx.cs">
+      <DependentUpon>RepDebtRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\RepDebtRecovery.aspx.designer.cs">
+      <DependentUpon>RepDebtRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\tax_declaration_report.aspx.cs">
+      <DependentUpon>tax_declaration_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\tax_declaration_report.aspx.designer.cs">
+      <DependentUpon>tax_declaration_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_item_balance_repo.aspx.cs">
+      <DependentUpon>st_item_balance_repo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_item_balance_repo.aspx.designer.cs">
+      <DependentUpon>st_item_balance_repo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\acc_unpost.aspx.cs">
+      <DependentUpon>acc_unpost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\acc_unpost.aspx.designer.cs">
+      <DependentUpon>acc_unpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\move_account_cost_report.aspx.cs">
+      <DependentUpon>move_account_cost_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\move_account_cost_report.aspx.designer.cs">
+      <DependentUpon>move_account_cost_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\pay_doc_report.aspx.cs">
+      <DependentUpon>pay_doc_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\pay_doc_report.aspx.designer.cs">
+      <DependentUpon>pay_doc_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\rec_doc_report.aspx.cs">
+      <DependentUpon>rec_doc_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\rec_doc_report.aspx.designer.cs">
+      <DependentUpon>rec_doc_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\RepIncomStatment.aspx.cs">
+      <DependentUpon>RepIncomStatment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\RepIncomStatment.aspx.designer.cs">
+      <DependentUpon>RepIncomStatment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\RepSubTrailBalance.aspx.cs">
+      <DependentUpon>RepSubTrailBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\RepSubTrailBalance.aspx.designer.cs">
+      <DependentUpon>RepSubTrailBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\report\RepTrailBalance1.aspx.cs">
+      <DependentUpon>RepTrailBalance1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\report\RepTrailBalance1.aspx.designer.cs">
+      <DependentUpon>RepTrailBalance1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\RepMainTrailBalance.aspx.cs">
+      <DependentUpon>RepMainTrailBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\RepMainTrailBalance.aspx.designer.cs">
+      <DependentUpon>RepMainTrailBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_doc.aspx.cs">
+      <DependentUpon>hr_doc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_doc.aspx.designer.cs">
+      <DependentUpon>hr_doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_doc_report.aspx.cs">
+      <DependentUpon>hr_doc_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_doc_report.aspx.designer.cs">
+      <DependentUpon>hr_doc_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_employees.aspx.cs">
+      <DependentUpon>hr_employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_employees.aspx.designer.cs">
+      <DependentUpon>hr_employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_employees_master.aspx.cs">
+      <DependentUpon>hr_employees_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_employees_master.aspx.designer.cs">
+      <DependentUpon>hr_employees_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_loans.aspx.cs">
+      <DependentUpon>hr_loans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_loans.aspx.designer.cs">
+      <DependentUpon>hr_loans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_loan_report.aspx.cs">
+      <DependentUpon>hr_loan_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_loan_report.aspx.designer.cs">
+      <DependentUpon>hr_loan_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_masterfiles.aspx.cs">
+      <DependentUpon>hr_masterfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_masterfiles.aspx.designer.cs">
+      <DependentUpon>hr_masterfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_monthyear.aspx.cs">
+      <DependentUpon>hr_monthyear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_monthyear.aspx.designer.cs">
+      <DependentUpon>hr_monthyear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_salarypaid.aspx.cs">
+      <DependentUpon>hr_salarypaid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_salarypaid.aspx.designer.cs">
+      <DependentUpon>hr_salarypaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_salaryprep.aspx.cs">
+      <DependentUpon>hr_salaryprep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_salaryprep.aspx.designer.cs">
+      <DependentUpon>hr_salaryprep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_salaryvarables.aspx.cs">
+      <DependentUpon>hr_salaryvarables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_salaryvarables.aspx.designer.cs">
+      <DependentUpon>hr_salaryvarables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_salaryvar_report.aspx.cs">
+      <DependentUpon>hr_salaryvar_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_salaryvar_report.aspx.designer.cs">
+      <DependentUpon>hr_salaryvar_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_salary_report.aspx.cs">
+      <DependentUpon>hr_salary_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_salary_report.aspx.designer.cs">
+      <DependentUpon>hr_salary_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_vactions.aspx.cs">
+      <DependentUpon>hr_vactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_vactions.aspx.designer.cs">
+      <DependentUpon>hr_vactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\hr_vactions_report.aspx.cs">
+      <DependentUpon>hr_vactions_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\hr_vactions_report.aspx.designer.cs">
+      <DependentUpon>hr_vactions_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hr_employees.aspx.cs">
+      <DependentUpon>hr_employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hr_employees.aspx.designer.cs">
+      <DependentUpon>hr_employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReportDataSet.cs">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\p_inv_item_report.aspx.cs">
+      <DependentUpon>p_inv_item_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\p_inv_item_report.aspx.designer.cs">
+      <DependentUpon>p_inv_item_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\P_inv_Report.aspx.cs">
+      <DependentUpon>P_inv_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\P_inv_Report.aspx.designer.cs">
+      <DependentUpon>P_inv_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\total_p_inv_items.aspx.cs">
+      <DependentUpon>total_p_inv_items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\total_p_inv_items.aspx.designer.cs">
+      <DependentUpon>total_p_inv_items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\RepAccStatment.aspx.cs">
+      <DependentUpon>RepAccStatment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportDesigner\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportDesigner\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDesigner\ReportPramaterSet.aspx.cs">
+      <DependentUpon>ReportPramaterSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportDesigner\ReportPramaterSet.aspx.designer.cs">
+      <DependentUpon>ReportPramaterSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportHepler.cs" />
+    <Compile Include="ReportViewer\Viewer.aspx.cs">
+      <DependentUpon>Viewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewer\Viewer.aspx.designer.cs">
+      <DependentUpon>Viewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDesigner\XrReportDesginer.aspx.cs">
+      <DependentUpon>XrReportDesginer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportDesigner\XrReportDesginer.aspx.designer.cs">
+      <DependentUpon>XrReportDesginer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportServices\CustomCachedReportSourceWebResolver.cs" />
+    <Compile Include="Customers\add_cus.aspx.cs">
+      <DependentUpon>add_cus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\add_cus.aspx.designer.cs">
+      <DependentUpon>add_cus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportServices\FilesystemReportStorageWebExtension.cs" />
+    <Compile Include="GL\AccBranchs.aspx.cs">
+      <DependentUpon>AccBranchs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\AccBranchs.aspx.designer.cs">
+      <DependentUpon>AccBranchs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\AccPay.aspx.cs">
+      <DependentUpon>AccPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\AccPay.aspx.designer.cs">
+      <DependentUpon>AccPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\Chart.aspx.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\Chart.aspx.designer.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\pay_doc.aspx.cs">
+      <DependentUpon>pay_doc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\pay_doc.aspx.designer.cs">
+      <DependentUpon>pay_doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\rec_doc.aspx.cs">
+      <DependentUpon>rec_doc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\rec_doc.aspx.designer.cs">
+      <DependentUpon>rec_doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\Vouchers.aspx.cs">
+      <DependentUpon>Vouchers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GL\Vouchers.aspx.designer.cs">
+      <DependentUpon>Vouchers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewer\ViewRep.aspx.cs">
+      <DependentUpon>ViewRep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewer\ViewRep.aspx.designer.cs">
+      <DependentUpon>ViewRep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\CustGroup.aspx.cs">
+      <DependentUpon>CustGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\CustGroup.aspx.designer.cs">
+      <DependentUpon>CustGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\SuppGroup.aspx.cs">
+      <DependentUpon>SuppGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\SuppGroup.aspx.designer.cs">
+      <DependentUpon>SuppGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TokenResult.cs" />
+    <Compile Include="Purchases\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\P_Inv.aspx.cs">
+      <DependentUpon>P_Inv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\P_Inv.aspx.designer.cs">
+      <DependentUpon>P_Inv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\Rtn_P_Inv.aspx.cs">
+      <DependentUpon>Rtn_P_Inv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\Rtn_P_Inv.aspx.designer.cs">
+      <DependentUpon>Rtn_P_Inv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\request.aspx.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\request.aspx.designer.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\invtest.aspx.cs">
+      <DependentUpon>invtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\invtest.aspx.designer.cs">
+      <DependentUpon>invtest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\inv_items_report.aspx.cs">
+      <DependentUpon>inv_items_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\inv_items_report.aspx.designer.cs">
+      <DependentUpon>inv_items_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\inv_pay_report.aspx.cs">
+      <DependentUpon>inv_pay_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\inv_pay_report.aspx.designer.cs">
+      <DependentUpon>inv_pay_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\inv_report.aspx.cs">
+      <DependentUpon>inv_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\inv_report.aspx.designer.cs">
+      <DependentUpon>inv_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\S_order.aspx.cs">
+      <DependentUpon>S_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\S_order.aspx.designer.cs">
+      <DependentUpon>S_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\s_quote_order.aspx.cs">
+      <DependentUpon>s_quote_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\s_quote_order.aspx.designer.cs">
+      <DependentUpon>s_quote_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportServices\CustomReportDesignerExceptionHandler.cs" />
+    <Compile Include="ReportServices\CustomWebDocumentViewerExceptionHandler.cs" />
+    <Compile Include="Sales\total_inv_items.aspx.cs">
+      <DependentUpon>total_inv_items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\total_inv_items.aspx.designer.cs">
+      <DependentUpon>total_inv_items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\total_inv_pay.aspx.cs">
+      <DependentUpon>total_inv_pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\total_inv_pay.aspx.designer.cs">
+      <DependentUpon>total_inv_pay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\ChangeSPrice.aspx.cs">
+      <DependentUpon>ChangeSPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\ChangeSPrice.aspx.designer.cs">
+      <DependentUpon>ChangeSPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Inventorys.aspx.cs">
+      <DependentUpon>Inventorys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\Inventorys.aspx.designer.cs">
+      <DependentUpon>Inventorys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Inventory_Manage.aspx.cs">
+      <DependentUpon>Inventory_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\Inventory_Manage.aspx.designer.cs">
+      <DependentUpon>Inventory_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Item_Manage.aspx.cs">
+      <DependentUpon>Item_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\Item_Manage.aspx.designer.cs">
+      <DependentUpon>Item_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\print_barcode.aspx.cs">
+      <DependentUpon>print_barcode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\print_barcode.aspx.designer.cs">
+      <DependentUpon>print_barcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_addord.aspx.cs">
+      <DependentUpon>st_addord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_addord.aspx.designer.cs">
+      <DependentUpon>st_addord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_analysis_report.aspx.cs">
+      <DependentUpon>st_analysis_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_analysis_report.aspx.designer.cs">
+      <DependentUpon>st_analysis_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_Edit_add_ord.aspx.cs">
+      <DependentUpon>st_Edit_add_ord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_Edit_add_ord.aspx.designer.cs">
+      <DependentUpon>st_Edit_add_ord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_edit_issord.aspx.cs">
+      <DependentUpon>st_edit_issord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_edit_issord.aspx.designer.cs">
+      <DependentUpon>st_edit_issord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_issord.aspx.cs">
+      <DependentUpon>st_issord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_issord.aspx.designer.cs">
+      <DependentUpon>st_issord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_Items_data_balances_report.aspx.cs">
+      <DependentUpon>st_Items_data_balances_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_Items_data_balances_report.aspx.designer.cs">
+      <DependentUpon>st_Items_data_balances_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_itemwh.aspx.cs">
+      <DependentUpon>st_itemwh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_itemwh.aspx.designer.cs">
+      <DependentUpon>st_itemwh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_Receipt_transfer.aspx.cs">
+      <DependentUpon>st_Receipt_transfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_Receipt_transfer.aspx.designer.cs">
+      <DependentUpon>st_Receipt_transfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_transactions_report.aspx.cs">
+      <DependentUpon>st_transactions_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_transactions_report.aspx.designer.cs">
+      <DependentUpon>st_transactions_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\st_Trans_ord.aspx.cs">
+      <DependentUpon>st_Trans_ord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\st_Trans_ord.aspx.designer.cs">
+      <DependentUpon>st_Trans_ord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchases\Supplier.aspx.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchases\Supplier.aspx.designer.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\Branch.aspx.cs">
+      <DependentUpon>Branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\Branch.aspx.designer.cs">
+      <DependentUpon>Branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\customers.aspx.cs">
+      <DependentUpon>customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\customers.aspx.designer.cs">
+      <DependentUpon>customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Sec.cs" />
+    <Compile Include="Dal\sys_methods.cs" />
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\ItemGroups.aspx.cs">
+      <DependentUpon>ItemGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\ItemGroups.aspx.designer.cs">
+      <DependentUpon>ItemGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmaxBasepage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="import_excel.aspx.cs">
+      <DependentUpon>import_excel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="import_excel.aspx.designer.cs">
+      <DependentUpon>import_excel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101031351429_updateusertablev1.cs" />
+    <Compile Include="Migrations\202101031351429_updateusertablev1.Designer.cs">
+      <DependentUpon>202101031351429_updateusertablev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101031353400_updateusertablev2.cs" />
+    <Compile Include="Migrations\202101031353400_updateusertablev2.Designer.cs">
+      <DependentUpon>202101031353400_updateusertablev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101031421212_updateusertablev3.cs" />
+    <Compile Include="Migrations\202101031421212_updateusertablev3.Designer.cs">
+      <DependentUpon>202101031421212_updateusertablev3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="NotAuthorize.aspx.cs">
+      <DependentUpon>NotAuthorize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotAuthorize.aspx.designer.cs">
+      <DependentUpon>NotAuthorize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\CostCenter.aspx.cs">
+      <DependentUpon>CostCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\CostCenter.aspx.designer.cs">
+      <DependentUpon>CostCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\Expenses.aspx.cs">
+      <DependentUpon>Expenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\Expenses.aspx.designer.cs">
+      <DependentUpon>Expenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\payment_type.aspx.cs">
+      <DependentUpon>payment_type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\payment_type.aspx.designer.cs">
+      <DependentUpon>payment_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportDesigner.aspx.cs">
+      <DependentUpon>ReportDesigner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportDesigner.aspx.designer.cs">
+      <DependentUpon>ReportDesigner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\cust_search.aspx.cs">
+      <DependentUpon>cust_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\cust_search.aspx.designer.cs">
+      <DependentUpon>cust_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SalesInv.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\inv.aspx.cs">
+      <DependentUpon>inv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\inv.aspx.designer.cs">
+      <DependentUpon>inv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Inv_det.aspx.cs">
+      <DependentUpon>Inv_det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Inv_det.aspx.designer.cs">
+      <DependentUpon>Inv_det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\inv_search.aspx.cs">
+      <DependentUpon>inv_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\inv_search.aspx.designer.cs">
+      <DependentUpon>inv_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\items_inv_search.aspx.cs">
+      <DependentUpon>items_inv_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\items_inv_search.aspx.designer.cs">
+      <DependentUpon>items_inv_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Rtn_inv.aspx.cs">
+      <DependentUpon>Rtn_inv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Rtn_inv.aspx.designer.cs">
+      <DependentUpon>Rtn_inv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Rtn_search.aspx.cs">
+      <DependentUpon>Rtn_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Rtn_search.aspx.designer.cs">
+      <DependentUpon>Rtn_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\sman.aspx.cs">
+      <DependentUpon>sman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\sman.aspx.designer.cs">
+      <DependentUpon>sman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Stock\Items.aspx.cs">
+      <DependentUpon>Items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\Items.aspx.designer.cs">
+      <DependentUpon>Items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\item_search.aspx.cs">
+      <DependentUpon>item_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\item_search.aspx.designer.cs">
+      <DependentUpon>item_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\inv_dtl_rep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\inv_dtl_rep.Designer.cs">
+      <DependentUpon>inv_dtl_rep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\inv_rep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\inv_rep.Designer.cs">
+      <DependentUpon>inv_rep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inv_Report_old.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inv_Report_old.Designer.cs">
+      <DependentUpon>Inv_Report_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\short_menu.aspx.cs">
+      <DependentUpon>short_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\short_menu.aspx.designer.cs">
+      <DependentUpon>short_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\sys_company.aspx.cs">
+      <DependentUpon>sys_company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\sys_company.aspx.designer.cs">
+      <DependentUpon>sys_company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\sys_settings.aspx.cs">
+      <DependentUpon>sys_settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\sys_settings.aspx.designer.cs">
+      <DependentUpon>sys_settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\Years.aspx.cs">
+      <DependentUpon>Years.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\Years.aspx.designer.cs">
+      <DependentUpon>Years.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="s_inv.aspx.cs">
+      <DependentUpon>s_inv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="s_inv.aspx.designer.cs">
+      <DependentUpon>s_inv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\unit.aspx.cs">
+      <DependentUpon>unit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\unit.aspx.designer.cs">
+      <DependentUpon>unit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\userresetpass.aspx.cs">
+      <DependentUpon>userresetpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\userresetpass.aspx.designer.cs">
+      <DependentUpon>userresetpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GL\RepAccStatment.aspx.designer.cs">
+      <DependentUpon>RepAccStatment.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\img\faces\male\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Files\gl\" />
+    <Folder Include="Files\pay_doc\" />
+    <Folder Include="Files\Purchases\" />
+    <Folder Include="Files\rec_doc\" />
+    <Folder Include="Files\Sales\" />
+    <Folder Include="Files\stock\" />
+    <Folder Include="Img\Doc\" />
+    <Folder Include="Img\Emp\" />
+    <Folder Include="Img\Item\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HR\Web.config" />
+    <Content Include="Models\ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Models\ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Stock\Web.config" />
+    <Content Include="Users\Web.config" />
+    <Content Include="VanSalesThemsFile\font\iconsmind\icomoon.eot" />
+    <Content Include="VanSalesThemsFile\font\iconsmind\icomoon.ttf" />
+    <Content Include="VanSalesThemsFile\font\iconsmind\icomoon.woff" />
+    <Content Include="VanSalesThemsFile\font\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="VanSalesThemsFile\font\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="VanSalesThemsFile\font\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="VanSalesThemsFile\font\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="VanSalesThemsFile\font\simple-line-icons\LICENSE.md" />
+    <Content Include="Purchases\Web.config" />
+    <Content Include="VanSalesThemsFile\font\themify\fonts\themify9f24.eot" />
+    <Content Include="VanSalesThemsFile\font\themify\fonts\themify9f24.ttf" />
+    <Content Include="VanSalesThemsFile\font\themify\fonts\themify9f24.woff" />
+    <Content Include="VanSalesThemsFile\font\themify\fonts\themifyd41d.eot" />
+    <Content Include="ReportFiles\Stock\st_addtrans_page.repx" />
+    <Content Include="ReportFiles\Stock\st_addtansdtl_page.repx" />
+    <Content Include="ReportFiles\Stock\st_transactions_issord_page.repx" />
+    <Content Include="ReportFiles\Stock\st_transdtls_issord_page.repx" />
+    <Content Include="ReportFiles\Stock\st_Trans_ord_page.repx" />
+    <Content Include="ReportFiles\Stock\st_transdtls_trans_page.repx" />
+    <Content Include="ReportFiles\Sales\s_rtninv_page.repx" />
+    <Content Include="ReportFiles\Sales\rtninv_detail.repx" />
+    <Content Include="ReportFiles\Purchase\P_Inv_Page.repx" />
+    <Content Include="ReportFiles\Purchase\P_Inv_Detail_Page.repx" />
+    <Content Include="ReportFiles\Purchase\Rtn_P_Inv_Detail_Page.repx" />
+    <Content Include="ReportFiles\Purchase\Rtn_P_Inv_Page.repx" />
+    <Content Include="ReportFiles\Sales\s_inv_paydoc_page.repx" />
+    <Content Include="ReportFiles\Sales\inv_paydoc_dtl.repx" />
+    <Content Include="ReportFiles\Sales\s_quote_dtl.repx" />
+    <Content Include="ReportFiles\Sales\s_quote_order_page.repx" />
+    <Content Include="ReportFiles\pay_rec\pay_doc_page.repx" />
+    <Content Include="ReportFiles\pay_rec\rec_doc_page.repx" />
+    <Content Include="ReportFiles\Sales\s_order_dtl.repx" />
+    <Content Include="ReportFiles\Sales\s_order_page.repx" />
+    <Content Include="ReportFiles\Sales\itemrep.repx" />
+    <Content Include="ReportFiles\Stock\itemrep.repx" />
+    <Content Include="ReportFiles\Sales\RollPaper.repx" />
+    <Content Include="ReportFiles\Sales\s_inv_dtl_receipt_pos.repx" />
+    <Content Include="ReportFiles\Sales\s_inv_pay_receipt_pos.repx" />
+    <Content Include="ReportFiles\Sales\s_inv_receipt_pos.repx" />
+    <Content Include="ReportFiles\GL\gl_vouchersdtl_page.repx" />
+    <Content Include="ReportFiles\GL\gl_vouchers_page.repx" />
+    <Content Include="ReportFiles\Stock\itembarcode1.repx" />
+    <Content Include="ReportFiles\Stock\itembarcode2.repx" />
+    <Content Include="ReportFiles\Sales\s_rtn_inv_dtl_receipt_pos.repx" />
+    <Content Include="ReportFiles\Sales\s_rtn_inv_pay_receipt_pos.repx" />
+    <Content Include="ReportFiles\Sales\s_rtn_inv_receipt_pos.repx" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="VanSalesThemsFile\font\oops.font.style\font-awesome\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="ReportFiles\Purchase\P_order_Detail_Page.repx" />
+    <Content Include="ReportFiles\Purchase\P_order_Page.repx" />
+    <Content Include="ReportFiles\GL\main_trail_balance.repx" />
+    <Content Include="ReportFiles\GL\sub_trail_balance.repx" />
+    <Content Include="ReportFiles\GL\Header.repx" />
+    <Content Include="ReportFiles\GL\rep_acc_statment.repx" />
+    <Content Include="ReportFiles\Stock\st_transactions_issord_rep.repx" />
+    <Content Include="ReportFiles\Sales\inv_detail_A5.repx" />
+    <Content Include="ReportFiles\Sales\inv_measure_A5.repx" />
+    <Content Include="ReportFiles\Sales\s_inv_page_A5.repx" />
+    <Content Include="ReportFiles\GL\RepIncomStatment.repx" />
+    <Content Include="ReportFiles\Purchase\Header.repx" />
+    <Content Include="ReportFiles\Purchase\P_inv_Report.repx" />
+    <Content Include="ReportFiles\Sys\Header.repx" />
+    <Content Include="ReportFiles\Stock\Header.repx" />
+    <Content Include="ReportFiles\Sales\Header.repx" />
+    <Content Include="ReportFiles\pay_rec\Header.repx" />
+    <Content Include="ReportFiles\GL\RepBalanceSheetStatment.repx" />
+    <Content Include="ReportFiles\Purchase\p_inv_item_report.repx" />
+    <Content Include="ReportFiles\Purchase\total_p_inv_items.repx" />
+    <Content Include="ReportFiles\GL\move_account_cost_report.repx" />
+    <Content Include="ReportFiles\GL\RepDebtRecovery.repx" />
+    <Content Include="ReportFiles\Sales\Inv_Report.repx" />
+    <Content Include="ReportFiles\Sales\inv_items_report.repx" />
+    <Content Include="ReportFiles\Sales\total_inv_pay.repx" />
+    <Content Include="ReportFiles\Sales\total_inv_items.repx" />
+    <Content Include="ReportFiles\Sales\inv_pay_report.repx" />
+    <Content Include="ReportFiles\Stock\st_transactions_report.repx" />
+    <Content Include="ReportFiles\Stock\st_analysis_report.repx" />
+    <Content Include="ReportFiles\Stock\st_Items_data_balances_report.repx" />
+    <Content Include="ReportFiles\Stock\st_item_balance_repo.repx" />
+    <Content Include="ReportFiles\HR\hr_salary_report.repx" />
+    <Content Include="ReportFiles\HR\Header.repx" />
+    <Content Include="ReportFiles\HR\hr_salaryvar_report.repx" />
+    <Content Include="ReportFiles\HR\hr_loan_report.repx" />
+    <Content Include="ReportFiles\HR\hr_vactions_report.repx" />
+    <Content Include="ReportFiles\HR\hr_doc_report.repx" />
+    <Content Include="ReportFiles\GL\rec_doc_report.repx" />
+    <Content Include="ReportFiles\GL\pay_doc_report.repx" />
+    <Content Include="ReportFiles\GL\tax_declaration.repx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101031351429_updateusertablev1.resx">
+      <DependentUpon>202101031351429_updateusertablev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101031353400_updateusertablev2.resx">
+      <DependentUpon>202101031353400_updateusertablev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101031421212_updateusertablev3.resx">
+      <DependentUpon>202101031421212_updateusertablev3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Report\inv_dtl_rep.resx">
+      <DependentUpon>inv_dtl_rep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\inv_rep.resx">
+      <DependentUpon>inv_rep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inv_Report_old.resx">
+      <DependentUpon>Inv_Report_old.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emax.Core\Emax.Core.csproj">
+      <Project>{07af1bba-4c95-482c-897f-87a282d81785}</Project>
+      <Name>Emax.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emax.SharedLib\Emax.SharedLib.csproj">
+      <Project>{cd39258e-574d-44fd-bfa1-ec0f205ceda1}</Project>
+      <Name>Emax.SharedLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Emax.Dal.csproj">
+      <Project>{F4E81949-8AE7-4AD1-AADC-B452AA193DDD}</Project>
+      <Name>Emax.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55423</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44317/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

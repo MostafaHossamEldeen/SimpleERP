@@ -1,0 +1,2256 @@
+
+/*:root{
+
+master_color1: #35B86B;
+
+master_color2: #1e693d;
+
+background: #232223;
+
+btn_back_color: #2c2c2c;
+
+btn_hover: #3d3d3d;
+
+text color: #969696;
+
+}
+*/
+
+
+/* tree list */
+
+.dxtlControl_MaterialCompact
+{
+    color: #969696;
+    border: 1px #DFDFDF;
+}
+.dxtlControl_MaterialCompact caption
+{
+    color: #969696;
+}
+.dxtlControl_MaterialCompact .dxtlDataTable
+{
+    border: 1px solid #DFDFDF;
+}
+/* Indent cells */
+.dxtlIndent_MaterialCompact,
+.dxtlIndentWithButton_MaterialCompact
+{
+    background: #232223 none no-repeat top center;
+}
+
+.dxtlSelectionCell_MaterialCompact
+{
+    border: 1px solid #DFDFDF;
+}
+/* Tree-lines cells */
+/* Headers */
+.dxtlHeader_MaterialCompact
+{
+    border: 1px solid #DFDFDF;
+    background-color: #232223;
+    color: white;
+}
+
+/* Nodes */
+.dxtlNode_MaterialCompact
+{
+    background: #232223 none;
+}
+.dxtlNode_MaterialCompact:hover{
+    background-color: #3d3d3d;
+}
+.dxtlAltNode_MaterialCompact
+{
+    background-color: #232223;
+}
+.dxtlSelectedNode_MaterialCompact
+{
+    background: #232223 none;
+}
+.dxtlFocusedNode_MaterialCompact
+{
+    background: #35B86B none;
+    color: white;
+}
+.dxtlInlineEditNode_MaterialCompact
+{
+    background: #232223 none;
+}
+.dxtlEditFormDisplayNode_MaterialCompact
+{
+    background: #232223 none;
+}
+.dxtlNode_MaterialCompact td.dxtl,
+.dxtlAltNode_MaterialCompact td.dxtl,
+.dxtlSelectedNode_MaterialCompact td.dxtl,
+.dxtlFocusedNode_MaterialCompact td.dxtl,
+.dxtlEditFormDisplayNode_MaterialCompact td.dxtl,
+.dxtlCommandCell_MaterialCompact
+{
+    border: 1px solid #DFDFDF;
+}
+
+.dxtlInlineEditNode_MaterialCompact td.dxtl
+{
+    border: 1px solid #DFDFDF;
+}
+/* Preview */
+.dxtlPreview_MaterialCompact
+{
+    color: #969696;
+    border: 1px solid #DFDFDF;
+}
+/* Footers */
+.dxtlGroupFooter_MaterialCompact td.dxtl,
+.dxtlFooter_MaterialCompact td.dxtl
+{
+    border: 1px solid #DFDFDF;
+}
+
+/* Pagers */
+
+.dxtlPagerTopPanel_MaterialCompact
+{
+    border-color: #DFDFDF;
+}
+.dxtlPagerBottomPanel_MaterialCompact
+{
+    border: 1px solid #DFDFDF;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+/* Editing */
+.dxtlEditForm_MaterialCompact
+{
+    border: 1px solid #DFDFDF;
+    background-color: #232223;
+}
+
+.dxtlError_MaterialCompact
+{
+    background: #FFC8C8 none;
+    color: #FF0000;
+    border: 1px solid #DFDFDF;
+}
+
+.dxtlEditForm_MaterialCompact .dxtlCommandCell_MaterialCompact a:hover,
+.dxtlPopupEditForm_MaterialCompact .dxtlCommandCell_MaterialCompact a:hover
+{
+    background-color: #3d3d3d;
+}
+/* Links */
+.dxtlControl_MaterialCompact a.dxeHyperlink:not([href]):not([onclick]):not(.dxbButtonSys)
+{
+    color: #969696;
+}
+.dxtlControl_MaterialCompact a
+{
+    color: #35B86B;
+}
+.dxtlFocusedNode_MaterialCompact a
+{
+    color: white !important;
+}
+
+/* Customization window */
+
+.dxtlControl_MaterialCompact .dxpcLite_MaterialCompact .dxpc-content .dxtlHeader_MaterialCompact
+{
+    background-color: #232223;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+/* Loading panel */
+.dxtlLoadingPanel_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+
+.dxtlLoadingPanel_MaterialCompact .dxlp-loadingImage
+{
+    border: 4px solid #35B86B;
+    border-top: 4px solid #EEE;
+}
+
+/* Disabled */
+.dxtlDisabled_MaterialCompact,
+.dxtlDisabled_MaterialCompact .dxtl
+{
+    color: #b8b8b8;
+}
+/* Ripple */
+
+.dxtlControl_MaterialCompact .dxpcLite_MaterialCompact
+{
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+
+/* Filtering */
+.dxtlFilterRow_MaterialCompact
+{
+    background-color: #232223;
+}
+.dxtlFilterRow_MaterialCompact > td
+{
+    border-bottom: 1px Solid #DFDFDF;
+    border-right: 1px Solid #DFDFDF;
+}
+/* Search Panel */
+.dxtlSearchPanel_MaterialCompact .dxeButtonEdit_MaterialCompact
+{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+.dxtlSearchPanel_MaterialCompact .dxeButtonEdit_MaterialCompact,
+.dxtlSearchPanel_MaterialCompact .dxeButtonEdit_MaterialCompact input
+{
+    background-color: #232223;
+}
+
+.dxtlControl_MaterialCompact .dxtlHL
+{
+    background: #35B86B;
+    color: white;
+}
+/* Filter Builder, Filter Bar */
+.dxtlFilterBar_MaterialCompact
+{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+    border: 1px solid #DFDFDF;
+}
+.dxtlFilterBar_MaterialCompact a
+{
+    color: #35B86B;
+}
+
+.dxtlFilterBuilderMainArea_MaterialCompact
+{
+    background: #232223 none;
+}
+.dxtlFilterBuilderButtonArea_MaterialCompact
+{
+    border-top: 1px solid #eaeaea;
+}
+
+/*batch*/
+.dxtlControl_MaterialCompact .dxtlBatchEditDeletedNode_MaterialCompact,
+.dxtlControl_MaterialCompact .dxtlBatchEditNewNode_MaterialCompact.dxtlBatchEditDeletedNode_MaterialCompact,
+.dxtlControl_MaterialCompact .dxtlBatchEditDeletedNode_MaterialCompact .dxtlPreview_MaterialCompact
+{
+    background: #232223;
+}
+
+.dxtlControl_MaterialCompact td.dxtlBatchEditModifiedCell_MaterialCompact
+{
+    background: #232223;
+}
+.dxtlBatchEditDeletedNode_MaterialCompact > td:not(.dxtlCommandColumn)_MaterialCompact
+{
+    color: rgba(0,0,0,0.5);
+}
+.dxtlBatchEditDeletedNode_MaterialCompact td.dxtlBatchEditModifiedCell_MaterialCompact
+{
+    background: #232223;
+}
+.dxtlControl_MaterialCompact .dxtlBatchEditNewNode_MaterialCompact
+{
+    background: #232223;
+}
+.dxtlFocusedCell_MaterialCompact
+{
+    box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -webkit-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -moz-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+}
+
+
+/* Search popup */
+
+.modal-content {
+    background-color: #232223;
+    color: #969696;
+}
+
+.inputpopup {
+    background-color: #232223;
+    color: #969696;
+}
+
+.form-control{
+    background-color: #232223;
+    color: #969696;
+}
+
+.form-control:focus{
+    background-color: #232223;
+    color: #969696;
+    border-color: #576a3d;
+}
+
+
+.dx-datagrid {
+    background-color: #232223;
+    color: #969696;
+}
+
+.close {
+    color: #969696;
+}
+
+.dxucBrowseButton_MaterialCompact{
+    background-color: #232223;
+    color: #969696;
+}
+
+.dxucControl_MaterialCompact .dxucBrowseButton_MaterialCompact a{
+        color: #969696;
+}
+
+.btnsearchpopup {
+    background-color: #2c2c2c;
+}
+
+
+/*  sweet alrt  */
+
+.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal {
+    
+    background-color: #232223;
+}
+
+
+.swal2-title{
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #969696;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+}
+
+.swal2-styled.swal2-confirm{
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #35B86B;
+    color: #fff;
+    font-size: 1.0625em;
+}
+
+/* Gird View */
+
+
+.dxm-rtl ul.dx {
+	background-color: #232223;
+	color: #969696;
+}
+
+.dxgvPopupEditForm_MaterialCompact,
+.dxpcLite_MaterialCompact .dxpc-header,
+.dxdpLite_MaterialCompact .dxpc-header{
+	background-color: #232223;
+}
+
+.dxgvEditForm_MaterialCompact .dxflGroupBoxCaption_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvPopupEditForm_MaterialCompact .dxflGroupBoxCaption_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvEditForm_MaterialCompact .dxflPCSys .dxflGroupBoxCaption_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvPopupEditForm_MaterialCompact .dxflPCSys .dxflGroupBoxCaption_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvControl_MaterialCompact,
+.dxgvDisabled_MaterialCompact {
+	background-color: #232223;
+	color: #969696;
+}
+
+.dxgvDisabled_MaterialCompact {
+	color: #969696;
+}
+
+.dxgvControl_MaterialCompact a.dxeHyperlink:not([href]):not([onclick]):not(.dxbButtonSys) {
+	color: #969696;
+}
+
+.dxgvControl_MaterialCompact a {
+	color: #35B86B;
+}
+
+.dxgvControl_MaterialCompact a:hover.dxbDisabled_MaterialCompact {
+	color: #BBBBBB;
+}
+
+.dxgvDisabled_MaterialCompact a {
+	color: #969696;
+}
+
+.dxgvGroupRow_MaterialCompact td.dxgv.dxgvPHEC, .dxgvPreviewRow_MaterialCompact td.dxgv.dxgvPHEC,
+.dxgvDetailRow_MaterialCompact td.dxgv.dxgvPHEC, .dxgvGroupFooter_MaterialCompact td.dxgv.dxgvPHEC,
+.dxgvDataRow_MaterialCompact td.dxgvPHEC {
+	border-right: 1px solid #969696;
+}
+
+*[dir="rtl"] .dxgvGroupRow_MaterialCompact td.dxgv.dxgvPHEC, *[dir="rtl"] .dxgvPreviewRow_MaterialCompact td.dxgv.dxgvPHEC,
+*[dir="rtl"] .dxgvDetailRow_MaterialCompact td.dxgv.dxgvPHEC, *[dir="rtl"] .dxgvGroupFooter_MaterialCompact td.dxgv.dxgvPHEC,
+*[dir="rtl"] .dxgvDataRow_MaterialCompact td.dxgvPHEC {
+	border-left: 1px solid #969696;
+}
+
+.dxgvLoadingPanel_MaterialCompact {
+	background-color: #232223;
+	color: #969696;
+	-moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+
+.dxgvLoadingPanel_MaterialCompact .dxlp-loadingImage {
+	border: 4px solid #35B86B;
+	border-top: 4px solid #EEE;
+}
+
+
+.dxgvLoadingPanelStatusBar_MaterialCompact .dxlp-loadingImage {
+	border: 2px solid #35B86B;
+	border-top: 2px solid #EEE;
+}
+
+
+.dxgvTable_MaterialCompact {
+	background-color: #232223;
+	border: 1px solid #969696;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+.dxgvTable_MaterialCompact .dxgvHEC {
+	background-color: #232223;
+}
+
+.dxgvTable_MaterialCompact .dxgvFooter_MaterialCompact .dxgvHEC {
+	background-color: #232223;
+}
+
+.dxgvInlineEditRow_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696;
+}
+
+.dxgvInlineEditRow_MaterialCompact td.dxgvIndentCell {
+	background-color: #232223;
+}
+
+.dxgvDataRowAlt_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvFilterRow_MaterialCompact {
+	border-top: 1px solid #232223;
+}
+
+.dxgvEditForm_MaterialCompact > td.dxgv {
+	border-bottom: 1px solid #969696 !important;
+	background-color: #232223;
+}
+
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact,
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact.dxgvDataRowHover_MaterialCompact {
+	background-color: #35B86B;
+	color: #232223;
+}
+
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact a,
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvFocusedGroupRow_MaterialCompact a {
+	color: #232223;
+}
+
+.dxgvControl_MaterialCompact .dxgvADSB:hover::before {
+	background-color: #35B86B;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+.dxgvControl_MaterialCompact .dxgvFocusedRow_MaterialCompact .dxgvADSB:hover::before {
+	background-color: #232223;
+}
+
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvSelectedRow_MaterialCompact,
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvSelectedRow_MaterialCompact.dxgvDataRowHover_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvPreviewRow_MaterialCompact {
+	color: #999999;
+}
+
+.dxgvDetailRow_MaterialCompact td.dxgv,
+.dxgvPreviewRow_MaterialCompact td.dxgv,
+.dxgvEmptyDataRow_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvDetailRow_MaterialCompact td.dxgvIndentCell {
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvDetailRow_MaterialCompact.dxgvADR .dxgvADCC {
+	color: #7F7F7F;
+}
+
+.dxgvDetailRow_MaterialCompact.dxgvADR.dxgvFocusedRow_MaterialCompact .dxgvADCC,
+.dxgvDetailRow_MaterialCompact.dxgvADR.dxgvFocusedRow_MaterialCompact .dxgvADDC,
+.dxgvDetailRow_MaterialCompact.dxgvADR.dxgvFocusedRow_MaterialCompact .dxgvADCMDC a {
+	color: #232223;
+}
+
+.dxgvEmptyDataRow_MaterialCompact {
+	color: Gray;
+}
+
+.dxgvEmptyDataRow_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvEditFormDisplayRow_MaterialCompact td.dxgv,
+.dxgvDetailCell_MaterialCompact td.dxgv,
+.dxgvDataRow_MaterialCompact td.dxgv,
+.dxgvDetailRow_MaterialCompact.dxgvADR td.dxgvAIC {
+	border-bottom: 1px solid #969696 !important;
+	border-right: 1px solid #969696;
+}
+
+.dxgvEditFormDisplayRow_MaterialCompact:last-child td.dxgv,
+.dxgvDetailCell_MaterialCompact:last-child td.dxgv,
+.dxgvDataRow_MaterialCompact:last-child td.dxgv,
+.dxgvDetailRow_MaterialCompact.dxgvADR:last-child td.dxgvAIC {
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvEditFormDisplayRow_MaterialCompact td.dxgvIndentCell {
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvEditingErrorRow_MaterialCompact {
+	background-color: #FFC8C8;
+	color: #FF0000;
+}
+
+.dxgvEditingErrorRow_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvFilterRow_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696 !important;
+	border-right: 1px solid #969696;
+	background-color: #232223;
+}
+
+.dxgvGroupRow_MaterialCompact,
+.dxgvBatchEditChangesPreviewGroupRow_MaterialCompact {
+	background-color: #232223;
+	color: #939393;
+}
+
+.dxgvFocusedGroupRow_MaterialCompact {
+	background-color: #35B86B;
+	color: #939393;
+}
+
+.dxgvGroupRow_MaterialCompact td.dxgv,
+.dxgvFocusedGroupRow_MaterialCompact td.dxgv,
+.dxgvBatchEditChangesPreviewGroupRow_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696 !important;
+	padding: 10px 10px 9px;
+	background-color: inherit;
+}
+
+.dxgvFocusedGroupRow_MaterialCompact td.dxgvIndentCell {
+	background-color: #232223 !important;
+}
+sddsada
+.dxgvHeaderPanel_MaterialCompact {
+	background-color: #232223;
+	border-bottom: 1px solid #969696;
+}
+
+.dxgvHeader_MaterialCompact {
+	border: 1px solid #969696;
+	background-color: #232223;
+	color: #969696;
+}
+
+.dxgvHeader_MaterialCompact a,
+.dxgvHeader_MaterialCompact a.dxgvCommandColumnItem_MaterialCompact,
+.dxgvHeader_MaterialCompact a.dxgvCommandColumnItem_MaterialCompact.dxbDisabled_MaterialCompact,
+.dxgvCommandColumn_MaterialCompact a,
+.dxgvCommandColumn_MaterialCompact a.dxgvCommandColumnItem_MaterialCompact.dxbDisabled_MaterialCompact {
+	color: #35B86B;
+}
+
+
+.dxgvCustomization_MaterialCompact .dxgvHeader_MaterialCompact {
+	background-color: #232223;
+	color: #969696;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+
+.dxgvAdaptiveGroupPanel_MaterialCompact,
+.dxgvGroupPanel_MaterialCompact {
+	color: #8e8e93;
+}
+
+.dxgvGroupPanel_MaterialCompact .dxgvHeader_MaterialCompact,
+.dxgvAdaptiveGroupPanel_MaterialCompact .dxgvHeader_MaterialCompact {
+	background-color: #232223;
+	border: 1px solid #969696;
+}
+
+.dxgvAdaptiveHeaderPanel_MaterialCompact .dxgvHeader_MaterialCompact {
+	border: 1px solid #969696;
+}
+
+.dxgvAdaptiveHeaderPanel_MaterialCompact {
+	border-bottom: 1px solid #969696;
+}
+
+.dxgvFooter_MaterialCompact {
+	background-color: #232223;
+	color: #8e8e93;
+}
+
+.dxgvFooter_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696;
+}
+
+.dxgvABRL .dxgvFooter_MaterialCompact td.dxgv,
+.dxgvABRL .dxgvGroupFooter_MaterialCompact td.dxgv {
+	border-right: 1px solid #969696;
+}
+
+.dxgvGroupFooter_MaterialCompact {
+	color: #8e8e93;
+}
+
+.dxgvGroupFooter_MaterialCompact td.dxgv {
+	border-bottom: 1px solid #969696;
+}
+
+.dxgvDataRow_MaterialCompact td.dxgvIndentCell,
+.dxgvDetailRow_MaterialCompact td.dxgvIndentCell,
+.dxgvPreviewRow_MaterialCompact td.dxgvIndentCell,
+.dxgvGroupFooter_MaterialCompact td.dxgvIndentCell,
+.dxgvInlineEditRow_MaterialCompact td.dxgvIndentCell {
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvGroupRow_MaterialCompact td.dxgvIndentCell {
+	background-color: #232223;
+	border-bottom: 1px solid #969696 !important;
+}
+
+.dxgvTitlePanel_MaterialCompact,
+.dxgvTable_MaterialCompact caption {
+	color: #999999;
+}
+
+.dxgvEditFormTable_MaterialCompact .dxflFormLayout_MaterialCompact .dxflCommandItemSys a:hover,
+.dxgvEditFormTable_MaterialCompact .dxgvCommandColumn_MaterialCompact a:hover {
+	background-color: #232223;
+	text-decoration: none;
+}
+
+.dxgvEditFormTable_MaterialCompact a {
+	color: #35B86B;
+}
+
+.dxgvPagerBottomPanel_MaterialCompact {
+	background-color: #232223;
+	border-bottom: 1px solid #969696;
+	border-left: 1px solid #969696;
+	border-right: 1px solid #969696;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+.dxgvControl_MaterialCompact .dxgvFSDC,
+.dxgvControl_MaterialCompact .dxgvHSDC {
+	background-color: #232223;
+	border-right: 1px solid #969696;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+.dxgvControl_MaterialCompact .dxgvHSDC {
+	border-top: 1px solid #969696;
+	border-left: 1px solid #969696;
+}
+
+.dxgvControl_MaterialCompact .dxgvFSDC {
+	border-bottom: 1px solid #969696;
+}
+
+
+.dxgvControl_MaterialCompact .dxgvCSD .dxgvTable_MaterialCompact .dxgvFGFixed {
+	border-left: 1px solid #969696;
+}
+
+.dxgvControl_MaterialCompact .dxgvCSD {
+	border: 1px solid #969696;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+.dxgvControl_MaterialCompact .dxpcLite_MaterialCompact {
+	-moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+
+.dxgvFilterBar_MaterialCompact {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+	border: 1px solid #969696;
+}
+
+.dxgvFilterBar_MaterialCompact a {
+	color: #35B86B;
+}
+
+.dxgvFilterBuilderMainArea_MaterialCompact {
+	background: #232223 none;
+}
+
+.dxgvFilterBuilderButtonArea_MaterialCompact {
+	border-top: 1px solid #232223;
+}
+
+.dxgvDataRowHover_MaterialCompact {
+	background-color: #3d3d3d;
+}
+
+.dxgvControl_MaterialCompact td.dxgvBatchEditModifiedCell_MaterialCompact {
+	background: #232223;
+}
+
+.dxgvBatchEditDeletedItem_MaterialCompact,
+.dxgvBatchEditNewItem_MaterialCompact.dxgvBatchEditDeletedItem_MaterialCompact {
+	background: #232223;
+}
+
+.dxgvBatchEditDeletedItem_MaterialCompact > td:not(.dxgvCommandColumn_MaterialCompact) {
+	color: rgba(0,0,0,0.5);
+}
+
+.dxgvBatchEditDeletedItem_MaterialCompact td.dxgvBatchEditModifiedCell_MaterialCompact {
+	background: #232223;
+}
+
+.dxgvBatchEditNewItem_MaterialCompact {
+	background: #232223;
+}
+
+
+.dxgvSearchPanel_MaterialCompact .dxeButtonEdit_MaterialCompact {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+
+.dxgvSearchPanel_MaterialCompact .dxeButtonEdit_MaterialCompact,
+.dxgvSearchPanel_MaterialCompact .dxeButtonEdit_MaterialCompact input {
+	background-color: #232223;
+}
+
+.dxgvControl_MaterialCompact .dxgvHL {
+	background: #35B86B;
+	color: #232223;
+}
+
+.dxgvFocusedCell_MaterialCompact {
+	box-shadow: inset 2px 2px 0 #969696, inset -2px -2px 0 #969696;
+	-webkit-box-shadow: inset 2px 2px 0 #969696, inset -2px -2px 0 #969696;
+	-moz-box-shadow: inset 2px 2px 0 #969696, inset -2px -2px 0 #969696;
+}
+
+
+.dxgvTable_MaterialCompact .dxgvDataRowHover_MaterialCompact .dxICheckBox_MaterialCompact.dxWeb_edtCheckBoxUnchecked_MaterialCompact .dxRipple,
+.dxgvTable_MaterialCompact .dxgvDataRowHover_MaterialCompact .dxeIRadioButton_MaterialCompact.dxEditors_edtRadioButtonUnchecked_MaterialCompact .dxRipple
+.dxgvTable_MaterialCompact .dxgvSelectedRow_MaterialCompact .dxICheckBox_MaterialCompact.dxWeb_edtCheckBoxChecked_MaterialCompact .dxRipple,
+.dxgvTable_MaterialCompact .dxgvSelectedRow_MaterialCompact .dxeIRadioButton_MaterialCompact.dxEditors_edtRadioButtonChecked_MaterialCompact .dxRipple {
+	background-color: rgba(53,183,105,0.3);
+}
+
+.dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact .dxICheckBox_MaterialCompact.dxWeb_edtCheckBoxChecked_MaterialCompact .dxRipple,
+.dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact .dxICheckBox_MaterialCompact.dxWeb_edtCheckBoxUnchecked_MaterialCompact .dxRipple,
+.dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact .dxeIRadioButton_MaterialCompact.dxEditors_edtRadioButtonChecked_MaterialCompact .dxRipple,
+.dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact .dxeIRadioButton_MaterialCompact.dxEditors_edtRadioButtonUnchecked_MaterialCompact .dxRipple {
+	background-color: rgba(255,255,255,0.35);
+}
+
+.dxgvCustDialog_MaterialCompact .dxpc-content.dxgvCD_ColumnChooserPage,
+.dxgvCustDialog_MaterialCompact .dxpc-content.dxgvCD_FilterPage {
+	background-color: #232223;
+}
+
+.dxgvCustDialog_MaterialCompact .dxpc-content.dxgvCD_SortPage,
+.dxgvCustDialog_MaterialCompact .dxpc-content.dxgvCD_GroupPage {
+	background-color: #232223;
+}
+
+.dxgvCustDialogHeader_MaterialCompact {
+	background-color: #35B86B;
+	color: #969696;
+}
+
+.dxgvCustDialogHeader_MaterialCompact .dxgvCD_TS .dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer .dxtc-tab .dxtc-link,
+.dxgvCustDialogHeader_MaterialCompact .dxgvCD_TS .dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer .dxtc-activeTab .dxtc-link {
+	color: #232223;
+}
+
+.dxgvCustDialogHeader_MaterialCompact .dxgvCD_TS .dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer .dxtc-activeTab {
+	border-bottom-color: #232223;
+}
+
+.dxgvCustDialogHeader_MaterialCompact .dxgvCD_TS .dxgvCD_TSLS,
+.dxgvCustDialogHeader_MaterialCompact .dxgvCD_TS .dxgvCD_TSRS {
+	box-shadow: 0 0 11px 11px #35B86B;
+}
+
+.dxgvCustDialogDragArea_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvCustDialogDragArea_MaterialCompact .dxgvCD_DAETC {
+	color: #999999;
+}
+
+.dxgvCustDialogListArea_MaterialCompact {
+	background: #232223;
+}
+
+	.dxgvCustDialogListArea_MaterialCompact .dxgvCD_LAC {
+		color: #666666;
+		border-bottom: 1px solid #969696;
+	}
+
+.dxgvCustDialogColumnItem_MaterialCompact {
+	background-color: #232223;
+	color: rgba(0,0,0,0.64);
+}
+
+.dxgvCustDialogDragArea_MaterialCompact .dxgvCustDialogColumnItem_MaterialCompact {
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.dxgvCustDialogDragArea_MaterialCompact .dxgvCustDialogColumnItem_MaterialCompact > div:first-child {
+	background-color: #232223;
+}
+
+.dxgvCustDialogColumnChooserPage_MaterialCompact .dxgvCustDialogDragArea_MaterialCompact .dxgvCustDialogColumnItem_MaterialCompact > div:first-child {
+	background-color: #232223;
+}
+
+
+.dxgvCustDialogDragArea_MaterialCompact .dxgvCustDialogColumnItem_MaterialCompact.DXCDDraggingItem {
+	box-shadow: 0 10px 0.25rem rgba(0,0,0,0.12), 0 0.25rem 0.5rem rgba(0,0,0,0.24);
+}
+
+
+.dxgvCustDialogSortingPage_MaterialCompact .dxgvCD_DAEB,
+.dxgvCustDialogGroupingPage_MaterialCompact .dxgvCD_DAEB {
+	background: #232223;
+	box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.11);
+}
+
+.dxgvCustDialogFilteringPage_MaterialCompact {
+	background-color: #232223;
+}
+
+.dxgvCustDialogFilteringPage_MaterialCompact .dxgvCustDialogColumnItem_MaterialCompact,
+.dxgvCustDialogFilteringPage_MaterialCompact .dxgvCustDialogFilterItem_MaterialCompact {
+	box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+	background-color: #232223;
+	border-bottom: 1px solid #969696;
+}
+
+.dxgvCustDialogFilteringPage_MaterialCompact .dxgvCD_FR + .dxgvCD_UF {
+	border-top: 1px solid #969696;
+}
+
+.dxgvCustDialogFilterItem_MaterialCompact .dxgvCD_UF.dxgvCD_UFLBV {
+	border-bottom: 1px solid #969696;
+}
+
+.dxgvCustDialogHeader_MaterialCompact .dxRipple {
+	background-color: rgba(255,255,255,0.35);
+}
+
+.dxgvCustDialogContent_MaterialCompact .dxRipple {
+	background-color: rgba(53,183,105,0.3);
+}
+
+.dxgvCustDialogContent_MaterialCompact .dxgvDAEBBR .dxRipple {
+	background-color: rgba(0,0,0,0.3);
+}
+/* Grid Lookup*/
+
+.dxgvControl_MaterialCompact.dxgvInLookup.dxgvWithTopElement > tbody > tr > td > .dxgvTable_MaterialCompact,
+.dxgvControl_MaterialCompact.dxgvInLookup.dxgvWithTopElement .dxgvHSDC {
+	border-top: 1px solid #969696;
+}
+
+.dxgvControl_MaterialCompact.dxgvInLookup.dxgvWithBottomElement .dxgvCSD {
+	border-bottom: 1px solid #969696;
+}
+
+.dxeTextBox_MaterialCompact td.dxic, .dxeButtonEdit_MaterialCompact td.dxic, .dxeButtonEdit_MaterialCompact[cellspacing="0"] td.dxic{
+	background-color:#232223;
+	color: #232223;
+}
+.dxWebKitFamily *[dir="rtl"] .dxeEditAreaSys{
+	background-color:#232223;
+}
+
+
+/* Data Editor */
+
+
+.dxWebKitFamily *[dir="rtl"] .dxeEditAreaSys{
+	background-color: #232223;
+    color: #969696;
+}
+
+
+.dxtcLite_MaterialCompact > .dxtc-stripContainer:hover .dxtc-tab a:hover{
+    background-color: #3d3d3d;
+}
+
+.dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer:hover .dxtc-activeTab:hover .dxtcLite_MaterialCompact > .dxtc-stripContainer:hover 
+.dxtc-activeTab, .dxtcLite_MaterialCompact > .dxtc-stripContainer:hover .dxtc-activeTab a:hover {
+    background-color: #3d3d3d;
+}
+
+.dxtcLite_MaterialCompact > .dxtc-stripContainer .dxtc-tab a {
+    color: #969696;
+}
+
+.dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer .dxtc-tab, .dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer 
+.dxtc-spacer, .dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer 
+.dxtc-sbWrapper, .dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer 
+.dxtc-sbIndent, .dxtcLite_MaterialCompact.dxtc-top > .dxtc-stripContainer .dxtc-sbSpacer {
+    border-bottom: 3px solid #969696;
+    color: #969696;
+}
+
+input#MainContent_formLayout_txt_transno_I{
+    color: white;
+}
+
+.dxflGroupBoxCaption_MaterialCompact {
+    background-color: #232223;
+}
+
+.dxeCalendar_MaterialCompact .dxe-more-labels-container > div.dxe-h-line,
+.dxeCalendar_MaterialCompact .dxe-more-labels-container > div.dxe-v-line
+{
+    background-color: #232223;
+}
+/* -- ValidationSummary -- */
+.dxvsValidationSummary_MaterialCompact
+{
+    color: Red;
+}
+
+.dxvsValidationSummary_MaterialCompact a.dxvsHL_MaterialCompact,
+.dxvsValidationSummary_MaterialCompact a.dxvsHL_MaterialCompact:visited
+{
+    color: red;
+}
+.dxvsValidationSummary_MaterialCompact a.dxvsHL_MaterialCompact
+{
+    border-bottom: 1px dashed #f70;
+}
+.dxvsValidationSummary_MaterialCompact a.dxvsHL_MaterialCompact:hover
+{
+    color: #f70;
+}
+
+.dxeTBIncBtnHover_MaterialCompact.dxEditors_edtTBIncBtn_MaterialCompact,
+.dxeTBDecBtnHover_MaterialCompact.dxEditors_edtTBDecBtn_MaterialCompact
+{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.dxeTBHSys .dxeTBTrack_MaterialCompact
+{
+    background-color: #232223;
+}
+.dxeTBVSys .dxeTBTrack_MaterialCompact
+{
+    background-color: #232223;
+}
+
+.dxeTBHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeTBHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact,
+.dxeTBVSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeTBVSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact
+{
+    background-color: #35B86B;
+    border-color: #35B86B;
+}
+.dxeTBHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeTBHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact,
+.dxeTBVSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeTBVSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact
+{
+    background-color: #232223;
+    border-color: #35B86B;
+}
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact
+{
+    border: 2px solid #35B86B;
+}
+.dxeTBMainDH_MaterialCompact, .dxeTBSecondaryDH_MaterialCompact
+{
+    border: 2px solid #959595;
+    background-color: #232223;
+}
+
+.dxeTBHSys .dxeTBBarHighlight_MaterialCompact
+{
+    background: #35B86B;
+}
+.dxeTBVSys .dxeTBBarHighlight_MaterialCompact
+{
+    background: #35B86B;
+}
+.dxeTBRBLabel_MaterialCompact, .dxeTBLTLabel_MaterialCompact
+{
+    text-align: center;
+    color: #969696;
+    cursor: default;
+}
+
+.dxeTBItem_MaterialCompact
+{
+    color: #969696;
+}
+
+.dxeTBSelectedItem_MaterialCompact .dxeTBRBLabel_MaterialCompact,
+.dxeTBSelectedItem_MaterialCompact .dxeTBLTLabel_MaterialCompact,
+.dxeTBSelectedTick_MaterialCompact .dxeTBRBLabel_MaterialCompact,
+.dxeTBSelectedTick_MaterialCompact .dxeTBLTLabel_MaterialCompact
+{
+    color: #35B86B;
+}
+
+div.dxeHelpText_MaterialCompact,
+.dxeTBValueToolTip_MaterialCompact
+{
+
+    background: #35B86B;
+    color: #969696;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+td.dxeHelpText_MaterialCompact
+{
+    color: #969696;
+}
+
+.dxeTrackBar_MaterialCompact .dxeTBDecBtn_MaterialCompact .dxRipple,
+.dxeTrackBar_MaterialCompact .dxeTBIncBtn_MaterialCompact .dxRipple
+{
+    background-color: rgba(53,183,105,0.3);
+}
+.dxAndroidMobilePlatform .dxeTrackBar_MaterialCompact .dxeTBDecBtn_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform .dxeTrackBar_MaterialCompact .dxeTBIncBtn_MaterialCompact .dxRipple,
+.dxAndroidMobilePlatform .dxeTrackBar_MaterialCompact .dxeTBDecBtn_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform .dxeTrackBar_MaterialCompact .dxeTBIncBtn_MaterialCompact .dxRipple
+{
+    background-color: rgba(53,183,105,0.4);
+}
+/* Loading */
+.dxlpLoadingPanel_MaterialCompact,
+.dxlpLoadingPanelWithContent_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+
+.dxcaLoadingPanel_MaterialCompact .dxlp-loadingImage,
+.dxeImage_MaterialCompact.dxe-loadingImage
+{
+    border: 4px solid #35B86B;
+    border-top: 4px solid #EEE;
+}
+
+.dxeBase_MaterialCompact
+{
+    color: #969696;
+}
+
+.dxeListBoxItemSelected_MaterialCompact .dxeIRBFocused_MaterialCompact::after,
+.dxgvFocusedRow_MaterialCompact .dxeIRBFocused_MaterialCompact::after
+{
+    background-color: rgba(255,255,255,0.18);
+}
+.dxEditors_edtRadioButtonUnchecked_MaterialCompact.dxeIRBFocused_MaterialCompact::after
+{
+    background-color: rgba(0,0,0,0.1);
+}
+.dxeIRBFocused_MaterialCompact::after
+{
+    background-color: rgba(53,183,105,0.3);
+}
+
+.dxeIRadioButton_MaterialCompact.dxEditors_edtRadioButtonChecked_MaterialCompact .dxRipple
+{
+    background-color: rgba(53,183,105,0.3);
+}
+.dxeIRadioButton_MaterialCompact.dxichSys.dxWeb_edtRadioButtonUnchecked_MaterialCompact .dxRipple
+{
+    background-color: rgba(0,0,0,0.1);
+}
+.dxAndroidMobilePlatform .dxeIRadioButton_MaterialCompact.dxEditors_edtRadioButtonChecked_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform .dxeIRadioButton_MaterialCompact.dxEditors_edtRadioButtonChecked_MaterialCompact .dxRipple
+{
+    background-color: rgba(53,183,105,0.4);
+}
+.dxAndroidMobilePlatform .dxeIRadioButton_MaterialCompact.dxichSys.dxWeb_edtRadioButtonUnchecked_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform .dxeIRadioButton_MaterialCompact.dxichSys.dxWeb_edtRadioButtonUnchecked_MaterialCompact .dxRipple
+{
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* -- ErrorFrame -- */
+.dxeErrorCell_MaterialCompact
+{
+    color: Red;
+    border-color: white;
+}
+
+.dxeErrorFrameWithoutError_MaterialCompact
+{
+    border: 1px solid Red;
+}
+
+.dxeEditArea_MaterialCompact
+{
+    border: 1px solid #A0A0A0;
+}
+.dxeEditArea_MaterialCompact,
+body input.dxeEditArea_MaterialCompact
+{
+    color: #969696;
+}
+
+.dxeBinaryImageButtonPanel_MaterialCompact .dxeBinImgBtnShaderSys
+{
+    background-color: rgba(0,0,0,0.36);
+}
+
+.dxeButtonEditButton_MaterialCompact,
+.dxeCalendarButton_MaterialCompact,
+.dxeSpinIncButton_MaterialCompact,
+.dxeSpinDecButton_MaterialCompact,
+.dxeSpinLargeIncButton_MaterialCompact,
+.dxeSpinLargeDecButton_MaterialCompact,
+.dxeColorEditButton_MaterialCompact
+{
+    background-color: #3d3d3d;
+}
+.dxeButtonEdit_MaterialCompact
+{
+    background-color: #232223;
+    border: 1px solid #DCDCDC;
+}
+
+/* -- Hover -- */
+.dxeButtonEditButtonHover_MaterialCompact,
+.dxeSpinIncButtonHover_MaterialCompact,
+.dxeSpinDecButtonHover_MaterialCompact,
+.dxeSpinLargeIncButtonHover_MaterialCompact,
+.dxeSpinLargeDecButtonHover_MaterialCompact
+{
+    background-color: #35B86B;
+    color: white !important;
+}
+.dxeCalendarButtonHover_MaterialCompact
+{
+    color: #35B86B !important;
+    background: #DDD;
+}
+/* -- Pressed -- */
+.dxeCalendarButtonPressed_MaterialCompact,
+.dxeButtonEditButtonPressed_MaterialCompact,
+.dxeSpinIncButtonPressed_MaterialCompact,
+.dxeSpinDecButtonPressed_MaterialCompact,
+.dxeSpinLargeIncButtonPressed_MaterialCompact,
+.dxeSpinLargeDecButtonPressed_MaterialCompact,
+.dxeColorEditButton_MaterialCompact:active
+{
+    background-color: #35B86B;
+    color: white;
+}
+.dxeColorEditButton_MaterialCompact:active,
+.dxeColorEditButton_MaterialCompact:hover
+{
+    box-shadow: 0px 8px 16px 1.2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 8px 16px 1.2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 8px 16px 1.2px rgba(0,0,0,0.2);
+}
+input.dxeColorEditButton_MaterialCompact:hover
+{
+    color: #35B86B !important;
+    background: #DDDDDD;
+    border-color: #DDDDDD !important;
+}
+.dxeCalendarButtonPressed_MaterialCompact
+{
+    color: #35B86B !important;
+    background: #DDD;
+}
+.dxeColorEditButton_MaterialCompact
+{
+    background-color: #35B86B;
+    color: #FFFFFF;
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.dxeCalendarButton_MaterialCompact,
+input.dxeColorEditButton_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+}
+
+.dxeButtonEditButton_MaterialCompact .dxRippleContainer .dxRipple
+{
+    background-color: rgba(0,0,0,0.1);
+}
+.dxeButtonEditButton_MaterialCompact .dxEditors_edtDropDown_MaterialCompact + .dxRippleContainer .dxRipple
+{
+    background-color: rgba(53,183,105,0.3);
+}
+.dxAndroidMobilePlatform .dxeButtonEditButton_MaterialCompact .dxRippleContainer .dxRipple,
+.dxMacOSMobilePlatform .dxeButtonEditButton_MaterialCompact .dxRippleContainer .dxRipple
+{
+    background-color: rgba(0,0,0,0.2);
+}
+.dxAndroidMobilePlatform .dxeButtonEditButton_MaterialCompact .dxEditors_edtDropDown_MaterialCompact + .dxRippleContainer .dxRipple,
+.dxMacOSMobilePlatform .dxeButtonEditButton_MaterialCompact .dxEditors_edtDropDown_MaterialCompact + .dxRippleContainer .dxRipple
+{
+    background-color: rgba(53,183,105,0.4);
+}
+.dxeButtonEdit_MaterialCompact .dxeEditArea_MaterialCompact
+{
+    background-color: #232223;
+}
+
+.dxeTextBox_MaterialCompact
+{
+    background-color: #232223;
+    border: 1px solid #DCDCDC;
+}
+.dxeTextBox_MaterialCompact .dxeEditArea_MaterialCompact
+{
+    background-color: #232223;
+}
+.dxeRadioButtonList_MaterialCompact, .dxeCheckBoxList_MaterialCompact
+{
+    border: 1px solid #DCDCDC;
+}
+
+/* -- Memo -- */
+.dxeMemo_MaterialCompact
+{
+    background-color: #232223;
+    border: 1px solid #DCDCDC;
+}
+.dxFirefox .dxeMemo_MaterialCompact .dxeMemoEditArea_MaterialCompact,
+.dxeMemo_MaterialCompact .dxeMemoEditArea_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+}
+.dxFirefox .dxeMemo_MaterialCompact .dxeMemoEditArea_MaterialCompact.dxeDisabled_MaterialCompact,
+.dxeMemo_MaterialCompact .dxeMemoEditArea_MaterialCompact.dxeDisabled_MaterialCompact
+{
+    color: #969696;
+}
+/* -- Hyperlink -- */
+.dxeHyperlink_MaterialCompact
+{
+    color: #35B86B;
+}
+.dxeHyperlink_MaterialCompact:visited
+{
+    color: #1e693d;
+}
+
+/* -- ListBox -- */
+.dxeListBox_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+    border: 1px solid #DCDCDC;
+}
+
+.dxeListBoxFilter_MaterialCompact
+{
+    border-bottom: 1px solid #DCDCDC;
+    background-color: #232223;
+}
+
+.dxeListBox_MaterialCompact .dxeListBoxFilter_MaterialCompact .dxeLBShowFilterBtnSys
+{
+    background-color: #232223;
+}
+.dxeListBox_MaterialCompact .dxeListBoxFilter_MaterialCompact .dxeButtonEditSys,
+.dxeListBox_MaterialCompact .dxeListBoxFilter_MaterialCompact .dxeButtonEditSys .dxeEditAreaSys
+{
+    background-color: #232223;
+}
+
+.dxeListBox_MaterialCompact .dxeListBoxFilter_MaterialCompact .dxeLBShowFilterBtnSys.dxbButtonHover_MaterialCompact
+{
+    background-color: #3d3d3d;
+}
+.dxeListBox_MaterialCompact.dx-acc-r .dxeListBoxFilter_MaterialCompact .dxeLBShowFilterBtnSys .dxbf
+{
+    border-color: #35B86B;
+}
+
+.dxeListBox_MaterialCompact > tbody > tr > td > .dxeListBoxSelectAll_MaterialCompact
+{
+    border-bottom: 1px solid #DCDCDC;
+}
+.dxeListBox_MaterialCompact > tbody > tr > td > .dxeListBoxSelectAllHover_MaterialCompact
+{
+    background-color: rgba(72,72,72,0.05);
+}
+.dxeListBox_MaterialCompact > tbody > tr > td > .dxeListBoxSelectAllHover_MaterialCompact .dxeBase_MaterialCompact
+{
+    color: #969696;
+}
+
+.dxeDisabled_MaterialCompact .dxeListBoxSelectAll_MaterialCompact .dxeBase_MaterialCompact
+{
+    color: #969696;
+}
+
+.dxeListBoxItem_MaterialCompact em
+{
+    background: #232223 none repeat 0 0;
+    color: #969696;
+
+}
+
+/* Ripple */
+
+.dxeListBox_MaterialCompact .dxlbd .dxeListBoxItemRow_MaterialCompact .dxeListBoxItemSelected_MaterialCompact + .dxRippleContainer .dxRipple
+{
+    background-color: rgba(255,255,255,0.85);
+}
+.dxeListBox_MaterialCompact .dxlbd .dxeListBoxItemRow_MaterialCompact .dxRipple,
+.dxeListBox_MaterialCompact .dxeListBoxSelectAll_MaterialCompact .dxRipple,
+.dxeListBox_MaterialCompact .dxeHCCSA .dxRipple
+{
+    background-color: rgba(255,255,255,0.85);
+}
+
+/*Grid lines*/
+.dxeListBox_MaterialCompact td.dxeLTM,
+.dxeListBox_MaterialCompact td.dxeTM,
+.dxeListBox_MaterialCompact td.dxeMIM
+{
+    border-left: 1px solid #cfcfcf !important;
+}
+.dxeListBox_MaterialCompact td.dxeLTMR,
+.dxeListBox_MaterialCompact td.dxeTMR,
+.dxeListBox_MaterialCompact td.dxeMIMR
+{
+    border-right: 1px solid #cfcfcf !important;
+}
+.dxeListBox_MaterialCompact td.dxeIM,
+.dxeListBox_MaterialCompact td.dxeFTM,
+.dxeListBox_MaterialCompact td.dxeTM,
+.dxeListBox_MaterialCompact td.dxeLTM,
+.dxeListBox_MaterialCompact td.dxeCM,
+.dxeListBox_MaterialCompact td.dxeMIM,
+.dxeListBox_MaterialCompact td.dxeIMR,
+.dxeListBox_MaterialCompact td.dxeFTMR,
+.dxeListBox_MaterialCompact td.dxeTMR,
+.dxeListBox_MaterialCompact td.dxeLTMR,
+.dxeListBox_MaterialCompact td.dxeCMR,
+.dxeListBox_MaterialCompact td.dxeMIMR
+{
+    border-bottom: 1px solid #cfcfcf;
+}
+.dxeListBoxItemSelected_MaterialCompact
+{
+    color: #969696;
+    background-color: rgba(72,72,72,0.1);
+}
+.dxeListBoxItemHover_MaterialCompact
+{
+    color: #969696;
+    background-color: rgba(72,72,72,0.05);
+}
+.dxeListBoxItemHover_MaterialCompact.dxeListBoxItemSelected_MaterialCompact
+{
+    color: #969696;
+    background-color: rgba(72,72,72,0.2);
+}
+.dxeDisabled_MaterialCompact.dxeListBox_MaterialCompact .dxeListBoxItemSelected_MaterialCompact
+{
+    background-color: #232223;
+}
+.dxeListBoxWithCustAppearanceSys .dxeListBoxItemSelected_MaterialCompact
+{
+    color: #969696 !important;
+    background-color: rgba(72,72,72,0.1) !important;
+}
+.dxeListBoxWithCustAppearanceSys .dxeListBoxItem_MaterialCompact.dxeDisabled_MaterialCompact
+{
+    color: #969696 !important;
+}
+.dxeListBoxWithCustAppearanceSys .dxeListBoxItemHover_MaterialCompact.dxeListBoxItemSelected_MaterialCompact
+{
+    color: #969696 !important;
+    background-color: rgba(72,72,72,0.2) !important;
+}
+.dxeListBoxWithCustAppearanceSys .dxeListBoxItemHover_MaterialCompact
+{
+    color: #969696 !important;
+    background-color: rgba(72,72,72,0.05) !important;
+}
+
+/*Header*/
+.dxeListBox_MaterialCompact .dxeHD
+{
+    border-bottom: 1px solid #DCDCDC;
+    color: #969696;
+}
+.dxeListBox_MaterialCompact .dxeHC,
+.dxeListBox_MaterialCompact .dxeHLC,
+.dxeListBox_MaterialCompact td.dxeHMIC
+{
+    border-left: 1px solid #DCDCDC;
+}
+.dxeListBox_MaterialCompact .dxeHCR,
+.dxeListBox_MaterialCompact .dxeHLCR,
+.dxeListBox_MaterialCompact td.dxeHMICR
+{
+    border-right: 1px solid #A0A0A0;
+}
+.dxeListBox_MaterialCompact .dxeHICR,
+.dxeListBox_MaterialCompact .dxeHFCR,
+.dxeListBox_MaterialCompact .dxeHCCR
+{
+    border-right: 1px solid #DCDCDC;
+}
+
+.dxeListBox_MaterialCompact .dxeHLC
+{
+    border-right: 1px solid #DCDCDC;
+}
+.dxeListBox_MaterialCompact .dxeHLCR
+{
+    border-left: 1px solid #DCDCDC;
+}
+/* -- Calendar -- */
+.dxeCalendar_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+    border: 1px solid #D9D9D9;
+}
+.dxeCalendarFooter_MaterialCompact
+{
+    border-top: 1px solid #EAEAEA;
+}
+.dxeCalendar_MaterialCompact td.dxMonthGridWithWeekNumbers > table > tbody > tr > td:first-child,
+.dxeCalendar_MaterialCompact td.dxMonthGridWithWeekNumbers > div.dxAC > div > table > tbody > tr > td:first-child
+{
+    color: #969696;
+    background-color: #232223;
+}
+
+.dxeCalendarWeekNumber_MaterialCompact
+{
+    color: #969696;
+    background-color: #232223;
+}
+
+.dxeCalendarWeekend_MaterialCompact
+{
+    color: #FF3300;
+}
+
+.dxeCalendarOutOfRange_MaterialCompact,
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarOutOfRange_MaterialCompact
+{
+    color: #969696;
+}
+.dxeCalendarDayDisabled_MaterialCompact,
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarDayDisabled_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696 !important;
+}
+
+.dxeCalendarSelected_MaterialCompact.dxeDayInRange,
+.dxeCalendarDay_MaterialCompact.dxeCalendarHover_MaterialCompact:not(.dxeCalendarOutOfRange_MaterialCompact):not(.dxeCalendarDayDisabled_MaterialCompact):not(.dxeCalendarSelected_MaterialCompact)
+{
+    color: #969696;
+}
+.dxeCalendarSelected_MaterialCompact
+{
+    color: white;
+}
+
+.dxeCalendarFastNavItem_MaterialCompact
+{
+    background-color: #232223;
+    outline: 1px white solid;
+}
+
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemHover_MaterialCompact:not(.dxeCalendarOutOfRange_MaterialCompact):not(.dxeCalendarDayDisabled_MaterialCompact):not(.dxeCalendarFastNavItemSelected_MaterialCompact),
+.dxeCalendarFastNavMonth_MaterialCompact.dxeCalendarFastNavMonthHover_MaterialCompact,
+.dxeCalendarFastNavYear_MaterialCompact.dxeCalendarFastNavYearHover_MaterialCompact
+{
+    background-color: #3d3d3d;
+    color: white;
+}
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact,
+.dxeCalendarFastNavMonth_MaterialCompact.dxeCalendarFastNavMonthSelected_MaterialCompact,
+.dxeCalendarFastNavYear_MaterialCompact.dxeCalendarFastNavYearSelected_MaterialCompact
+{
+    background-color: #35B86B;
+    color: white;
+}
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact,
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemOtherPeriod_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact
+{
+    color: white;
+}
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarToday_MaterialCompact
+{
+    box-shadow: inset 0 0 0 2px #b8b8b8;
+}
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact.dxeCalendarToday_MaterialCompact
+{
+    box-shadow: inset 0 0 0 2px #1e693d;
+}
+.dxeDayInRange.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact
+{
+    background-color: #232223;
+    color: white;
+}
+.dxeDayInRange.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact.dxeCalendarToday_MaterialCompact,
+.dxeCalendarToday_MaterialCompact.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemHover_MaterialCompact:not(.dxeCalendarOutOfRange_MaterialCompact):not(.dxeCalendarDayDisabled_MaterialCompact):not(.dxeCalendarFastNavItemSelected_MaterialCompact)
+{
+    box-shadow: inset 0 0 0 2px #858585;
+}
+.dxeCalendarDay_MaterialCompact.dxeCalendarHover_MaterialCompact:not(.dxeCalendarOutOfRange_MaterialCompact):not(.dxeCalendarDayDisabled_MaterialCompact):not(.dxeCalendarSelected_MaterialCompact)
+{
+    background-color: #3d3d3d;
+    color: white;
+}
+.dxeCalendarDay_MaterialCompact.dxeCalendarSelected_MaterialCompact
+{
+    background-color: #35B86B;
+    color: white;
+}
+.dxeCalendarDay_MaterialCompact.dxeCalendarToday_MaterialCompact
+{
+    box-shadow: inset 0 0 0 1px #b8b8b8;
+}
+.dxeCalendarDay_MaterialCompact.dxeCalendarSelected_MaterialCompact.dxeCalendarToday_MaterialCompact
+{
+    box-shadow: inset 0 0 0 1px #1e693d;
+}
+.dxeDayInRange.dxeCalendarSelected_MaterialCompact
+{
+    background-color: #232223;
+    color: white;
+}
+.dxeDayInRange.dxeCalendarSelected_MaterialCompact.dxeCalendarToday_MaterialCompact,
+.dxeCalendarToday_MaterialCompact.dxeCalendarDay_MaterialCompact.dxeCalendarHover_MaterialCompact:not(.dxeCalendarOutOfRange_MaterialCompact):not(.dxeCalendarDayDisabled_MaterialCompact):not(.dxeCalendarSelected_MaterialCompact)
+{
+    box-shadow: inset 0 0 0 1px #858585;
+}
+
+.dxeCalendarSelected_MaterialCompact.dxeDisabled_MaterialCompact
+{
+    background-color: #ffd5a6;
+}
+.dxeCalendarHeader_MaterialCompact
+{
+    background-color: #35B86B;
+    color: white;
+}
+
+.dxeCalendar_MaterialCompact.dxeFocused_MaterialCompact .dxeCalendarFooter_MaterialCompact
+{
+    border-color: #35B86B;
+}
+.dxeCalendarFastNav_MaterialCompact
+{
+    color: white;
+    background: White none;
+    border-top: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+
+.dxeCalendarFastNavHeader_MaterialCompact
+{
+    color: #969696;
+    background-color: #232223;
+}
+
+.dxeCalendarFastNavFooter_MaterialCompact
+{
+    color: white;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    background-color: #232223;
+}
+
+.dxeCalendarFastNavItem_MaterialCompact,
+.dxeCalendarFastNavMonth_MaterialCompact,
+.dxeCalendarFastNavYear_MaterialCompact
+{
+    color: #969696;
+}
+
+.dxeCalendarButton_MaterialCompact .dxRipple
+{
+    background-color: rgba(255,255,255,0.45);
+}
+.dxAndroidMobilePlatform .dxeCalendarButton_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform .dxeCalendarButton_MaterialCompact .dxRipple
+{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.dxAndroidMobilePlatform .dxeCalendarDay_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform .dxeCalendarDay_MaterialCompact .dxRipple
+{
+    background-color: rgba(0,0,0,0.25);
+}
+
+/* Disabled */
+.dxeDisabled_MaterialCompact,
+.dxeDisabled_MaterialCompact td.dxe
+{
+    color: #969696;
+}
+.dxeEditArea_MaterialCompact.dxeDisabled_MaterialCompact
+{
+    color: #969696;
+}
+a.dxeDisabled_MaterialCompact:hover
+{
+    color: #969696;
+}
+.dxeButtonDisabled_MaterialCompact
+{
+    border-color: #969696;
+    color: #969696;
+}
+/* -- Button -- */
+.dxbButton_MaterialCompact
+{
+    color: white;
+    background-color: #2c2c2c;
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.dxbButton_MaterialCompact.dxbDisabled_MaterialCompact
+{
+    border-color: #DDDDDD;
+    background-color: #232223;
+    color: #969696;
+}
+.dxbButtonHover_MaterialCompact
+{
+    color: white;
+    background-color: #35B86B;
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+}
+.dxbButtonChecked_MaterialCompact
+{
+    color: white;
+    background-color: #217242;
+}
+.dxbButtonPressed_MaterialCompact
+{
+    color: white;
+    background-color: #35B86B;
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+}
+
+div.dxbButton_MaterialCompact .dxRipple
+{
+    background-color: rgba(255,255,255,0.85);
+}
+.dxAndroidMobilePlatform div.dxbButton_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform div.dxbButton_MaterialCompact .dxRipple
+{
+    background-color: rgba(255,255,255,0.9);
+}
+.dxbButton_MaterialCompact .dxBadge
+{
+    background: white;
+    color: #35B86B;
+}
+.dxbButton_MaterialCompact.dxbButtonHover_MaterialCompact .dxBadge,
+.dxbButton_MaterialCompact.dxbButtonPressed_MaterialCompact .dxBadge
+{
+    color: #35B86B;
+}
+/* Button Link */
+a.dxbButton_MaterialCompact
+{
+    color: #35B86B;
+}
+
+a.dxbButton_MaterialCompact .dxBadge
+{
+    background: #35B86B;
+    color: white;
+}
+
+/* Disabled */
+.dxbDisabled_MaterialCompact,
+a.dxbButton_MaterialCompact.dxbDisabled_MaterialCompact
+{
+    color: #BBBBBB;
+}
+
+/* -- FilterControl -- */
+.dxfcControl_MaterialCompact
+{
+    color: white;
+}
+
+a.dxfcPropertyName_MaterialCompact
+{
+    color: #35B86B !important;
+}
+a.dxfcGroupType_MaterialCompact
+{
+    color: #db3412 !important;
+}
+a.dxfcOperation_MaterialCompact
+{
+    color: #64B5F6 !important;
+}
+a.dxfcValue_MaterialCompact
+{
+    color: Gray !important;
+}
+.dxeMaskHint_MaterialCompact
+{
+    background: #ffffe1 none;
+    border: 1px solid white;
+    color: white;
+}
+
+.dxbButton_MaterialCompact.dxb-secondary
+{
+    background: #2c2c2c;
+    color: #969696;
+}
+.dxbButton_MaterialCompact.dxb-secondary.dxbButtonHover_MaterialCompact, .dxbButton_MaterialCompact.dxb-secondary.dxbButtonPressed_MaterialCompact
+{
+    background: #3d3d3d;
+}
+.dxbButton_MaterialCompact.dxb-secondary.dxbDisabled_MaterialCompact
+{
+    background: rgba(255,255,255,0.5);
+    color: rgba(102,102,102,0.5);
+}
+.dxbButton_MaterialCompact.dxb-secondary .dxBadge
+{
+    background: #35B86B;
+    color: #ffffff;
+}
+.dxbButton_MaterialCompact.dxb-secondary.dxbButtonHover_MaterialCompact .dxBadge,
+.dxbButton_MaterialCompact.dxb-secondary.dxbButtonPressed_MaterialCompact .dxBadge
+{
+    color: #ffffff;
+}
+.dxbButton_MaterialCompact.dxb-outline
+{
+    background: #ffffff;
+    border-color: #dbdbdb;
+    color: #969696;
+}
+.dxbButton_MaterialCompact.dxb-outline.dxbButtonHover_MaterialCompact, .dxbButton_MaterialCompact.dxb-outline.dxbButtonPressed_MaterialCompact
+{
+    background: #35B86B;
+    color: #ffffff;
+}
+.dxbButton_MaterialCompact.dxb-outline.dxbDisabled_MaterialCompact
+{
+    background: rgba(255,255,255,0.5);
+    border-color: rgba(219,219,219,0.5);
+    color: rgba(102,102,102,0.5);
+}
+.dxbButton_MaterialCompact.dxb-outline .dxBadge
+{
+    background: #35B86B;
+    color: #ffffff;
+}
+.dxbButton_MaterialCompact.dxb-outline.dxbButtonHover_MaterialCompact .dxBadge,
+.dxbButton_MaterialCompact.dxb-outline.dxbButtonPressed_MaterialCompact .dxBadge
+{
+    background: #ffffff;
+    color: #35B86B;
+}
+.dxbButton_MaterialCompact.dxb-danger
+{
+    background: #e81123;
+    border-color: transparent;
+    color: #ffffff;
+}
+.dxbButton_MaterialCompact.dxb-danger.dxbButtonHover_MaterialCompact, .dxbButton_MaterialCompact.dxb-danger.dxbButtonPressed_MaterialCompact
+{
+    background: #f13b4b;
+}
+.dxbButton_MaterialCompact.dxb-danger.dxbDisabled_MaterialCompact
+{
+    background: rgba(232,17,35,0.5);
+    color: rgba(255,255,255,0.5);
+}
+.dxbButton_MaterialCompact.dxb-danger .dxBadge
+{
+    background: #ffffff;
+    color: #e81123;
+}
+
+.dxfcControl_MaterialCompact .dxfc-validationSummary li a
+{
+    color: red;
+    border-bottom: 1px dashed #f70;
+}
+.dxfcControl_MaterialCompact .dxfc-validationSummary li a:hover
+{
+    color: #f70;
+}
+/* -- ProgressBar -- */
+.dxeProgressBar_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+    border: 1px solid #DCDCDC;
+
+}
+
+.dxeProgressBar_MaterialCompact.dxeDisabled_MaterialCompact td.dxe
+{
+    color: #969696;
+}
+.dxeProgressBarIndicator_MaterialCompact
+{
+    background-color: #35B86B;
+}
+.dxeProgressBar_MaterialCompact.dxeDisabled_MaterialCompact .dxeProgressBarIndicator_MaterialCompact
+{
+    background-color: #232223;
+}
+
+/* -- DropDownWindow -- */
+
+.dxeDropDownWindow_MaterialCompact
+{
+    background-color: #232223;
+    border: 1px solid #c0c0c0;
+}
+.dxpcDropDown_MaterialCompact > .dxpc-shadow
+{
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+/*----------------- ColorTable -----------------*/
+
+.dxeItemPicker_MaterialCompact
+{
+    background-color: #232223;
+    border: 1px solid #c0c0c0;
+}
+
+.dxeColorTableCellDiv_MaterialCompact,
+.dxeACICellDiv_MaterialCompact
+{
+    border: 2px solid #FFFFFF;
+}
+.dxeColorTableCellDiv_MaterialCompact[style*="rgb(255, 255, 255)"],
+.dxeColorTableCellDiv_MaterialCompact:not([style*="background-color"]),
+.dxeACICellDiv_MaterialCompact[style*="#FFF"],
+.dxeACICellDiv_MaterialCompact:not([style*="background-color"])
+{
+    border: 1px solid #F0F0F0;
+}
+
+.dxeColorTableCellSelected_MaterialCompact > .dxeColorTableCellDiv_MaterialCompact,
+.dxeACICellSelected_MaterialCompact > .dxeACICellDiv_MaterialCompact,
+.dxeColorTableCellHover_MaterialCompact.dxeColorTableCellSelected_MaterialCompact > .dxeColorTableCellDiv_MaterialCompact,
+.dxeColorTableCellHover_MaterialCompact.dxeACICellSelected_MaterialCompact > .dxeACICellDiv_MaterialCompact
+{
+    border: 2px solid #35B86B;
+}
+.dxeColorTableCellHover_MaterialCompact > .dxeColorTableCellDiv_MaterialCompact,
+.dxeItemPickerCellHover_MaterialCompact,
+.dxeAutomaticColorItemCellHover_MaterialCompact > .dxeACICellDiv_MaterialCompact
+{
+    border: 2px solid #E0E0E0;
+}
+
+/* -- Invalid Style -- */
+/* -- Focused Style -- */
+.dxeFocused_MaterialCompact
+{
+    border: 1px solid #35B86B;
+}
+
+/* -- Null Text Style -- */
+.dxeNullText_MaterialCompact .dxeEditArea_MaterialCompact,
+.dxeNullText_MaterialCompact .dxeMemoEditArea_MaterialCompact,
+.dxFirefox .dxeNullText_MaterialCompact .dxeEditArea_MaterialCompact,
+.dxFirefox .dxeNullText_MaterialCompact .dxeMemoEditArea_MaterialCompact
+{
+    color: #bdbdbd;
+}
+.dxeTextBox_MaterialCompact .dxeFNTextSys, .dxeButtonEdit_MaterialCompact .dxeFNTextSys, .dxeMemo_MaterialCompact .dxeFNTextSys
+{
+    color: #bdbdbd;
+}
+.dxeNullText_MaterialCompact input:-webkit-autofill
+{
+    -webkit-text-fill-color: #bdbdbd;
+}
+/* -- Captcha -- */
+
+.dxcaControl_MaterialCompact .dxca-imageDiv
+{
+    color: #FFFFFF;
+}
+.dxEditors_caRefresh_MaterialCompact
+{
+    -webkit-box-shadow: 0px 2px 2.82px 0.18px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 2px 2.82px 0.18px rgba(0,0,0,0.24);
+    box-shadow: 0px 2px 2.82px 0.18px rgba(0,0,0,0.24);
+}
+.dxcaRefreshButton_MaterialCompact
+{
+    color: #1e3695;
+}
+.dxcaDisabledRefreshButton_MaterialCompact
+{
+    color: #acacac;
+}
+
+.dxcaTextBoxCellNoIndent_MaterialCompact .dxeErrorCell_MaterialCompact
+{
+    color: Red;
+}
+
+.dxcaLoadingPanel_MaterialCompact
+{
+    background-color: #232223;
+    color: #969696;
+}
+
+/* Removes flicking in Material Safari*/
+
+.dxeLyCaptionCell_MaterialCompact
+{
+    color: #004184;
+}
+
+.dxeLyGroupBox_MaterialCompact
+{
+    border: 1px Solid #9F9F9F;
+}
+.dxeLyGroupBoxCaption_MaterialCompact > span
+{
+    background-color: #232223;
+}
+
+/* ASPxCololrEdit */
+.dxcpParametersCell_MaterialCompact input
+{
+    color: #969696;
+}
+
+.dxcpColorParameterMainDiv_MaterialCompact > label
+{
+    color: #969696;
+}
+
+.dxeCustomColorButtonHover_MaterialCompact
+{
+    box-shadow: 0px 8px 16px 1.2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 8px 16px 1.2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 8px 16px 1.2px rgba(0,0,0,0.2);
+}
+
+.dxeAutomaticColorItem_MaterialCompact .dxeACICellDiv_MaterialCompact[style*="#FFF"],
+.dxeAutomaticColorItem_MaterialCompact .dxeACICellDiv_MaterialCompact[style*="background-color:White;"],
+.dxeAutomaticColorItem_MaterialCompact .dxeACICellDiv_MaterialCompact[style*="rgb(255, 255, 255)"],
+.dxeAutomaticColorItem_MaterialCompact .dxeACICellDiv_MaterialCompact:not([style*="background-color"])
+{
+    border: 1px solid #E0E0E0;
+}
+.dxeAutomaticColorItemCellHover_MaterialCompact .dxeACICellDiv_MaterialCompact[style*="#FFF"],
+.dxeAutomaticColorItemCellHover_MaterialCompact .dxeACICellDiv_MaterialCompact[style*="background-color:White;"],
+.dxeAutomaticColorItemCellHover_MaterialCompact .dxeACICellDiv_MaterialCompact[style*="rgb(255, 255, 255)"],
+.dxeAutomaticColorItemCellHover_MaterialCompact .dxeACICellDiv_MaterialCompact:not([style*="background-color"])
+{
+    border: 2px solid #E0E0E0;
+}
+
+.dxeColorTablesMainDiv_MaterialCompact,
+.dxeColorSelectorMainDiv_MaterialCompact
+{
+    background-color: #232223;
+    border: 1px solid #E0E0E0;
+}
+
+.dxeColorSelectorMainDiv_MaterialCompact > div
+{
+    border-top: 1px solid #EAEAEA;
+}
+.dxcpColorArea_MaterialCompact,
+.dxcpHueAreaImage_MaterialCompact,
+.dxcpCurrentAndSaved_MaterialCompact,
+.dxeColorTablesMainDiv_MaterialCompact,
+.dxeColorSelectorMainDiv_MaterialCompact,
+.dxcpParametersCell_MaterialCompact input
+{
+    border: 1px solid #DCDCDC;
+}
+
+/* Ripple */
+
+.dxeColorTablesMainDiv_MaterialCompact .dxeCustomColorButtonHover_MaterialCompact .dxRipple
+{
+    background-color: rgba(255,255,255,0.85);
+}
+.dxAndroidMobilePlatform .dxeColorTablesMainDiv_MaterialCompact .dxeCustomColorButtonHover_MaterialCompact .dxRipple,
+.dxMacOSMobilePlatform .dxeColorTablesMainDiv_MaterialCompact .dxeCustomColorButtonHover_MaterialCompact .dxRipple
+{
+    background-color: rgba(255,255,255,0.9);
+}
+/* -- ASPxTokenBox -- */
+
+.dxeToken_MaterialCompact
+{
+    background: #35B86B;
+    color: white;
+}
+
+.dxeTokenRemoveButton_MaterialCompact
+{
+    background-color: #232223;
+}
+
+.dxeDisabled_MaterialCompact .dxeToken_MaterialCompact
+{
+    background: #232223;
+    color: #969696;
+}
+
+/* ASPxPictureEdit */
+
+.dxpeCommandPanel_MaterialCompact
+{
+    background-color: #232223;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+}
+
+.dxpeDropZone_MaterialCompact
+{
+    background-color: #232223;
+}
+.dxpePlaceHolder_MaterialCompact
+{
+    background-color: #232223;
+}
+
+/* Editor caption */
+
+.dxeCaptionCell_MaterialCompact
+{
+    color: #969696;
+
+}
+
+.dxeRequiredMark_MaterialCompact
+{
+    color: #35B86B;
+}
+.dxeOptionalMark_MaterialCompact
+{
+    color: gray;
+}
+/* Out of range warning*/
+.dxeOutOfRWarn_MaterialCompact
+{
+    background-color: #232223;
+    color: red;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #A8A8A8;
+}
+
+/* Adaptive DropDown */
+.dxpcDropDown_MaterialCompact .dxdd-header
+{
+    border-bottom: 1px solid #ebebeb;
+    background: #232223;
+}
+.dxpcDropDown_MaterialCompact .dxdd-header .dxdd-caption
+{
+    color: #969696;
+}
+
+.dxpcDropDown_MaterialCompact .dxpc-mainDiv
+{
+    background-color: #232223;
+}
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact + .dxpcModalBackLite_MaterialCompact,
+.dxmodalSys.dxdd-root + .dxpcModalBackLite_MaterialCompact
+{
+    background-color: #232223;
+}
+
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxpc-shadow
+{
+    box-shadow: 0px 4px 16px 0 rgba(0,0,0,0.32);
+}
+
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input
+{
+    border: solid 2px #35B86B;
+}
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input > input
+{
+    color: #35B86B;
+}
+
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input .dxeFNTextSys
+{
+    color: #bdbdbd;
+}
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-help
+{
+    color: #999999;
+}
+
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxpc-mainDiv.dxdd-list .dxeListBox_MaterialCompact
+{
+    border-color: #ebebeb;
+    color: #999999;
+    background-color: #232223;
+}
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxpc-mainDiv.dxdd-list .dxeListBox_MaterialCompact .dxeListBoxItemHover_MaterialCompact
+{
+    background: rgba(0,0,0,0.08);
+    color: #999999;
+}
+
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxpc-mainDiv.dxdd-cal .dxeCalendar_MaterialCompact .dxeCalendarHeader_MaterialCompact
+{
+    color: #969696;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxpc-mainDiv.dxdd-cal .dxeCalendarDETS.dxeCalendar_MaterialCompact .dxeCalendarFooter_MaterialCompact
+{
+    border-bottom: 1px solid #ebebeb;
+}
+
+.dxeNullText_MaterialCompact + .dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input .dxeEditArea_MaterialCompact,
+.dxFirefox .dxeNullText_MaterialCompact + .dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input .dxeEditArea_MaterialCompact
+{
+    color: #bdbdbd;
+}
+.dxeNullText_MaterialCompact + .dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input input:-webkit-autofill,
+.dxFirefox .dxeNullText_MaterialCompact + .dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input input:-webkit-autofill
+{
+    -webkit-text-fill-color: #bdbdbd;
+}
+
+.dxScrollPicker_MaterialCompact .dxsp-wgroup + .dxsp-wgroup
+{
+    border-top: 1px solid #ebebeb;
+}
+
+.dxScrollPicker_MaterialCompact .dxsp-caption
+{
+    color: rgba(153,153,153,0.5);
+}
+.dxScrollPicker_MaterialCompact .dxsp-wheel-hover .dxsp-frame,
+.dxScrollPicker_MaterialCompact .dxsp-wheel-touch .dxsp-frame
+{
+    border-color: #35B86B;
+}
+
+.dxScrollPicker_MaterialCompact .dxsp-item
+{
+    color: #969696;
+}
+.dxScrollPicker_MaterialCompact .dxsp-item-focused
+{
+    color: #35B86B;
+}
+
+.dxmLite_MaterialCompact .dxm-item.dxm-checked, .dxmLite_MaterialCompact .dxm-item.dxm-selected {
+    background-color: #35B86B;
+}
+.dxmLite_MaterialCompact:hover .dxm-item.dxm-checked:hover, .dxmLite_MaterialCompact:hover .dxm-item.dxm-selected:hover {
+    background-color: #35B86B;
+}

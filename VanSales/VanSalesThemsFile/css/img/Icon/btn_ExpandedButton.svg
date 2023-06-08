@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 161" width="512" height="161">
+	<title>minus</title>
+	<defs>
+		<image  width="510" height="161" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAf4AAAChCAMAAAARHi2BAAAAAXNSR0IB2cksfwAAAQ5QTFRFUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxc////UHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcUHxcaxIb+wAAAFp0Uk5TAAZWpt/5//PXVVHbUgOJVOPkW1yrrOD4AP789unTr3gyBwQhWpDC9/315s19GQtQnOz7syuF78U1KK3yyDc22YozxJOpLKfnlFO0cBVppev60rCIBR1EebXitgadvgAAAvRJREFUeJzt29lSE0EUgOEeARFjWAKJDgEFF4hiVCIuyCKuuIu7vv+LCBSlN1ZZlZp0V/r/vxc4p+ufi7k5IRwpTo2Mjp0WxPiZkYki/HG2lnohxVY7dxK/Ppl6FaUwWT/Ob32oyaP6U6m3UCpTh39906mXUCozRWik3kHpzIa51CsonWZopV5B6bTC+dQrKJ2xkHoDpWR+NPOjmR/N/GjmRzM/mvnRzI9mfjTzo5kfzfxo5kczP5r50cyPZn4086OZH+0/+YOGnPnRzI9mfjTzo5kfzfxo5kczP5r50cyPZn4086OZH838aOZHMz+a+dHMj2Z+NPOjmR/N/GjmRzM/mvnRzI9mfjTzo5kfzfxo5kczP5r50cyPZn4086OZH838aOZHMz+a+dHMj2Z+NPOjmR/N/GjmRzM/mvnRzI9mfjTzo5kfzfxo5kczP5r50cyPZn4086OZH838aOZHMz+a+dHMj2Z+NPOjmR/N/GjmRzM/mvnRzI9mfjTzo5kfzfxo5kczP5r50cyPZn4086OZH838aOZHMz+a+dHMj2Z+NPMPzIWKDWJH8w+M+dHMj2Z+NPOjmR/N/GjmR8s+v/6hnG8vLF68tLRcdf7LV65eW5lZLctoTzF/P8rO9RtrN7tV5791+87a+nzMh5i/T73xuxtV5+/eW7zfi/oK8/erfPCw6vybj7Y6cR9h/r5t71Sdf2kl9hvM37fq8+9ux36D+ftWff4d8w8P86OZH838aOZHMz+a+dHMj2Z+NPOjmR/N/GjmR8si/1bsidnIIP9YeBx5Yj4yyN8Kc5En5iOD/M3QiDwxHxnknw3FdOSR2Rj+/DPLIUzEHZmP7d1hzz9xdAa0F3dmLsqVJ1Xn330a777n0N7xFVj9WcyZmeisrj/frDr/i5f77XgfwKv6yRng61q0mVno9NoLi2/evqs6f/f9h7WPkQ49alN/z0CLRnP0IM7Y4Vf22vufPn+Z3Siqzv/12/cfP38N/szrYLTZKI7D/waO1WvDqsoXegAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #cff09e } 
+	</style>
+	<path id="Shape 2" class="shp0" d="M20 17L203 30L304 132L309 155L45 142L22 144L20 17Z" />
+	<use id="Rounded Rectangle 1" href="#img1" x="1" y="1" />
+</svg>

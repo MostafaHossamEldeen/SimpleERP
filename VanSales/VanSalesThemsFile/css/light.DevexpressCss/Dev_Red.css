@@ -1,0 +1,504 @@
+/* used as a border of large controls (like grids, diagram) */
+/* used as a background below a page in richedit/diagram */
+/* used as a border of large controls (like grids, diagram) */
+/* used as a background below a page in richedit/diagram */
+
+:root {
+	--theme-color-1: #880a1f;
+	--theme-color-2: #e7284a;
+	--theme-color-3: #843a47;
+	--theme-color-4: #d8667a;
+    --theme-color-5: #f69682;
+}
+
+/* Tree list */
+
+
+
+/* Nodes */
+
+.dxtlFocusedNode_MaterialCompact
+{
+    background: #880a1f none;
+}
+
+
+
+.dxtlControl_MaterialCompact a
+{
+    color: #880a1f;
+}
+
+/* Loading panel */
+
+.dxtlLoadingPanel_MaterialCompact .dxlp-loadingImage
+{
+    border: 4px solid #880a1f;
+}
+
+
+
+.dxtlControl_MaterialCompact .dxtlHL
+{
+    background: #880a1f;
+}
+
+.dxtlFilterBar_MaterialCompact a
+{
+    color: #880a1f;
+}
+
+
+/* Grid View */
+
+
+.dxgvControl_MaterialCompact a {
+	color: #843a47;
+}
+
+.dxgvLoadingPanel_MaterialCompact .dxlp-loadingImage {
+	border: 4px solid #880a1f;
+}
+
+
+.dxgvLoadingPanelStatusBar_MaterialCompact .dxlp-loadingImage {
+	border: 2px solid #880a1f;
+}
+
+
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact,
+.dxgvControl_MaterialCompact .dxgvTable_MaterialCompact .dxgvFocusedRow_MaterialCompact.dxgvDataRowHover_MaterialCompact {
+	background-color: #880a1f;
+}
+
+.dxgvControl_MaterialCompact .dxgvADSB:hover::before {
+	background-color: #880a1f;
+}
+
+
+.dxgvFocusedGroupRow_MaterialCompact {
+	background-color: #880a1f;
+}
+
+
+.dxgvHeader_MaterialCompact a,
+.dxgvHeader_MaterialCompact a.dxgvCommandColumnItem_MaterialCompact,
+.dxgvHeader_MaterialCompact a.dxgvCommandColumnItem_MaterialCompact.dxbDisabled_MaterialCompact,
+.dxgvCommandColumn_MaterialCompact a,
+.dxgvCommandColumn_MaterialCompact a.dxgvCommandColumnItem_MaterialCompact.dxbDisabled_MaterialCompact {
+	color: #880a1f;
+}
+
+
+
+.dxgvEditFormTable_MaterialCompact a {
+	color: #880a1f;
+}
+
+
+.dxgvFilterBar_MaterialCompact a {
+	color: #880a1f;
+}
+
+
+.dxgvControl_MaterialCompact .dxgvHL {
+	background: #880a1f;
+}
+
+
+.dxgvCustDialogHeader_MaterialCompact {
+	background-color: #880a1f;
+}
+
+.dxgvCustDialogHeader_MaterialCompact .dxgvCD_TS .dxgvCD_TSLS,
+.dxgvCustDialogHeader_MaterialCompact .dxgvCD_TS .dxgvCD_TSRS {
+	box-shadow: 0 0 11px 11px #880a1f;
+}
+
+
+/* Grid Lookup*/
+
+.dxpLite_MaterialCompact:not(.dxpLiteDisabled_MaterialCompact) .dxp-current.dxp-num:hover{
+	background-color: #880a1f;
+}
+
+.dxpLite_MaterialCompact .dxp-current{
+	background-color: #880a1f;
+}
+
+.dxgvFooter_MaterialCompact {
+	color: #843a47;
+}
+
+.dxWeb_edtCheckBoxChecked_MaterialCompact {
+    -webkit-filter: hue-rotate(920deg);
+    filter: hue-rotate(920deg);
+}
+
+
+/* Search popup */
+
+
+.form-control:focus{
+    border-color: #880a1f;
+}
+
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td, .dx-datagrid-rowsview 
+.dx-selection.dx-row:not(.dx-row-focused) > tr > td, .dx-datagrid-rowsview 
+.dx-selection.dx-row:not(.dx-row-focused):hover > td, .dx-datagrid-rowsview 
+.dx-selection.dx-row:not(.dx-row-focused):hover > tr > td {
+    background-color: #880a1f;
+}
+
+
+/* Data Editor */
+
+
+
+.dxeTBHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeTBHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact,
+.dxeTBVSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeTBVSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHHover_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHHover_MaterialCompact
+{
+    background-color: #880a1f;
+    border-color: #880a1f;
+}
+.dxeTBHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeTBHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact,
+.dxeTBVSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeTBVSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact.dxEditors_edtTBMainDHPressed_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact.dxEditors_edtTBSecondaryDHPressed_MaterialCompact
+{
+    border-color: #880a1f;
+}
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBHSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedMDHSys .dxeTBMainDH_MaterialCompact,
+.dxeFocused_MaterialCompact .dxeTBVSys .dxeFocusedSDHSys .dxeTBSecondaryDH_MaterialCompact
+{
+    border: 2px solid #880a1f;
+}
+.dxeTBHSys .dxeTBBarHighlight_MaterialCompact
+{
+    background: #880a1f;
+}
+.dxeTBVSys .dxeTBBarHighlight_MaterialCompact
+{
+    background: #880a1f;
+}
+
+.dxeTBSelectedItem_MaterialCompact .dxeTBRBLabel_MaterialCompact,
+.dxeTBSelectedItem_MaterialCompact .dxeTBLTLabel_MaterialCompact,
+.dxeTBSelectedTick_MaterialCompact .dxeTBRBLabel_MaterialCompact,
+.dxeTBSelectedTick_MaterialCompact .dxeTBLTLabel_MaterialCompact
+{
+    color: #880a1f;
+}
+
+div.dxeHelpText_MaterialCompact,
+.dxeTBValueToolTip_MaterialCompact
+{
+
+    background: #880a1f;
+}
+
+
+/* Loading */
+
+.dxcaLoadingPanel_MaterialCompact .dxlp-loadingImage,
+.dxeImage_MaterialCompact.dxe-loadingImage
+{
+    border: 4px solid #880a1f;
+}
+
+/* -- Hover -- */
+.dxeButtonEditButtonHover_MaterialCompact,
+.dxeSpinIncButtonHover_MaterialCompact,
+.dxeSpinDecButtonHover_MaterialCompact,
+.dxeSpinLargeIncButtonHover_MaterialCompact,
+.dxeSpinLargeDecButtonHover_MaterialCompact
+{
+    background-color: #880a1f;
+}
+.dxeCalendarButtonHover_MaterialCompact
+{
+    color: #880a1f !important;
+}
+/* -- Pressed -- */
+.dxeCalendarButtonPressed_MaterialCompact,
+.dxeButtonEditButtonPressed_MaterialCompact,
+.dxeSpinIncButtonPressed_MaterialCompact,
+.dxeSpinDecButtonPressed_MaterialCompact,
+.dxeSpinLargeIncButtonPressed_MaterialCompact,
+.dxeSpinLargeDecButtonPressed_MaterialCompact,
+.dxeColorEditButton_MaterialCompact:active
+{
+    background-color: #880a1f;
+}
+
+input.dxeColorEditButton_MaterialCompact:hover
+{
+    color: #880a1f !important;
+}
+.dxeCalendarButtonPressed_MaterialCompact
+{
+    color: #880a1f !important;
+}
+.dxeColorEditButton_MaterialCompact
+{
+    background-color: #880a1f;
+}
+
+
+
+/* -- Hyperlink -- */
+.dxeHyperlink_MaterialCompact
+{
+    color: #880a1f;
+}
+.dxeHyperlink_MaterialCompact:visited
+{
+    color: #e7284a;
+}
+
+/* -- ListBox -- */
+
+
+.dxeListBox_MaterialCompact.dx-acc-r .dxeListBoxFilter_MaterialCompact .dxeLBShowFilterBtnSys .dxbf
+{
+    border-color: #880a1f;
+}
+
+
+
+
+
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact,
+.dxeCalendarFastNavMonth_MaterialCompact.dxeCalendarFastNavMonthSelected_MaterialCompact,
+.dxeCalendarFastNavYear_MaterialCompact.dxeCalendarFastNavYearSelected_MaterialCompact
+{
+    background-color: #880a1f;
+}
+
+.dxeCalendarFastNavItem_MaterialCompact.dxeCalendarFastNavItemSelected_MaterialCompact.dxeCalendarToday_MaterialCompact
+{
+    box-shadow: inset 0 0 0 2px #e7284a;
+}
+
+.dxeCalendarDay_MaterialCompact.dxeCalendarSelected_MaterialCompact
+{
+    background-color: #880a1f;
+}
+
+.dxeCalendarDay_MaterialCompact.dxeCalendarSelected_MaterialCompact.dxeCalendarToday_MaterialCompact
+{
+    box-shadow: inset 0 0 0 1px #e7284a;
+}
+
+.dxeCalendarHeader_MaterialCompact
+{
+    background-color: #880a1f;
+}
+
+.dxeCalendar_MaterialCompact.dxeFocused_MaterialCompact .dxeCalendarFooter_MaterialCompact
+{
+    border-color: #880a1f;
+}
+
+
+/* -- Button -- */
+.dxbButtonHover_MaterialCompact
+{
+    background-color: #880a1f;
+}
+.dxbButtonChecked_MaterialCompact
+{
+    background-color: #880a1f;
+}
+.dxbButtonPressed_MaterialCompact
+{
+    background-color: #880a1f;
+}
+
+.dxbButton_MaterialCompact .dxBadge
+{
+    color: #880a1f;
+}
+.dxbButton_MaterialCompact.dxbButtonHover_MaterialCompact .dxBadge,
+.dxbButton_MaterialCompact.dxbButtonPressed_MaterialCompact .dxBadge
+{
+    color: #880a1f;
+}
+/* Button Link */
+a.dxbButton_MaterialCompact
+{
+    color: #880a1f;
+}
+
+a.dxbButton_MaterialCompact .dxBadge
+{
+    background: #880a1f;
+}
+
+
+a.dxfcPropertyName_MaterialCompact
+{
+    color: #880a1f !important;
+}
+
+a.dxfcOperation_MaterialCompact
+{
+    color: #f69682 !important;
+}
+
+.dxbButton_MaterialCompact.dxb-secondary .dxBadge
+{
+    background: #880a1f;
+}
+
+.dxbButton_MaterialCompact.dxb-outline.dxbButtonHover_MaterialCompact, .dxbButton_MaterialCompact.dxb-outline.dxbButtonPressed_MaterialCompact
+{
+    background: #880a1f;
+}
+
+.dxbButton_MaterialCompact.dxb-outline .dxBadge
+{
+    background: #880a1f;
+}
+.dxbButton_MaterialCompact.dxb-outline.dxbButtonHover_MaterialCompact .dxBadge,
+.dxbButton_MaterialCompact.dxb-outline.dxbButtonPressed_MaterialCompact .dxBadge
+{
+    color: #880a1f;
+}
+
+
+/* -- ProgressBar -- */
+
+.dxeProgressBarIndicator_MaterialCompact
+{
+    background-color: #880a1f;
+}
+
+/*----------------- ColorTable -----------------*/
+
+.dxeColorTableCellSelected_MaterialCompact > .dxeColorTableCellDiv_MaterialCompact,
+.dxeACICellSelected_MaterialCompact > .dxeACICellDiv_MaterialCompact,
+.dxeColorTableCellHover_MaterialCompact.dxeColorTableCellSelected_MaterialCompact > .dxeColorTableCellDiv_MaterialCompact,
+.dxeColorTableCellHover_MaterialCompact.dxeACICellSelected_MaterialCompact > .dxeACICellDiv_MaterialCompact
+{
+    border: 2px solid #880a1f;
+}
+
+.dxeFocused_MaterialCompact
+{
+    border: 1px solid #880a1f;
+}
+
+
+/* -- Captcha -- */
+
+
+.dxcaRefreshButton_MaterialCompact
+{
+    color: #880a1f;
+}
+
+
+/* Removes flicking in Material Safari*/
+
+.dxeLyCaptionCell_MaterialCompact
+{
+    color: #d8667a;
+}
+
+
+/* -- ASPxTokenBox -- */
+
+.dxeToken_MaterialCompact
+{
+    background: #880a1f;
+}
+
+
+
+/* Editor caption */
+
+.dxeRequiredMark_MaterialCompact
+{
+    color: #880a1f;
+}
+
+
+/* Adaptive DropDown */
+
+
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input
+{
+    border: solid 2px #880a1f;
+}
+.dxmodalSys.dxdd-root .dxpcDropDown_MaterialCompact .dxdd-input > input
+{
+    color: #880a1f;
+}
+
+.dxScrollPicker_MaterialCompact .dxsp-wheel-hover .dxsp-frame,
+.dxScrollPicker_MaterialCompact .dxsp-wheel-touch .dxsp-frame
+{
+    border-color: #880a1f;
+}
+
+.dxScrollPicker_MaterialCompact .dxsp-item-focused
+{
+    color: #880a1f;
+}
+
+.dxEditors_edtRadioButtonChecked_MaterialCompact{
+    -webkit-filter: hue-rotate(920deg);
+    filter: hue-rotate(920deg);
+}
+
+/*  accordion  */
+
+.accordion__item__header {
+    background-color: #880a1f;
+    color: #fff;
+}
+.accordion__item__header::before {
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+}
+.accordion__item__header.active {
+    background-color: #880a1f;
+    color: #fff;
+}
+
+.accordion__item__content {
+    border: 2px solid #880a1f;
+}
+
+.accordion_item_header_block {
+    background-color: #880a1f;
+    color: #fff;
+}
+
+.accordion_item_header_block.active {
+    background-color: #880a1f;
+    color: #fff;
+}
+
+.dxflRequired_MaterialCompact {
+    color: #880a1f;
+}
+.dxmLite_MaterialCompact .dxm-item.dxm-checked, .dxmLite_MaterialCompact .dxm-item.dxm-selected {
+    background-color: #880a1f;
+}
+.dxmLite_MaterialCompact:hover .dxm-item.dxm-checked:hover, .dxmLite_MaterialCompact:hover .dxm-item.dxm-selected:hover {
+    background-color: #880a1f;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<ReportDataSet xmlns="http://tempuri.org/ReportDataSet.xsd">
+  <RepHeaderColumn>
+    <RepName>itemrep</RepName>
+    <Caption>كود الحساب</Caption>
+    <Data>txt_chartid</Data>
+    <RowCount>0</RowCount>
+    <Rowno>1</Rowno>
+    <Id>1</Id>
+    <DataType>false</DataType>
+  </RepHeaderColumn>
+  <RepHeaderColumn>
+    <RepName>itemrep</RepName>
+    <Caption>من</Caption>
+    <Data>dtefrom</Data>
+    <RowCount>0</RowCount>
+    <Rowno>2</Rowno>
+    <Id>2</Id>
+    <DataType>true</DataType>
+  </RepHeaderColumn>
+  <RepHeaderColumn>
+    <RepName>itemrep</RepName>
+    <Caption>الى</Caption>
+    <Data>dteto</Data>
+    <RowCount>0</RowCount>
+    <Rowno>2</Rowno>
+    <Id>3</Id>
+    <DataType>true</DataType>
+  </RepHeaderColumn>
+  <ReportHeaderRows>
+    <RepName>itemrep</RepName>
+    <RowsCount>4</RowsCount>
+    <ColumnCount>4</ColumnCount>
+  </ReportHeaderRows>
+</ReportDataSet>

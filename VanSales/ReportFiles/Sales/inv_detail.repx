@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" DisplayName="inv_detail" Margins="26, 47, 3, 1" PageWidth="850" PageHeight="1100" Version="20.2" RightToLeft="Yes" DataMember="s_inv_dtl_rep" DataSource="#Ref-0" Font="Arial, 9pt">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" Description="inv_id" ValueInfo="0" Name="inv_id" Type="#Ref-2" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="TopMargin1" HeightF="3" Visible="false" />
+    <Item2 Ref="5" ControlType="ReportHeaderBand" Name="ReportHeader1" HeightF="1.04" />
+    <Item3 Ref="6" ControlType="PageHeaderBand" Name="PageHeader1" HeightF="70.83">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRTable" Name="table2" RightToLeft="Yes" TextAlignment="MiddleCenter" SizeF="762.47,70.83" LocationFloat="0,0" BorderColor="255,201,197,197" Borders="Left, Top, Right">
+          <Rows>
+            <Item1 Ref="8" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="9" ControlType="XRTableCell" Name="tableCell17" Weight="0.40559370142065193" Multiline="true" Text="Item code&#xA;كود الصنف" Padding="2,2,0,0,100" />
+                <Item2 Ref="10" ControlType="XRTableCell" Name="tableCell9" Weight="0.49484373243740021" Multiline="true" Text="nature of goods &#xA;تفاصيل السلع " Padding="2,2,0,0,100" />
+                <Item3 Ref="11" ControlType="XRTableCell" Name="tableCell10" Weight="0.26778419584576441" Multiline="true" Text="unit price&#xA;سعر الوحده" Padding="2,2,0,0,100" />
+                <Item4 Ref="12" ControlType="XRTableCell" Name="tableCell6" Weight="0.23287227153637805" Multiline="true" Text="quantity&#xA;الكميه" Padding="2,2,0,0,100" />
+                <Item5 Ref="13" ControlType="XRTableCell" Name="tableCell7" Weight="0.37647099021167085" Multiline="true" Text="taxable amount&#xA;المبلغ الخاضع للضريبه&#xA;" Padding="2,2,0,0,100" />
+                <Item6 Ref="14" ControlType="XRTableCell" Name="tableCell8" Weight="0.27169734664076572" Multiline="true" Text="disscount&#xA;خصومات" Padding="2,2,0,0,100" />
+                <Item7 Ref="15" ControlType="XRTableCell" Name="tableCell13" Weight="0.23287298737590656" Multiline="true" Text="tax rate&#xA;الضريبه%" Padding="2,2,0,0,100" />
+                <Item8 Ref="16" ControlType="XRTableCell" Name="tableCell12" Weight="0.32989745690026095" Multiline="true" Text="tax amount&#xA;مبلغ الضريبه" Padding="2,2,0,0,100" />
+                <Item9 Ref="17" ControlType="XRTableCell" Name="tableCell11" Weight="0.43459795695476988" Multiline="true" Text="&#xA;total including vat&#xA;المجموع شامل الضريبة " Padding="2,2,0,0,100" />
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="18" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="19" ControlType="DetailBand" Name="Detail1" HeightF="25">
+      <Controls>
+        <Item1 Ref="20" ControlType="XRTable" Name="table1" RightToLeft="Yes" TextAlignment="MiddleCenter" SizeF="762.45,25" LocationFloat="0,0" BorderColor="255,201,197,197" Borders="All">
+          <Rows>
+            <Item1 Ref="21" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="22" ControlType="XRTableCell" Name="tableCell18" Weight="0.78640892041312027" Multiline="true" Text="tableCell18" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="23" EventName="BeforePrint" PropertyName="Text" Expression="[itemcode]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="24" ControlType="XRTableCell" Name="tableCell4" Weight="0.95945378234664658" Multiline="true" Text="tableCell4" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="25" EventName="BeforePrint" PropertyName="Text" Expression="[itemname]" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="26" ControlType="XRTableCell" Name="tableCell5" Weight="0.51913398016160039" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell5" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="27" EventName="BeforePrint" PropertyName="Text" Expression="[realprice]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="28" ControlType="XRTableCell" Name="tableCell1" Weight="0.45223730204809875" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell1" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="29" EventName="BeforePrint" PropertyName="Text" Expression="[qty]" />
+                  </ExpressionBindings>
+                </Item4>
+                <Item5 Ref="30" ControlType="XRTableCell" Name="tableCell2" Weight="0.73065902751496747" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell2" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="Text" Expression="[taxableamount]" />
+                  </ExpressionBindings>
+                </Item5>
+                <Item6 Ref="32" ControlType="XRTableCell" Name="tableCell3" Weight="0.52549047735989651" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell3" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="33" EventName="BeforePrint" PropertyName="Text" Expression="[discvalue]" />
+                  </ExpressionBindings>
+                </Item6>
+                <Item7 Ref="34" ControlType="XRTableCell" Name="tableCell16" Weight="0.45093617195823443" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell16" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="35" EventName="BeforePrint" PropertyName="Text" Expression="[vat]" />
+                  </ExpressionBindings>
+                </Item7>
+                <Item8 Ref="36" ControlType="XRTableCell" Name="tableCell15" Weight="0.63883768714810674" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell15" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[vatvalue]" />
+                  </ExpressionBindings>
+                </Item8>
+                <Item9 Ref="38" ControlType="XRTableCell" Name="tableCell14" Weight="0.84400550706223343" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell14" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="39" EventName="BeforePrint" PropertyName="Text" Expression="[totalincludvat]" />
+                  </ExpressionBindings>
+                </Item9>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="40" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="41" ControlType="BottomMarginBand" Name="BottomMargin1" HeightF="1" Visible="false" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="42" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="component1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iY29tcG9uZW50MSI+PENvbm5lY3Rpb24gTmFtZT0iVmFuU2FsZXMiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iY29tcCI+PFByb2NOYW1lPnN5c19jb21wYW55X3NlbDwvUHJvY05hbWU+PC9RdWVyeT48UXVlcnkgVHlwZT0iU3RvcmVkUHJvY1F1ZXJ5IiBOYW1lPSJpbnYiPjxQYXJhbWV0ZXIgTmFtZT0iQHNpbnZpZCIgVHlwZT0iU3lzdGVtLkludDMyIj4wPC9QYXJhbWV0ZXI+PFByb2NOYW1lPnNfaW52X3JlcDwvUHJvY05hbWU+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImNvbXBvbmVudDEiPjxWaWV3IE5hbWU9ImludiI+PEZpZWxkIE5hbWU9InNpbnZpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InNuYXR1cmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJzbmF0dXJlbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJzaW52bm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ic2ludmRvY25vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNpbnZkYXRhIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0ic2ludnRpbWUiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9ImJyYW5jaGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iYnJhbmNobmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjY2lkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iY2NuYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNpbnZwYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJzaW52cGF5bmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjdXN0aWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJjdXN0bmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjdXN0dmF0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImN1c3RhZGQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY3VzdHZhdGFwcGx5IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJjdXN0bW9iaWxlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InN1c2VyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNtYW5pZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InNtYW5uYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNub3RlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwb3N0c3QiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9InBvc3lhY2MiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9InBvc3RzdHR4dCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwb3N0YWNjdHh0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InZvY2hyaWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJ0b3RhbGludiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZGlzY3AiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9ImRpc2N2IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJuZXRidmF0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ2YXR2YWx1ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0ibmV0YXZhdCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0icmVzdHZhbHVlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkb2NpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImRvY25vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ5ZWFyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImludmRvYyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ3aXRob3V0aW52IiBUeXBlPSJCb29sZWFuIiAvPjwvVmlldz48VmlldyBOYW1lPSJjb21wIj48RmllbGQgTmFtZT0iY29tcGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iY29tcG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcGFjdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21weWVhciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbGVnYWwiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcHRlbCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbW9iIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNvbXB3ZWIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcGVtYWlsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNvbXBhZGQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcG1hbmFnZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY29tcHZhdG5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNvbXBub3RlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbG9nbyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+    <Item2 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InNfaW52X2R0bF9yZXAiPjxQYXJhbWV0ZXIgTmFtZT0iQGludl9pZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uSW50MzIpKD9pbnZfaWQpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPnNfaW52X2R0bF9yZXA8L1Byb2NOYW1lPjwvUXVlcnk+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0ic3lzX3NldHRpbmdfc2VsIj48UHJvY05hbWU+c3lzX3NldHRpbmdfc2VsPC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9InNfaW52X2R0bF9yZXAiPjxGaWVsZCBOYW1lPSJpbnZkdGxpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InNpbnZpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Iml0ZW1pZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVuaXRpZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVuaXRuYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InF0eSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZmFjdG9yIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJwcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iaWNvc3QiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InZhbHVlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkaXNjcCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZGlzY3ZhbHVlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJuZXR2YWx1ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0idmF0dmFsdWUiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Iml0ZW1ub3RlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJib251cyIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0ibmF0dXJlaW52IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iYnJhbmNoaWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJpbnZkYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iY3VzdGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0ic2ludm5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImN1c3RuYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImJyYW5jaG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZnllYXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmVhbHByaWNlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ0YXhhYmxlYW1vdW50IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ0b3RhbGluY2x1ZHZhdCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iaXRlbWNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaXRlbW5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idmF0IiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48VmlldyBOYW1lPSJzeXNfc2V0dGluZ19zZWwiPjxGaWVsZCBOYW1lPSJjaGFydGx2bCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InZhdCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0idmF0dHlwZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImFsbG93aW5nIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJjb3N0Y2FsYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImNvc3RuYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImF1dG9lbXAiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9ImF1dG9pdGVtIiBUeXBlPSJCb29sZWFuIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="2" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

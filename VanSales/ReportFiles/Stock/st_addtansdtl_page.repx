@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" DisplayName="st_addtansdtl_page.repx" Margins="27, 24, 1, 100" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="20.2" DataMember="st_transdtls_sel_rep" DataSource="#Ref-0" Font="Arial, 9pt">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" Description="transid" ValueInfo="0" Name="transid" Type="#Ref-2" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="TopMargin1" HeightF="1" />
+    <Item2 Ref="5" ControlType="PageHeaderBand" Name="PageHeader1" HeightF="25">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRTable" Name="table1" SizeF="752.05,25" LocationFloat="1.04,0">
+          <Rows>
+            <Item1 Ref="7" ControlType="XRTableRow" Name="tableRow1" Weight="1" TextAlignment="MiddleCenter" BackColor="0,40,209,110">
+              <Cells>
+                <Item1 Ref="8" ControlType="XRTableCell" Name="tableCell7" Weight="0.98930042159306042" Multiline="true" Text="الكميه" Font="Arial, 9pt, style=Bold" BackColor="255,154,177,123" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="9" UseFont="false" UseBackColor="false" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="10" ControlType="XRTableCell" Name="tableCell5" Weight="0.86470036849440945" Multiline="true" Text="الوحده" Font="Arial, 9pt, style=Bold" BackColor="255,154,177,123" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="11" UseFont="false" UseBackColor="false" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="12" ControlType="XRTableCell" Name="tableCell1" Weight="2.6667011363626778" Multiline="true" Text="اسم الصنف" Font="Arial, 9pt, style=Bold" BackColor="255,154,177,123" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="13" UseFont="false" UseBackColor="false" UseBorders="false" />
+                </Item3>
+                <Item4 Ref="14" ControlType="XRTableCell" Name="tableCell10" Weight="1.4583006240857648" Multiline="true" Text="باركود الصنف" Font="Arial, 9pt, style=Bold" BackColor="255,154,177,123" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="15" UseFont="false" UseBackColor="false" UseBorders="false" />
+                </Item4>
+                <Item5 Ref="16" ControlType="XRTableCell" Name="tableCell3" Weight="0.91670039065777076" Multiline="true" Text="كود الصنف" Font="Arial, 9pt, style=Bold" BackColor="255,154,177,123" Padding="2,2,0,0,100" Borders="All">
+                  <StylePriority Ref="17" UseFont="false" UseBackColor="false" UseBorders="false" />
+                </Item5>
+              </Cells>
+              <StylePriority Ref="18" UseBackColor="false" UseTextAlignment="false" />
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item2>
+    <Item3 Ref="19" ControlType="DetailBand" Name="Detail1" HeightF="25.01">
+      <Controls>
+        <Item1 Ref="20" ControlType="XRTable" Name="table2" SizeF="752.05,25" LocationFloat="1.04,0">
+          <Rows>
+            <Item1 Ref="21" ControlType="XRTableRow" Name="tableRow2" Weight="1" Borders="None">
+              <Cells>
+                <Item1 Ref="22" ControlType="XRTableCell" Name="tableCell9" Weight="0.97920000000000018" Multiline="true" Text="tableCell9" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="Left, Right, Bottom">
+                  <Summary Ref="23" Running="Page" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[qty]" />
+                    <Item2 Ref="25" EventName="BeforePrint" PropertyName="Visible" Expression="[].Sum( [qty] ) " />
+                  </ExpressionBindings>
+                  <StylePriority Ref="26" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="27" ControlType="XRTableCell" Name="tableCell8" Weight="0.87480000000000024" Multiline="true" Text="tableCell8" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="Left, Right, Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="28" EventName="BeforePrint" PropertyName="Text" Expression="[unitname]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="29" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="30" ControlType="XRTableCell" Name="tableCell2" Weight="2.6564000000000005" Multiline="true" Text="tableCell2" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="Left, Right, Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="Text" Expression="[itemname]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="32" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="33" ControlType="XRTableCell" Name="tableCell4" Weight="1.4686000000000004" Multiline="true" Text="tableCell4" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="Left, Right, Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="34" EventName="BeforePrint" PropertyName="Text" Expression="[barcode1]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="35" UseBorders="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="36" ControlType="XRTableCell" Name="tableCell6" Weight="0.91670000000000007" Multiline="true" Text="tableCell6" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="Left, Right, Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[itemcode]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="38" UseBorders="false" UseTextAlignment="false" />
+                </Item5>
+              </Cells>
+              <StylePriority Ref="39" UseBorders="false" />
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="40" ControlType="ReportFooterBand" Name="ReportFooter1" HeightF="36.46">
+      <Controls>
+        <Item1 Ref="41" ControlType="XRLabel" Name="label2" Multiline="true" Text=":اجمالى الكميه" TextAlignment="MiddleCenter" SizeF="94.32,23" LocationFloat="108.93,0" Font="Arial, 11pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="42" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="43" ControlType="XRLabel" Name="label1" Multiline="true" Text="label1" TextAlignment="MiddleCenter" SizeF="107.88,23" LocationFloat="1.04,0" Font="Arial, 11pt, style=Bold" Padding="2,2,0,0,100">
+          <Summary Ref="44" Running="Report" IgnoreNullValues="true" />
+          <ExpressionBindings>
+            <Item1 Ref="45" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([qty] )" />
+          </ExpressionBindings>
+          <StylePriority Ref="46" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item4>
+    <Item5 Ref="47" ControlType="BottomMarginBand" Name="BottomMargin1" Visible="false" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InN0X3RyYW5zZHRsc19zZWxfcmVwIj48UGFyYW1ldGVyIE5hbWU9IkB0cmFuc2lkIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5JbnQzMikoP3RyYW5zaWQpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPnN0X3RyYW5zZHRsc19zZWxfcmVwPC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9InN0X3RyYW5zZHRsc19zZWxfcmVwIj48RmllbGQgTmFtZT0iaXRlbWNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYmFyY29kZTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaXRlbW5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idW5pdGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idW5pdG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icXR5IiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="2" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

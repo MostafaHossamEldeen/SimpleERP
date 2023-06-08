@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" DisplayName="P_order_Detail_Page.repx" Margins="27, 27, 2, 2" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="20.2" DataMember="p_orderdtls_sel" DataSource="#Ref-0" Font="Arial, 9pt">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" Description="poid" AllowNull="true" Name="poid" Type="#Ref-2" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="TopMargin1" HeightF="2" />
+    <Item2 Ref="5" ControlType="ReportHeaderBand" Name="ReportHeader1" HeightF="27.08">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRTable" Name="table1" RightToLeft="Yes" TextAlignment="MiddleCenter" SizeF="772.98,25" LocationFloat="0,0" BackColor="38,0,0,0" BorderColor="255,201,197,197" Borders="All">
+          <Rows>
+            <Item1 Ref="7" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="8" ControlType="XRTableCell" Name="tableCell1" Weight="0.77628878816143743" Multiline="true" Text="الصافي" Padding="2,2,0,0,100" />
+                <Item2 Ref="9" ControlType="XRTableCell" Name="tableCell3" Weight="1.0006466749023297" Multiline="true" Text="قيمة الخصم" Padding="2,2,0,0,100" />
+                <Item3 Ref="10" ControlType="XRTableCell" Name="tableCell4" Weight="0.59086701714721968" Multiline="true" Text="نسبة الخصم" Padding="2,2,0,0,100" />
+                <Item4 Ref="11" ControlType="XRTableCell" Name="tableCell5" Weight="0.68573733202037457" Multiline="true" Text="الإجمالي" Padding="2,2,0,0,100" />
+                <Item5 Ref="12" ControlType="XRTableCell" Name="tableCell14" Weight="0.500239882488596" Multiline="true" Text="السعر" Padding="2,2,0,0,100" />
+                <Item6 Ref="13" ControlType="XRTableCell" Name="tableCell15" Weight="0.47443637592145571" Multiline="true" Text="الكمية" Padding="2,2,0,0,100" />
+                <Item7 Ref="14" ControlType="XRTableCell" Name="tableCell16" Weight="0.46145561885737291" Multiline="true" Text="الوحدة" Padding="2,2,0,0,100" />
+                <Item8 Ref="15" ControlType="XRTableCell" Name="tableCell27" Weight="0.82850979986821915" Multiline="true" Text="إسم الصنف" Padding="2,2,0,0,100" />
+                <Item9 Ref="16" ControlType="XRTableCell" Name="tableCell28" Weight="0.58967517174705208" Multiline="true" Text="كود الصنف" Padding="2,2,0,0,100" />
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="17" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item2>
+    <Item3 Ref="18" ControlType="DetailBand" Name="Detail1" HeightF="27.08">
+      <Controls>
+        <Item1 Ref="19" ControlType="XRTable" Name="table3" RightToLeft="Yes" TextAlignment="MiddleCenter" SizeF="772.98,25" LocationFloat="0,0" BorderColor="255,201,197,197" Borders="All">
+          <Rows>
+            <Item1 Ref="20" ControlType="XRTableRow" Name="tableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="21" ControlType="XRTableCell" Name="tableCell24" Weight="0.77628878816143743" Multiline="true" Text="tableCell14" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="22" EventName="BeforePrint" PropertyName="Text" Expression="[pnet]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="23" ControlType="XRTableCell" Name="tableCell22" Weight="1.0006466749023297" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[descv]" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="25" ControlType="XRTableCell" Name="tableCell21" Weight="0.59086701714721968" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="26" EventName="BeforePrint" PropertyName="Text" Expression="[descp]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="27" ControlType="XRTableCell" Name="tableCell20" Weight="0.68573733202037457" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="28" EventName="BeforePrint" PropertyName="Text" Expression="[pvalue]" />
+                  </ExpressionBindings>
+                </Item4>
+                <Item5 Ref="29" ControlType="XRTableCell" Name="tableCell19" Weight="0.500239882488596" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="30" EventName="BeforePrint" PropertyName="Text" Expression="[pprice]" />
+                  </ExpressionBindings>
+                </Item5>
+                <Item6 Ref="31" ControlType="XRTableCell" Name="tableCell18" Weight="0.47443637592145571" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="32" EventName="BeforePrint" PropertyName="Text" Expression="[qty]" />
+                  </ExpressionBindings>
+                </Item6>
+                <Item7 Ref="33" ControlType="XRTableCell" Name="tableCell17" Weight="0.46145561885737291" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="34" EventName="BeforePrint" PropertyName="Text" Expression="[unitname]" />
+                  </ExpressionBindings>
+                </Item7>
+                <Item8 Ref="35" ControlType="XRTableCell" Name="tableCell26" Weight="0.82850979986821915" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="36" EventName="BeforePrint" PropertyName="Text" Expression="[itemname]" />
+                  </ExpressionBindings>
+                </Item8>
+                <Item9 Ref="37" ControlType="XRTableCell" Name="tableCell25" Weight="0.58967517174705208" Multiline="true" Padding="2,2,0,0,100">
+                  <ExpressionBindings>
+                    <Item1 Ref="38" EventName="BeforePrint" PropertyName="Text" Expression="[itemcode]" />
+                  </ExpressionBindings>
+                </Item9>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="39" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="40" ControlType="BottomMarginBand" Name="BottomMargin1" HeightF="2" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IlZhblNhbGVzIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InBfb3JkZXJkdGxzX3NlbCI+PFBhcmFtZXRlciBOYW1lPSJAcG9pZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uSW50MzIpKCA/cG9pZCk8L1BhcmFtZXRlcj48UHJvY05hbWU+cF9vcmRlcmR0bHNfc2VsPC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9InBfb3JkZXJkdGxzX3NlbCI+PEZpZWxkIE5hbWU9InBvZHRsaWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJwb2lkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iaXRlbWlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idW5pdGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idW5pdG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZmFjdG9yIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJxdHkiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InBwcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0icHZhbHVlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkZXNjcCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZGVzY3YiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InBuZXQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InZhdHZhbHVlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJpdGVtbm90ZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYm9udXMiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9ImJyYW5jaGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0ic3VwcGlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0ic3VwcG5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icG9kYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iZnlhZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaXRlbW5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaXRlbWNvZGUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="2" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

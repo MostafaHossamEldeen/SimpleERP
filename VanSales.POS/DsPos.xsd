@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsPos" targetNamespace="http://tempuri.org/DsPos.xsd" xmlns:mstns="http://tempuri.org/DsPos.xsd" xmlns="http://tempuri.org/DsPos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VanSales" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VanSales (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.VanSales.POS.Properties.Settings.GlobalReference.Default.VanSales" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsPos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsPos" msprop:Generator_UserDSName="DsPos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="s_invdtls_sel" msprop:Generator_TableClassName="s_invdtls_selDataTable" msprop:Generator_TableVarName="tables_invdtls_sel" msprop:Generator_RowChangedName="s_invdtls_selRowChanged" msprop:Generator_TablePropName="s_invdtls_sel" msprop:Generator_RowDeletingName="s_invdtls_selRowDeleting" msprop:Generator_RowChangingName="s_invdtls_selRowChanging" msprop:Generator_RowEvHandlerName="s_invdtls_selRowChangeEventHandler" msprop:Generator_RowDeletedName="s_invdtls_selRowDeleted" msprop:Generator_RowClassName="s_invdtls_selRow" msprop:Generator_UserTableName="s_invdtls_sel" msprop:Generator_RowEvArgName="s_invdtls_selRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="invdtlid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columninvdtlid" msprop:Generator_ColumnPropNameInRow="invdtlid" msprop:Generator_ColumnPropNameInTable="invdtlidColumn" msprop:Generator_UserColumnName="invdtlid" type="xs:int" />
+              <xs:element name="itemcode" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="itemcode" msprop:Generator_ColumnVarNameInTable="columnitemcode" msprop:Generator_ColumnPropNameInTable="itemcodeColumn" msprop:Generator_UserColumnName="itemcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemname" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="itemname" msprop:Generator_ColumnVarNameInTable="columnitemname" msprop:Generator_ColumnPropNameInTable="itemnameColumn" msprop:Generator_UserColumnName="itemname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemid" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="itemid" msprop:Generator_ColumnVarNameInTable="columnitemid" msprop:Generator_ColumnPropNameInTable="itemidColumn" msprop:Generator_UserColumnName="itemid" type="xs:int" minOccurs="0" />
+              <xs:element name="unitid" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="unitid" msprop:Generator_ColumnVarNameInTable="columnunitid" msprop:Generator_ColumnPropNameInTable="unitidColumn" msprop:Generator_UserColumnName="unitid" type="xs:int" minOccurs="0" />
+              <xs:element name="unitname" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="unitname" msprop:Generator_ColumnVarNameInTable="columnunitname" msprop:Generator_ColumnPropNameInTable="unitnameColumn" msprop:Generator_UserColumnName="unitname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="factor" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="factor" msprop:Generator_ColumnVarNameInTable="columnfactor" msprop:Generator_ColumnPropNameInTable="factorColumn" msprop:Generator_UserColumnName="factor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="price" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="icost" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="icost" msprop:Generator_ColumnVarNameInTable="columnicost" msprop:Generator_ColumnPropNameInTable="icostColumn" msprop:Generator_UserColumnName="icost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="value" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="value" msprop:Generator_ColumnVarNameInTable="columnvalue" msprop:Generator_ColumnPropNameInTable="valueColumn" msprop:Generator_UserColumnName="value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="discp" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="discp" msprop:Generator_ColumnVarNameInTable="columndiscp" msprop:Generator_ColumnPropNameInTable="discpColumn" msprop:Generator_UserColumnName="discp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="discvalue" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="discvalue" msprop:Generator_ColumnVarNameInTable="columndiscvalue" msprop:Generator_ColumnPropNameInTable="discvalueColumn" msprop:Generator_UserColumnName="discvalue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="netvalue" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="netvalue" msprop:Generator_ColumnVarNameInTable="columnnetvalue" msprop:Generator_ColumnPropNameInTable="netvalueColumn" msprop:Generator_UserColumnName="netvalue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="vatvalue" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="vatvalue" msprop:Generator_ColumnVarNameInTable="columnvatvalue" msprop:Generator_ColumnPropNameInTable="vatvalueColumn" msprop:Generator_UserColumnName="vatvalue" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:s_invdtls_sel" />
+      <xs:field xpath="mstns:invdtlid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

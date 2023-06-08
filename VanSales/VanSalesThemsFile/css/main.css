@@ -1,0 +1,14 @@
+html {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+/* Hide everything under body tag */
+body.show-spinner > *{
+  opacity: 0;
+}
+
+

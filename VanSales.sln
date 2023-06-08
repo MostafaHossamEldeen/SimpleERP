@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanSales", "VanSales\VanSales.csproj", "{5F485900-8D01-4FF1-B3C1-4B02D558F45D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emax.Core", "Emax.Core\Emax.Core.csproj", "{07AF1BBA-4C95-482C-897F-87A282D81785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMax.DbEntities", "EMax.DbModels\EMax.DbEntities.csproj", "{69A5C47E-B26E-4D98-85A7-72016E3ECBCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emax.Identity", "Emax.Identity\Emax.Identity.csproj", "{AF6F50A6-B6EB-4E0D-9907-8CD8417D0296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emax.Vansales.Service", "Emax.Vansales.Service\Emax.Vansales.Service.csproj", "{0D40E47A-96E6-4993-B85E-B3BBE4687DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emax.Dal", "Repository\Emax.Dal.csproj", "{F4E81949-8AE7-4AD1-AADC-B452AA193DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emax.SharedLib", "Emax.SharedLib\Emax.SharedLib.csproj", "{CD39258E-574D-44FD-BFA1-EC0F205CEDA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanSales.POS", "VanSales.POS\VanSales.POS.csproj", "{E1C85D70-378D-4EA6-AB44-CE00B9C47C77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F485900-8D01-4FF1-B3C1-4B02D558F45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F485900-8D01-4FF1-B3C1-4B02D558F45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F485900-8D01-4FF1-B3C1-4B02D558F45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F485900-8D01-4FF1-B3C1-4B02D558F45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07AF1BBA-4C95-482C-897F-87A282D81785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AF1BBA-4C95-482C-897F-87A282D81785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AF1BBA-4C95-482C-897F-87A282D81785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AF1BBA-4C95-482C-897F-87A282D81785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A5C47E-B26E-4D98-85A7-72016E3ECBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A5C47E-B26E-4D98-85A7-72016E3ECBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A5C47E-B26E-4D98-85A7-72016E3ECBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A5C47E-B26E-4D98-85A7-72016E3ECBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6F50A6-B6EB-4E0D-9907-8CD8417D0296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6F50A6-B6EB-4E0D-9907-8CD8417D0296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6F50A6-B6EB-4E0D-9907-8CD8417D0296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6F50A6-B6EB-4E0D-9907-8CD8417D0296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D40E47A-96E6-4993-B85E-B3BBE4687DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D40E47A-96E6-4993-B85E-B3BBE4687DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D40E47A-96E6-4993-B85E-B3BBE4687DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D40E47A-96E6-4993-B85E-B3BBE4687DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E81949-8AE7-4AD1-AADC-B452AA193DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E81949-8AE7-4AD1-AADC-B452AA193DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E81949-8AE7-4AD1-AADC-B452AA193DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E81949-8AE7-4AD1-AADC-B452AA193DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD39258E-574D-44FD-BFA1-EC0F205CEDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD39258E-574D-44FD-BFA1-EC0F205CEDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD39258E-574D-44FD-BFA1-EC0F205CEDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD39258E-574D-44FD-BFA1-EC0F205CEDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C85D70-378D-4EA6-AB44-CE00B9C47C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C85D70-378D-4EA6-AB44-CE00B9C47C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C85D70-378D-4EA6-AB44-CE00B9C47C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C85D70-378D-4EA6-AB44-CE00B9C47C77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E64F947A-48F5-434D-8917-445943771A66}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.254/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VanSales\\VanSales.csproj
+		SccProjectName1 = VanSales
+		SccLocalPath1 = VanSales
+		SccProjectUniqueName2 = Emax.Core\\Emax.Core.csproj
+		SccProjectName2 = Emax.Core
+		SccLocalPath2 = Emax.Core
+		SccProjectUniqueName3 = EMax.DbModels\\EMax.DbEntities.csproj
+		SccProjectName3 = EMax.DbModels
+		SccLocalPath3 = EMax.DbModels
+		SccProjectUniqueName4 = Emax.Identity\\Emax.Identity.csproj
+		SccProjectName4 = Emax.Identity
+		SccLocalPath4 = Emax.Identity
+		SccProjectUniqueName5 = Emax.Vansales.Service\\Emax.Vansales.Service.csproj
+		SccProjectName5 = Emax.Vansales.Service
+		SccLocalPath5 = Emax.Vansales.Service
+		SccProjectUniqueName6 = Repository\\Emax.Dal.csproj
+		SccProjectName6 = Repository
+		SccLocalPath6 = Repository
+		SccProjectUniqueName7 = Emax.SharedLib\\Emax.SharedLib.csproj
+		SccProjectName7 = Emax.SharedLib
+		SccLocalPath7 = Emax.SharedLib
+		SccProjectUniqueName8 = VanSales.POS\\VanSales.POS.csproj
+		SccProjectName8 = VanSales.POS
+		SccLocalPath8 = VanSales.POS
+	EndGlobalSection
+EndGlobal

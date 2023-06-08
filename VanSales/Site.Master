@@ -1,0 +1,877 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="VanSales.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="ar">
+
+<head id="head1" runat="server">
+    <meta charset="UTF-8">
+    <title id="title1"><%= Page.Title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <link rel="stylesheet" href="/vansalesthemsfile/font/iconsmind/style.css" />
+    <link rel="stylesheet" href="/vansalesthemsfile/font/simple-line-icons/css/simple-line-icons.css" />
+    <link href="VanSalesThemsFile/font/themify/themify.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/vansalesthemsfile/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vansalesthemsfile/css/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/vansalesthemsfile/css/vendor/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/vansalesthemsfile/css/main.css" />
+   <%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"  integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />--%>
+   <link rel="stylesheet" href="Content/all.min.css"   />
+     
+    <link href="/Content/disablebtn.css" rel="stylesheet" />
+    <link href="/Content/animate.css" rel="stylesheet" />
+    <link href="/Content/dx.light.css" rel="stylesheet" />
+    <link href="/Content/dx.common.css" rel="stylesheet" />
+    <link href="/Content/accordion.css" rel="stylesheet" />
+    <script src="/VanSalesThemsFile/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/jquery.cookie.js"></script>
+    <script src="/Scripts/App/base/Helperjs.js"></script>
+    <script src="/Scripts/App/base/ApiHelper.js"></script>
+    <script src="/Scripts/App/base/DevExpressJsHelper.js"></script>
+    
+    <script src="/Scripts/dx.all.js"></script>
+    <script src="/Scripts/jquery.blockUI.js"></script>
+   <%--        <link rel="stylesheet" href="/content/jquery-ui.css" />
+    <script src="/Scripts/jquery-ui.min.js"></script>--%>
+      <style>
+.dxgvControl_MaterialCompact, 
+.dxgvDisabled_MaterialCompact {
+    font: 14px 'Roboto Regular', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+    background-color: White;
+    color: #484848;
+    cursor: default;
+    padding: 16px;
+    padding: 16px;
+}  
+
+
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td, .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td, .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td, .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td {
+    background-color: #35B86B;
+    color: #333;
+}
+
+ .btnsearchpopup{
+         padding: 6px 13px 4px;
+         background-color:white;
+         -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        /* height:30px;
+         width:30px*/
+            height: 37px;
+    width: 48px;
+        /*margin-right: .8rem;*/
+
+ }
+ .btnsearchpopup:before {
+   content: url(../img/icon/search.svg);
+   width: 20px;
+   float: left;
+     /*margin-top: 5px;*/
+    margin-left: -3px;
+ }
+
+ .col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    width: 10%;
+    text-align: left;
+}
+
+          .dxflNestedControlCell_MaterialCompact .dxflNotFloatedElSys {
+          
+          padding-top:20px;
+          }
+
+          .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link, .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused), .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
+    background-color: White;
+    color: #fff;
+}
+          .modal-header .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem;
+}
+    </style>
+  
+     
+
+</head>
+
+<body id="app-container" class="menu-default show-spinner"> 
+ <%--   <div id="emaxspiner" class="spinner spinner-1" style="z-index:65664545;">
+        <h5 class="loading" style="position:absolute; top:25%; left:30px;">برجاء الانتظار</h5>
+      </div>--%>
+
+    <div id="emaxcontent" style="display:block;">
+
+     <div class="loading_circle" id="loading_circle" style="display:none">
+      <div class="load_1"></div>
+      <div class="load_2"></div>
+      <div class="load_3"></div>
+      <div class="load_4"></div>
+      <div class="load_5"></div>
+    
+    </div>
+  <div class="modal" onkeydown="navigategrd(event)"  id="popupModalsearchdef" style="z-index:999999999;" data-name="aaa" tabindex="-1" role="dialog" aria-labelledby="popupModalsearchdefLabel" aria-hidden="true" dir="rtl">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"  >
+        <div class="modal-header">
+        <h5 class="modal-title" id="popupModalsearchdefLabel">بحث</h5>
+        <button type="button" class="close floa
+            t-right" data-dismiss="modal" data-type="aa" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body" >
+       <div class="container-fluid">
+     
+       <div class="form-group row">
+        <input type="text" id="txt_search" onkeydown="searchitm(event)" autocomplete="off"   placeholder="بحث" class="form-control" style="width:80%" />
+  
+      
+        
+        <button type="button"onclick="searchItmPopUp()" style="width:10%;margin-right:10px" class="btn btn-sm btnsearchpopup form-control"></button>
+       </div>
+   
+          </div>
+        <div   style="margin-top:10px">
+        <div id="grd_search"></div>
+
+
+        </div>
+       
+       </div>
+     </div>
+
+  </div>
+      </div>
+     <nav class="navbar fixed-top">
+        <div class="d-flex align-items-center navbar-right">
+            <a class="navbar-logo" href="../default.aspx">
+                 <span class="logo d-none d-xs-block"></span>
+            </a>
+            <a href="#" class="menu-button d-md-block" id="testpin">
+                <svg class="main" viewBox="0 0 9 17">
+                    <rect x="0.48" y="0.5" width="7" height="1" />
+                    <rect x="0.48" y="7.5" width="7" height="1" />
+                    <rect x="0.48" y="15.5" width="7" height="1" />
+                </svg>
+                <svg class="sub" viewBox="0 0 18 17">
+                    <rect x="1.56" y="0.5" width="16" height="1" />
+                    <rect x="1.56" y="7.5" width="16" height="1" />
+                    <rect x="1.56" y="15.5" width="16" height="1" />
+                </svg>
+            </a>
+            <div  class="search" data-search-path="file.default.html?q=">
+                <input type="text" id="myInput" placeholder="بحث في القائمة..." title="Type in a name">
+                <span class="search-icon">
+                    <i class="simple-icon-magnifier"></i>
+                </span>
+            </div>
+        </div>
+        <div class="company">
+            <div class="row company_name">
+                <asp:Label runat="server" ID="lblcompenyname" class="col-sm-8 company_namete"></asp:Label>
+                    <asp:Label runat="server" ID="lblcompney_job" class="col-sm-8 jop_company"></asp:Label>
+               <%-- <a class="jop_company">information technology</a>--%>
+            </div>
+            <div class="col-sm-8 info_company">
+                <span class="text">عدد المستخدمين:
+                    <asp:Label ID="lblcount" runat="server" Text="Label"></asp:Label>
+                </span>
+                <span class="text">السنة المالية:
+                 <asp:Label ID="lblfyear" runat="server" Text="Label"></asp:Label>
+                </span>
+                <span class="text">التاريخ:
+                          <asp:Label ID="lbldte" runat="server" Text="Label">1/1/2021</asp:Label>
+                </span>  
+            </div>
+        </div>
+
+        <div class="navbar-left">
+            <div class="header-icons d-inline-block align-middle">
+<!--notification-->
+                <div class="position-relative d-inline-block">
+                    <button class="header-icon btn btn-empty" type="button" id="notificationButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="simple-icon-bell"></i>
+                        <span class="count">3</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left mt-3 scroll position-absolute" id="notificationDropdown">
+                        <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                            <a href="#">
+                                <img src="#" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                            </a>
+                            <div class="pl-3 pr-2">
+                                <a href="#">
+                                    <p class="font-weight-medium mb-1">Joisse Kaycee just sent a new comment!</p>
+                                    <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                            <a href="#">
+                                <img src="#" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                            </a>
+                            <div class="pl-3 pr-2">
+                                <a href="#">
+                                    <p class="font-weight-medium mb-1">1 item is out of stock!</p>
+                                    <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                            <a href="#">
+                                <img src="#" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                            </a>
+                            <div class="pl-3 pr-2">
+                                <a href="#">
+                                    <p class="font-weight-medium mb-1">New order received! It is total $147,20.</p>
+                                    <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row mb-3 pb-3 ">
+                            <a href="#">
+                                <img src="#" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                            </a>
+                            <div class="pl-3 pr-2">
+                                <a href="#">
+                                    <p class="font-weight-medium mb-1">3 items just added to wish list by a user!</p>
+                                    <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--End notification-->
+                
+<!--fullscreen-->
+                <button class="header-icon btn btn-empty d-none d-sm-inline-block" type="button" id="fullScreenButton">
+                    <i class="simple-icon-size-fullscreen"></i>
+                    <i class="simple-icon-size-actual"></i>
+                </button>
+<!--End fullscreen-->
+            </div>
+
+<!--user-->
+            <div class="user d-inline-block">
+                <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                   <asp:Label ID="lblname" CssClass="name" runat="server" Text="Label"></asp:Label>
+                </button>
+                <div class="dropdown-menu dropdown-menu-left mt-3" style="text-align:right">
+                    <a class="dropdown-item" href="../Users/userresetpass.aspx">تغير كلمه المرور</a>
+                    <a class="dropdown-item" href="../Sys/short_menu.aspx">قائمتي المختصرة</a>
+                    <a class="dropdown-item" href="../logout.aspx">تسجيل خروج</a>
+                    
+                </div>
+            </div>
+<!--End user-->
+        </div>
+    </nav>
+        <!--sidebar-->
+
+  <div class="sidebar" id="topheader">
+        <div class="main-menu">
+            <div class="scroll">
+                <ul class="list-unstyled">
+                    <li class="active"  id="actmainfiles">
+                        <a href="#mainfiles">
+                            <i class="simple-icon-layers"></i>
+                            <span>الملفات الرئيسية</span>
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="#stock">
+                            <i class="iconsmind-Shop-4"></i> المستودعات
+                        </a>
+                    </li>
+                    <li id="actssales">
+                        <a href="#sales">
+                            <i class="iconsmind-Full-Cart"></i> المبيعات
+                        </a>
+                    </li>
+                      <li id="actpurchase">
+                        <a href="#purchase">
+                            <i class="iconsmind-Full-Cart" style="transform: rotateY(180deg);"></i> المشتريات
+                        </a>
+                    </li>
+                    <li id="actGL">
+                        <a href="#GL">
+                            <i class="iconsmind-Dollar-Sign2"></i> الحسابات
+                        </a>
+                    </li> 
+                    <li id="actDoc">
+                        <a href="#Doc">
+                            <i class="iconsmind-Handshake"></i> القبض والصرف
+                        </a>
+                    </li>
+                    <li id="actHR">
+                        <a href="#HR">
+                            <i class="hricon"></i> شئون الموظفين
+                        </a>
+                    </li>
+                    <li id="actsetting">
+                        <a href="#setting">
+                            <i class="simple-icon-equalizer"></i> الاعدادت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--sub menu-->
+        <div class="sub-menu">
+                   <div>
+                <!-- onclick="hideMenu();" -->
+                <a class="pin" type="button">   
+                    <i id = "freeze" class="ti-pin2"></i>
+                </a>
+            </div>
+            <div class="scroll">
+     <!--file_master sub menu-->
+                <ul class="list-unstyled" data-link="mainfiles">
+                    <li class="active" id="actmainfiles">
+                        <a href="../Sys/sys_company.aspx">الشركة
+                            <i class="iconsmind-Hotel"></i> 
+                        </a>
+                    </li>
+                    <li id="actmainfiles">
+                        <a href="../Sys/Branch.aspx">الفروع
+                            <i class="iconsmind-Vector-3"></i>
+                        </a>
+                    </li>
+                    <li id="actmainfiles">
+                        <a href="../Sys/CostCenter.aspx">مراكز التكلفة
+                            <i class="iconsmind-Bank"></i> 
+                        </a>
+                    </li>
+                    <li id="actmainfiles">
+                        <a href="../Sys/payment_type.aspx">طرق الدفع
+                            <i class="iconsmind-Money-2"></i> 
+                        </a>
+                    </li>
+                     <li id="actmainfiles">
+                        <a href="../Sys/Years.aspx">السنوات المالية
+                            <i class="simple-icon-calendar"></i> 
+                        </a>
+                    </li>
+                </ul>
+     <!--stock sub menu-->
+                <ul class="list-unstyled" data-link="stock">
+                    <li id="actsotke">
+                        <a href="../stock/unit.aspx">الوحدات
+                            <i class="iconsmind-Shoutwire"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../stock/ItemGroups.aspx">مجموعات الاصناف
+                            <i class="simple-icon-organization"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../Stock/Items.aspx">الاصناف
+                            <i class="iconsmind-Basket-Items"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../Stock/st_itemwh.aspx">اصناف الفروع
+                            <i class="simple-icon-book-open"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../Stock/ChangeSPrice.aspx">أسعار البيع و الخصومات
+                            <i class="simple-icon-book-open"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../Stock/st_Edit_add_ord.aspx">أذون الاضافة
+                            <i class="iconsmind-File-Download"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../Stock/st_edit_issord.aspx">أذون الصرف
+                            <i class="iconsmind-File-Upload"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../Stock/st_Trans_ord.aspx">أذون التحويل
+                            <i class="iconsmind-File-Share"></i> 
+                        </a>
+                    </li> 
+                    <li id="actsotke">
+                        <a href="../Stock/st_Receipt_transfer.aspx">أذون الاستلام
+                            <i class="iconsmind-File-Download"></i> 
+                        </a>
+                    </li>
+                     <li id="actsotke">
+                        <a href="../Stock/Inventory_Manage.aspx">سندات الجرد
+                            <i class="simple-icon-doc"></i> 
+                        </a>
+                    </li>
+                    <li id="actsotke">
+                        <a href="../Stock/print_barcode.aspx">طباعة الباركود
+                            <i class="iconsmind-Bar-Code"></i> 
+                        </a>
+                    </li>
+                     <div>
+                         <li id="actsotke">
+                            <a href="#Report-stock" data-toggle="collapse" aria-expanded="false" class="">
+                                <i class="simple-icon-arrow-down" style="margin-right: 40%"></i>
+                                التقارير
+                                <i class="simple-icon-notebook float-right"></i>  
+                            </a>
+                         </li>
+                            <div id="Report-stock" class="collapse sidebar-submenu" style=" background-color: #f6f6f6; font-size: 1rem;">
+                                <li id="actsotke">
+                                    <a href="../Stock/st_transactions_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">حركات اصناف المخزون</span>
+                                    </a>
+                                </li>
+                                <li id="actsotke">
+                                    <a href="../Stock/st_analysis_report.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed">تحليل ارصده المخزون</span>
+                                        </a>
+                                    </li>
+                                 <li id="actsotke">
+                                    <a href="../Stock/st_Items_data_balances_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">بيانات و أرصدة الأصناف</span>
+                                    </a>
+                                </li> 
+                                <li id="actsotke">
+                                    <a href="../Stock/st_item_balance_repo.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير حركة صنف</span>
+                                    </a>
+                                </li> 
+                            </div>
+                     </div>
+                </ul>
+     <!--sales sub menu-->                
+                <ul class="list-unstyled" data-link="sales">
+                    <li id="actssales">
+                        <a href="../sales/CustGroup.aspx">مجموعات العملاء
+                            <i class="simple-icon-organization"></i> 
+                        </a>
+                    </li>
+                    <li id="actssales">
+                        <a href="../sales/customers.aspx">العملاء
+                            <i class="iconsmind-Business-Mens"></i> 
+                        </a>
+                    </li>
+                    <li id="actssales">
+                        <a href="../sales/sman.aspx">المندوبين
+                            <i class="simple-icon-people"></i> 
+                        </a>
+                    </li>
+                      <li id="actssales">
+                        <a href="../Sales/s_quote_order.aspx">عرض أسعار 
+                            <i class="iconsmind-Billing"></i> 
+                        </a>
+                    </li>
+                    <li id="actssales">
+                        <a href="../Sales/S_order.aspx">أمر البيع
+                            <i class="iconsmind-Billing"></i> 
+                        </a>
+                    </li>
+                    <li id="actssales">
+                        <a href="../Sales/inv.aspx">فاتورة البيع
+                            <i class="iconsmind-Billing"></i> 
+                        </a>
+                    </li>
+                    <li id="actssales">
+                        <a href="../Sales/Rtn_inv.aspx">مرتجع الفواتير
+                            <i class="iconsmind-File-Refresh"></i> 
+                        </a>
+                    </li>
+                     <div>
+                         <li id="actssales">
+                            <a href="#Report-sales" data-toggle="collapse" aria-expanded="false" class="">
+                                <i class="simple-icon-arrow-down" style="margin-right: 40%"></i>
+                                التقارير
+                                <i class="simple-icon-notebook float-right"></i>  
+                            </a>
+                         </li>
+                            <div id="Report-sales" class="collapse sidebar-submenu" style=" background-color: #f6f6f6; font-size: 1rem;">
+                                <li id="actssales">
+                                    <a href="../Sales/inv_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير فواتير المبيعات </span>
+                                    </a>
+                                </li>
+                                <li id="actssales">
+                                    <a href="../Sales/inv_items_report.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed">تقرير اصناف المبيعات</span>
+                                    </a>
+                                </li>
+                                <li id="actssales">
+                                    <a href="../Sales/inv_pay_report.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed">تقرير طرق دفع المبيعات</span>
+                                    </a>
+                                </li>  
+                                <li id="actssales">
+                                    <a href="../Sales/total_inv_items.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed"> اجمالى مبيعات الأصناف</span>
+                                    </a>
+                                </li>  
+                                <li id="actssales">
+                                    <a href="../Sales/total_inv_pay.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed"> اجمالى طرف دفع المبيعات</span>
+                                    </a>
+                                </li>
+                            </div>
+                     </div>
+                </ul>
+
+                 <ul class="list-unstyled" data-link="purchase">
+                    <li id="actpurchase">
+                        <a href="../Purchases/SuppGroup.aspx">مجموعات الموردين
+                            <i class="simple-icon-organization"></i> 
+                        </a>
+                    </li>
+                    <li id="actpurchase">
+                        <a href="../Purchases/Supplier.aspx">الموردين
+                            <i class="iconsmind-Business-Mens"></i> 
+                        </a>
+                    </li>
+                     <li id="actpurchase">
+                        <a href="../Sys/Expenses.aspx">المصاريف
+                            <i class="iconsmind-Business-Mens"></i> 
+                        </a>
+                    </li>
+                    <li id="actpurchase">
+                        <a href="../Purchases/request.aspx">طلبيات الشراء
+                            <i class="iconsmind-File-Download"></i> 
+                        </a>
+                    </li>
+                    <li id="actpurchase">
+                        <a href="../Purchases/Orders.aspx">أمر الشراء
+                            <i class="iconsmind-Billing"></i> 
+                        </a>
+                    </li>
+                    <li id="actpurchase">
+                        <a href="../Purchases/P_Inv.aspx">فاتورة الشراء
+                            <i class="iconsmind-Billing"></i> 
+                        </a>
+                    </li>
+                    <li id="actpurchase">
+                        <a href="../Purchases/Rtn_P_Inv.aspx">مرتجع الفواتير
+                            <i class="iconsmind-File-Refresh"></i> 
+                        </a>
+                    </li>
+                             <div>
+                         <li id="actpurchase">
+                            <a href="#Report-purchas" data-toggle="collapse" aria-expanded="false" class="">
+                                <i class="simple-icon-arrow-down" style="margin-right: 40%"></i>
+                                التقارير
+                                <i class="simple-icon-notebook float-right"></i>  
+                            </a>
+                         </li>
+                            <div id="Report-purchas" class="collapse sidebar-submenu" style=" background-color: #f6f6f6; font-size: 1rem;">
+                                <li id="actpurchase">
+                                    <a href="../Purchases/P_inv_Report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير فواتير المشتريات </span>
+                                    </a>
+                                </li>
+                                <li id="actpurchase">
+                                    <a href="../Purchases/p_inv_item_report.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed">تقرير اصناف المشتريات</span>
+                                    </a>
+                                </li>                              
+                                <li id="actpurchase">
+                                    <a href="../Purchases/total_p_inv_items.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed"> اجمالى مشتريات الأصناف</span>
+                                    </a>
+                                </li>  
+                            
+                            </div>
+                     </div>
+                </ul>
+                <!--GL sub menu-->
+                <ul class="list-unstyled" data-link="GL">
+                      <li id="actGL">
+                        <a href="../GL/Chart.aspx">دليل الحسابات
+                            <i class="iconsmind-Numbering-List"></i> 
+                        </a>
+                          </li>  
+                          <li id="actGL">
+                        <a href="../GL/Vouchers.aspx">القيود اليومية
+                            <i class="simple-icon-doc"></i> 
+                        </a>
+
+                    </li>  
+                                        
+                      <div>
+                    <li id="actGL">
+                            <a href="#accrep" data-toggle="collapse" aria-expanded="false" class="">
+                                <i class="simple-icon-arrow-down" style="margin-right: 40%"></i>
+                                التقارير
+                                <i class="simple-icon-notebook float-right"></i>  
+                            </a>
+                         </li>
+                            <div id="accrep" class="collapse sidebar-submenu" style=" background-color: #f6f6f6; font-size: 1rem;">
+                                <li id="actGL">
+                                    <a href="../gl/RepAccStatment.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">كشف حساب</span>
+                                    </a>
+                                </li>
+                                   <li id="actGL">
+                                    <a href="../gl/repmaintrailbalance" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">ميزان مراجعه رئيسى</span>
+                                    </a>
+                                </li>
+                                   <li id="actGL">
+                                    <a href="../gl/repsubtrailbalance" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">ميزان مراجعه فرعى</span>
+                                    </a>
+                                </li>
+                                   <li id="actGL">
+                                    <a href="../gl/RepIncomStatment" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">قائمه الدخل</span>
+                                    </a>
+                                </li>
+                                   <li id="actGL">
+                                    <a href="../gl/RepBalanceSheetStatment" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">الميزانيه العموميه</span>
+                                    </a>
+                                </li>
+                                   <li id="actGL">
+                                    <a href="../GL/move_account_cost_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">حركه الحسابات ومركز االتكلفه</span>
+                                    </a>
+                                </li>
+                                   <li id="actGL">
+                                    <a href="../GL/RepDebtRecovery.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">اعمار الديوان</span>
+                                    </a>
+                                </li>
+                                <li id="actGL">
+                                    <a href="../GL/tax_declaration_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">الإقرار الضريبي</span>
+                                    </a>
+                                </li>
+                    </div>
+                    </div> 
+                </ul>
+                   <!--Doc sub menu-->
+                <ul class="list-unstyled" data-link="Doc">
+                      <li id="actDoc">
+                        <a href="../GL/rec_doc.aspx"> سندات القبض
+                            <i class="iconsmind-Financial" style="transform: rotateY(180deg);"></i> 
+                        </a>
+                      <li id="actDoc">
+                        <a href="../GL/pay_doc.aspx">سندات الصرف
+                            <i class="iconsmind-Financial"></i> 
+                        </a>
+                    </li>  
+                           <div>
+                         <li id="actDoc">
+                            <a href="#recrep" data-toggle="collapse" aria-expanded="false" class="">
+                                <i class="simple-icon-arrow-down" style="margin-right: 40%"></i>
+                                التقارير
+                                <i class="simple-icon-notebook float-right"></i>  
+                            </a>
+                         </li>
+                            <div id="recrep" class="collapse sidebar-submenu" style=" background-color: #f6f6f6; font-size: 1rem;">
+                                <li id="actDoc">
+                                    <a href="../GL/rec_doc_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير سند القبض</span>
+                                    </a>
+                                </li>
+                                <li id="actDoc">
+                                    <a href="../GL/pay_doc_report.aspx" class="" style="margin-right: 10px;">
+                                        <span class="menu-collapsed">تقرير سند الصرف</span>
+                                    </a>
+                                </li>
+                            </div>
+                     </div>
+                </ul>
+                <!--HR sub menu-->
+                <ul class="list-unstyled" data-link="HR">
+                      <li id="actHR">
+                        <a href="../HR/hr_masterfiles.aspx"> الملفات الرئيسية
+                            <i class="iconsmind-Folder-Archive"></i> 
+                        </a>
+                          <li id="actHR">
+                        <a href="../HR/hr_employees_master.aspx">الموظفين
+                            <i class="simple-icon-people"></i> 
+                        </a>
+                    </li>   
+                         <li id="actHR">
+                        <a href="../HR/hr_vactions.aspx">الاجازات
+                            <i class="simple-icon-calendar"></i> 
+                        </a>
+                    </li>
+                    <li id="actHR">
+                        <a href="../HR/hr_doc.aspx">الوثائق الرسمية
+                            <i class="iconsmind-File-Bookmark"></i> 
+                        </a>
+                    </li>
+                    <li id="actHR">
+                        <a href="../HR/hr_loans.aspx">الســلف
+                            <i class="iconsmind-Money-2"></i> 
+                        </a>
+                    </li>
+                    <li id="actHR">
+                        <a href="../HR/hr_monthyear.aspx">شهور الرواتب
+                            <i class="iconsmind-Calendar-4"></i> 
+                        </a>
+                    </li>
+                    <li id="actHR">
+                        <a href="../HR/hr_salaryvarables.aspx">متغيرات الرواتب
+                            <i class="iconsmind-Arrow-Mix"></i> 
+                        </a>
+                    </li>
+                    <li id="actHR">
+                        <a href="../HR/hr_salaryprep.aspx">إعداد الرواتب
+                            <i class="iconsmind-Financial"></i> 
+                        </a>
+                    </li>
+                    <li id="actHR">
+                        <a href="../HR/hr_salarypaid.aspx">صرف الرواتب
+                            <i class="iconsmind-Money-Bag"></i> 
+                        </a>
+                    </li>
+                    <div>
+                         <li id="actHR">
+                            <a href="#Report-HR" data-toggle="collapse" aria-expanded="false" class="">
+                                <i class="simple-icon-arrow-down" style="margin-right: 40%"></i>
+                                التقارير
+                                <i class="simple-icon-notebook float-right"></i>  
+                            </a>
+                         </li>
+                            <div id="Report-HR" class="collapse sidebar-submenu" style=" background-color: #f6f6f6; font-size: 1rem;">
+                                <li id="actHR">
+                                    <a href="../HR/hr_salary_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير رواتب الموظفين</span>
+                                    </a>
+                                </li>
+                                <li id="actHR">
+                                    <a href="../HR/hr_salaryvar_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">متغيرات رواتب الموظفين</span>
+                                    </a>
+                                </li>
+                                <li id="actHR">
+                                    <a href="../HR/hr_doc_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير الوثائق الرسمية</span>
+                                    </a>
+                                </li>
+                                <li id="actHR">
+                                    <a href="../HR/hr_loan_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير السلف</span>
+                                    </a>
+                                </li>
+                                <li id="actHR">
+                                    <a href="../HR/hr_vactions_report.aspx" class="" style="margin-right: 10px;">
+                                       <span class="menu-collapsed">تقرير الاجازات</span>
+                                    </a>
+                                </li>
+                            </div>
+                     </div>
+                </ul>
+     <!--setting sub menu-->
+                <ul class="list-unstyled" data-link="setting">
+                      <li id="actsetting">
+                        <a href="../sys/sys_settings.aspx">اعدادات النظام
+                            <i class="iconsmind-Data-Settings"></i> 
+                        </a>
+                    </li> 
+                    <li id="actsetting">
+                        <a href="../Users/users.aspx">المستخدمين
+                            <i class="iconsmind-Lock-User"></i> 
+                        </a>
+                    </li> 
+                   <li id="actsetting">
+                        <a href="../GL/AccPay.aspx">حسابات طرق الدفع
+                            <i class="iconsmind-Dollar"></i> 
+                        </a>
+                    </li> 
+                    <li id="actsetting">
+                        <a href="../GL/AccBranchs.aspx">ربط الحسابات الرئيسية
+                            <i class="iconsmind-Arrow-Merge"></i> 
+                        </a>
+                    </li> 
+                    <li id="actsetting">
+                        <a href="../sys/acc_unpost.aspx">فك ترحيل الحسابات
+                            <i class="simple-icon-doc"></i> 
+                        </a>
+
+                    </li> 
+                       
+                </ul>
+<!--end sub menu-->
+            </div>
+        </div>
+    </div>
+    
+<!--End sidebar-->
+
+    <main>
+        <div class="container-fluid" >
+        <%--          <div class="cir" id="crlogo">
+                <div class="Ellipse_1" id="test">
+                    <img src="../vansalesthemsfile/img/emax.png" alt="" class="userlogo">
+                </div>
+            </div>--%>
+          <%--  <a class="logobottom bto" id="cor" onclick="cirlogo();"><i class="simple-icon-arrow-up"></i></a>--%>
+              <%--  <div class="laptop" id="moduleerp"></div>--%>
+                                <div class="">
+                                    <!---->
+                                    <form runat="server" id="mainfrm" class="mainformstyle">
+                                        <asp:ScriptManager runat="server" ScriptMode="Release">
+                                            <Scripts>
+                                                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                                                <%--Framework Scripts--%>
+                                                <asp:ScriptReference Name="MsAjaxBundle" />
+                                               
+                                                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                                                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                                                <%--<asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />--%>
+                                                <%--<asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />--%>
+                                                <%--<asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />--%>
+                                             <%--   <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />--%>
+                                                <%--<asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />--%>
+                                                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                                                <asp:ScriptReference Name="WebFormsBundle" />
+                                               
+                                                <%--Site Scripts--%>
+
+                                               
+                                            </Scripts>
+                                        </asp:ScriptManager> 
+                                        <script type="text/javascript" lang="javascript">
+                                            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+                                            function EndRequestHandler(sender, args) {
+                                                if (args.get_error() != undefined) {
+                                                    args.set_errorHandled(true);
+                                                }
+                                            } </script>
+
+                                             
+                                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                       
+                                        </asp:ContentPlaceHolder>
+                                    </form>
+                                </div>
+
+                        </div>
+    </main>
+    </div>
+    <script src="/Scripts/sweetalert2.js"></script>
+    <script src="/vansalesthemsfile/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/vansalesthemsfile/js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="/vansalesthemsfile/js/vendor/owl.carousel.min.js"></script>
+    <script src="/vansalesthemsfile/js/dore.script.js"></script>
+    <script src="/vansalesthemsfile/js/scripts.js"></script>
+    <script src="/VanSalesThemsFile/js/Custome.js"></script>
+
+
+<!-- Modal -->
+
+</body>
+
+</html>
+<script>
+
+</script>
+
